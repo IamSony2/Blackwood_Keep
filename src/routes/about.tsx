@@ -1,0 +1,254 @@
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { Lightbulb, Award, Heart, Settings, ShieldCheck } from "lucide-react";
+import { PageLayout } from "@/components/PageLayout";
+import { GoldDivider } from "@/components/GoldDivider";
+
+export const Route = createFileRoute("/about")({
+  head: () => ({
+    meta: [
+      { title: "Strategic Digital Growth Partners | About Blackwood Keep" },
+      {
+        name: "description",
+        content:
+          "Led by Maggie Smith, Blackwood Keep engineers reliable, jargon-free lead acquisition funnels and digital automation systems for North West businesses. Discover our operational standards.",
+      },
+      { property: "og:title", content: "About Blackwood Keep" },
+      {
+        property: "og:description",
+        content:
+          "Rooted in clarity. Engineered for performance. Meet the principles behind Blackwood Keep.",
+      },
+      { property: "og:url", content: "/about" },
+    ],
+    links: [{ rel: "canonical", href: "/about" }],
+  }),
+  component: AboutPage,
+});
+
+const dark = "#0B0B0D";
+const navy = "#111827";
+const gold = "#C8A45D";
+const goldAntique = "#B68B3A";
+const champagne = "#E5D2A0";
+const silver = "#D1D5DB";
+const white = "#F8F9FA";
+
+function AboutPage() {
+  return (
+    <PageLayout>
+      {/* HERO */}
+      <section
+        style={{ backgroundColor: dark, minHeight: "60vh" }}
+        className="flex items-center justify-center px-6 py-20"
+      >
+        <div className="mx-auto max-w-3xl text-center">
+          <h1
+            style={{
+              color: champagne,
+              fontSize: "clamp(32px,5vw,52px)",
+              lineHeight: 1.15,
+            }}
+          >
+            Rooted in clarity. Engineered for performance.
+          </h1>
+          <p
+            className="mx-auto mt-6"
+            style={{ color: silver, fontSize: "17px", maxWidth: "600px", lineHeight: 1.6 }}
+          >
+            We founded Blackwood Keep to eradicate the empty noise, vanity reports, and misaligned
+            incentives that cause modern agencies to fail their clients. We build technical systems
+            that protect and scale your revenue.
+          </p>
+        </div>
+      </section>
+
+      {/* OPERATIONAL STANDARDS */}
+      <section style={{ backgroundColor: white }} className="px-6 py-20">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="text-center" style={{ color: navy, fontSize: "clamp(26px,3vw,36px)" }}>
+            The Blackwood Keep Charter
+          </h2>
+          <div className="mt-4 flex justify-center">
+            <GoldDivider />
+          </div>
+          <div className="mt-10 space-y-6" style={{ color: "#374151", lineHeight: 1.8, fontSize: "16px" }}>
+            <p>
+              Digital marketing shouldn't feel like a mysterious variable. Most local trade
+              operators, facilities directors, and B2B leaders are exhausted by abstract metrics
+              like 'impressions' and 'brand awareness' while their baseline sales pipelines remain
+              unpredictable. We built this firm to execute with complete commercial transparency.
+            </p>
+            <p>
+              We position ourselves as a highly focused operational partner. We only deploy systems
+              when we have reverse-engineered your target Cost Per Lead (CPL) and verified that
+              your internal customer acquisition infrastructure can scale comfortably alongside
+              our lead engines. You will never be managed as a basic retainer checkbox.
+            </p>
+            <p>
+              From our operational hub serving the Wirral, Liverpool, Chester, and North Wales, we
+              implement data-first systems that generate elite enquiries, build regional trust,
+              and run flawlessly in the background while your team executes physical operations.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* MISSION & VISION */}
+      <section style={{ backgroundColor: navy }} className="px-6 py-20">
+        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-2">
+          <PullQuote
+            label="Our Mission"
+            quote="To equip high-potential B2B enterprises and regional trades with ironclad automated funnels, allowing them to capture local markets and scale without operational chaos."
+          />
+          <PullQuote
+            label="Our Vision"
+            quote="To establish Blackwood Keep as the premier standard for plain-English, high-performance digital marketing, building data architectures that empower businesses across the UK."
+          />
+        </div>
+      </section>
+
+      {/* CORE PILLARS */}
+      <section style={{ backgroundColor: white }} className="px-6 py-20">
+        <div className="mx-auto max-w-6xl">
+          <h2 className="text-center" style={{ color: navy, fontSize: "clamp(26px,3vw,36px)" }}>
+            Our Non-Negotiables
+          </h2>
+          <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <ValueCard
+              icon={<Lightbulb size={24} style={{ color: gold }} />}
+              title="Absolute Clarity"
+              body="We present every strategy in clear, actionable business terms. If a campaign metric cannot be broken down in under 30 seconds, it does not belong in our pipeline architecture."
+            />
+            <ValueCard
+              icon={<Award size={24} style={{ color: gold }} />}
+              title="Commercial ROI Focus"
+              body="We measure campaign health purely by inbound lead quality, closed commercial values, and customer acquisition efficiency—never by random social platform clicks."
+            />
+            <ValueCard
+              icon={<Heart size={24} style={{ color: gold }} />}
+              title="Deep Strategic Alignment"
+              body="We thoroughly study prospective clients before onboarding. We only initiate partnerships where our funnel development can guarantee a measurable revenue impact."
+            />
+            <ValueCard
+              icon={<Settings size={24} style={{ color: gold }} />}
+              title="Systems Architecture"
+              body="We specialise in hands-off infrastructure, developing methodical, automated automation protocols that liberate your management layer from data entry tasks."
+            />
+            <ValueCard
+              icon={<ShieldCheck size={24} style={{ color: gold }} />}
+              title="Direct Candour"
+              body="We remain conscientiously realistic regarding target timelines, required media budgets, and market realities. No inflated projections—just predictable execution."
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* ALLIANCE HIGHLIGHT */}
+      <section style={{ backgroundColor: dark }} className="px-6 py-16">
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 style={{ color: champagne, fontSize: "clamp(24px,3vw,32px)" }}>
+            Built on Performance, Not Advertising.
+          </h2>
+          <p className="mt-6" style={{ color: silver, fontSize: "16px", lineHeight: 1.7 }}>
+            The core of our client portfolio is constructed through intentional industry referrals
+            and long-term asset performance. If your firm requires transparent growth, we invite
+            you to experience our strategic process directly.
+          </p>
+          <Link to="/referrals" className="mt-6 inline-block" style={{ color: gold }}>
+            Review our referral guidelines →
+          </Link>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section
+        style={{ backgroundColor: navy, borderTop: `1px solid ${goldAntique}` }}
+        className="px-6 py-16"
+      >
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 style={{ color: champagne, fontSize: "clamp(24px,3vw,32px)" }}>
+            Evaluate your current marketing spend efficiency.
+          </h2>
+          <Link
+            to="/free-audit"
+            className="mt-6 inline-block"
+            style={{
+              backgroundColor: gold,
+              color: dark,
+              padding: "14px 28px",
+              borderRadius: "8px",
+              fontWeight: 500,
+            }}
+          >
+            Request Free Pipeline Audit
+          </Link>
+        </div>
+      </section>
+    </PageLayout>
+  );
+}
+
+function PullQuote({ label, quote }: { label: string; quote: string }) {
+  return (
+    <div
+      style={{
+        borderLeft: `3px solid ${gold}`,
+        backgroundColor: dark,
+        borderRadius: "0 12px 12px 0",
+        padding: "1.5rem",
+      }}
+    >
+      <p
+        style={{
+          color: goldAntique,
+          fontSize: "11px",
+          textTransform: "uppercase",
+          letterSpacing: "0.12em",
+        }}
+      >
+        {label}
+      </p>
+      <p
+        className="mt-4"
+        style={{
+          color: champagne,
+          fontFamily: "var(--font-display)",
+          fontStyle: "italic",
+          fontSize: "20px",
+          lineHeight: 1.6,
+        }}
+      >
+        “{quote}”
+      </p>
+    </div>
+  );
+}
+
+function ValueCard({
+  icon,
+  title,
+  body,
+}: {
+  icon: React.ReactNode;
+  title: string;
+  body: string;
+}) {
+  return (
+    <div
+      style={{
+        backgroundColor: "#FFFFFF",
+        border: `0.5px solid ${silver}`,
+        borderRadius: "12px",
+        padding: "1.25rem",
+      }}
+    >
+      {icon}
+      <h3 className="mt-4" style={{ color: navy, fontFamily: "var(--font-sans)", fontWeight: 500, fontSize: "17px" }}>
+        {title}
+      </h3>
+      <p className="mt-2" style={{ color: "#374151", fontSize: "14px", lineHeight: 1.6 }}>
+        {body}
+      </p>
+    </div>
+  );
+}
