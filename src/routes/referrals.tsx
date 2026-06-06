@@ -1,0 +1,151 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { PageLayout } from "@/components/PageLayout";
+import { ZohoPlaceholder } from "@/components/ZohoPlaceholder";
+
+export const Route = createFileRoute("/referrals")({
+  head: () => ({
+    meta: [
+      { title: "Strategic Referral Framework | Blackwood Keep" },
+      {
+        name: "description",
+        content:
+          "Refer high-potential trades, facilities providers, and regional SMEs to Blackwood Keep and benefit through our structured referral network.",
+      },
+      { property: "og:title", content: "Referral Programme | Blackwood Keep" },
+      {
+        property: "og:description",
+        content: "Advocacy built on performance and trust.",
+      },
+      { property: "og:url", content: "/referrals" },
+    ],
+    links: [{ rel: "canonical", href: "/referrals" }],
+  }),
+  component: ReferralsPage,
+});
+
+const dark = "#0B0B0D";
+const navy = "#111827";
+const gold = "#C8A45D";
+const goldAntique = "#B68B3A";
+const champagne = "#E5D2A0";
+const silver = "#D1D5DB";
+const white = "#F8F9FA";
+
+function ReferralsPage() {
+  return (
+    <PageLayout>
+      {/* HERO */}
+      <section style={{ backgroundColor: dark, minHeight: "50vh" }} className="flex items-center justify-center px-6 py-20">
+        <div className="mx-auto max-w-3xl text-center">
+          <h1 style={{ color: champagne, fontSize: "clamp(30px,4.5vw,48px)", lineHeight: 1.2 }}>
+            Advocacy built on performance and trust.
+          </h1>
+          <p className="mt-6" style={{ color: silver, fontSize: "17px", lineHeight: 1.6 }}>
+            We scale regional operations through structural results, and we intentionally reward
+            professionals who guide firms to our door.
+          </p>
+        </div>
+      </section>
+
+      {/* PROCESS */}
+      <section style={{ backgroundColor: white }} className="px-6 py-20">
+        <div className="mx-auto max-w-6xl">
+          <h2 className="text-center" style={{ color: navy, fontSize: "clamp(26px,3vw,36px)" }}>
+            The Referral Mechanics
+          </h2>
+          <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
+            {[
+              { n: "1", t: "Introduce the Entity", b: "Identify a regional business leader or facilities operator struggling to maintain lead generation consistency, and supply their metrics via our intake module below." },
+              { n: "2", t: "We Run Diagnostics", b: "We provide them with our comprehensive, high-value video Growth Audit. No pressure, completely transparent." },
+              { n: "3", t: "Secure Ongoing Allocation", b: "When the entity activates a monthly framework contract, your referral validation registers instantly. Full program execution goes live Q4 2026." },
+            ].map((s) => (
+              <div key={s.n} className="text-center">
+                <div
+                  className="mx-auto flex h-14 w-14 items-center justify-center"
+                  style={{ backgroundColor: gold, color: dark, borderRadius: "999px", fontFamily: "var(--font-display)", fontSize: "22px" }}
+                >
+                  {s.n}
+                </div>
+                <h3 className="mt-4" style={{ color: navy, fontSize: "20px" }}>{s.t}</h3>
+                <p className="mt-3" style={{ color: "#374151", fontSize: "14px", lineHeight: 1.7 }}>{s.b}</p>
+              </div>
+            ))}
+          </div>
+          <p className="mt-10 text-center" style={{ color: "#888780", fontSize: "13px", fontStyle: "italic" }}>
+            Formal portal access and tracking parameters launching Q4 2026. Register early intake below.
+          </p>
+        </div>
+      </section>
+
+      {/* INTEGRATION PROFILE */}
+      <section style={{ backgroundColor: navy }} className="px-6 py-20">
+        <div className="mx-auto max-w-6xl">
+          <h2 className="text-center" style={{ color: champagne, fontSize: "clamp(26px,3vw,36px)" }}>
+            Ideal Introductions
+          </h2>
+          <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
+            {[
+              { t: "Commercial Contractors", b: "Mechanical, electrical, civil, roofing, and plumbing firms across the North West." },
+              { t: "Facilities & Asset Groups", b: "Commercial cleaning, safety compliance, security providers, and out-of-hours infrastructure teams." },
+              { t: "Mid-Market Service SMEs", b: "Any commercial firm across Wirral, Liverpool, Chester, or North Wales seeking client tracking consistency." },
+            ].map((c) => (
+              <div
+                key={c.t}
+                style={{
+                  backgroundColor: dark,
+                  border: `0.5px solid ${goldAntique}`,
+                  borderRadius: "12px",
+                  padding: "1.5rem",
+                }}
+              >
+                <h3 style={{ color: gold, fontSize: "18px" }}>{c.t}</h3>
+                <p className="mt-2" style={{ color: silver, fontSize: "14px", lineHeight: 1.6 }}>{c.b}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* INTAKE FORM */}
+      <section style={{ backgroundColor: white }} className="px-6 py-20">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="text-center" style={{ color: navy, fontSize: "clamp(26px,3vw,36px)" }}>
+            Submit Strategic Referral
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-center" style={{ color: "#374151", fontSize: "15px" }}>
+            Provide the corporate profile information below and our engineering team will initiate
+            tracking diagnostics.
+          </p>
+
+          {/* REFERRAL FORM — connect Zoho Forms here */}
+          <div className="mt-8">
+            <ZohoPlaceholder label="" variant="light" minHeight={300}>
+              <p style={{ color: navy, fontWeight: 500, marginBottom: 12 }}>
+                Zoho Forms — Referral Intake
+              </p>
+              <p style={{ color: "#888780", fontSize: "13px", lineHeight: 1.7 }}>
+                Field Inputs: Your Corporate Identity · Your Verified Email · Target Firm Name ·
+                Decision Maker Identity · Target Contact Coordinates · Strategic Context Notes
+              </p>
+            </ZohoPlaceholder>
+          </div>
+          <div className="mt-6 text-center">
+            <button
+              type="button"
+              style={{
+                backgroundColor: gold,
+                color: dark,
+                padding: "14px 32px",
+                borderRadius: "8px",
+                fontWeight: 500,
+              }}
+            >
+              Register Introduction
+            </button>
+          </div>
+          {/* END REFERRAL FORM */}
+        </div>
+      </section>
+    </PageLayout>
+  );
+}
