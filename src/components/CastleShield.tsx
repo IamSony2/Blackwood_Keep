@@ -1,0 +1,47 @@
+interface Props {
+  size?: number;
+  className?: string;
+}
+
+export function CastleShield({ size = 80, className = "" }: Props) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 100 110"
+      width={size}
+      height={(size * 110) / 100}
+      className={className}
+      aria-label="Blackwood Keep castle shield"
+      role="img"
+    >
+      {/* Shield outline */}
+      <path
+        d="M50 4 L92 14 L92 56 C92 82 74 100 50 106 C26 100 8 82 8 56 L8 14 Z"
+        fill="#0B0B0D"
+        stroke="#C8A45D"
+        strokeWidth="2"
+      />
+      {/* Battlements top */}
+      <g fill="#C8A45D">
+        <rect x="26" y="38" width="8" height="10" />
+        <rect x="38" y="38" width="8" height="10" />
+        <rect x="50" y="38" width="8" height="10" />
+        <rect x="62" y="38" width="8" height="10" />
+      </g>
+      {/* Tower body */}
+      <rect x="26" y="48" width="44" height="34" fill="#C8A45D" />
+      {/* Door */}
+      <path d="M44 82 L44 68 Q50 60 56 68 L56 82 Z" fill="#0B0B0D" />
+      {/* Windows */}
+      <rect x="32" y="56" width="6" height="10" fill="#0B0B0D" />
+      <rect x="58" y="56" width="6" height="10" fill="#0B0B0D" />
+      {/* Centre tall tower */}
+      <rect x="44" y="22" width="12" height="20" fill="#C8A45D" />
+      <rect x="44" y="22" width="4" height="6" fill="#0B0B0D" />
+      <rect x="52" y="22" width="4" height="6" fill="#0B0B0D" />
+      {/* Flag pole */}
+      <rect x="49" y="10" width="2" height="14" fill="#C8A45D" />
+      <path d="M51 11 L60 14 L51 17 Z" fill="#C8A45D" />
+    </svg>
+  );
+}
