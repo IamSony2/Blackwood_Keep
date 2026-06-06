@@ -11,20 +11,31 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import { CookieBanner } from "../components/CookieBanner";
 
 function NotFoundComponent() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background px-4">
+    <div
+      className="flex min-h-screen items-center justify-center px-4"
+      style={{ backgroundColor: "#0B0B0D" }}
+    >
       <div className="max-w-md text-center">
-        <h1 className="text-7xl font-bold text-foreground">404</h1>
-        <h2 className="mt-4 text-xl font-semibold text-foreground">Page not found</h2>
-        <p className="mt-2 text-sm text-muted-foreground">
+        <h1 style={{ color: "#E5D2A0", fontSize: "72px" }}>404</h1>
+        <h2 style={{ color: "#E5D2A0", fontSize: "20px", marginTop: "1rem" }}>Page not found</h2>
+        <p style={{ color: "#D1D5DB", marginTop: "0.5rem", fontSize: "14px" }}>
           The page you're looking for doesn't exist or has been moved.
         </p>
         <div className="mt-6">
           <Link
             to="/"
-            className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+            style={{
+              backgroundColor: "#C8A45D",
+              color: "#0B0B0D",
+              padding: "12px 24px",
+              borderRadius: "8px",
+              fontSize: "14px",
+              fontWeight: 500,
+            }}
           >
             Go home
           </Link>
@@ -42,12 +53,13 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   }, [error]);
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background px-4">
+    <div
+      className="flex min-h-screen items-center justify-center px-4"
+      style={{ backgroundColor: "#0B0B0D" }}
+    >
       <div className="max-w-md text-center">
-        <h1 className="text-xl font-semibold tracking-tight text-foreground">
-          This page didn't load
-        </h1>
-        <p className="mt-2 text-sm text-muted-foreground">
+        <h1 style={{ color: "#E5D2A0", fontSize: "20px" }}>This page didn't load</h1>
+        <p style={{ color: "#D1D5DB", marginTop: "0.5rem", fontSize: "14px" }}>
           Something went wrong on our end. You can try refreshing or head back home.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-2">
@@ -56,13 +68,27 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
               router.invalidate();
               reset();
             }}
-            className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+            style={{
+              backgroundColor: "#C8A45D",
+              color: "#0B0B0D",
+              padding: "10px 20px",
+              borderRadius: "8px",
+              fontSize: "14px",
+              fontWeight: 500,
+            }}
           >
             Try again
           </button>
           <a
             href="/"
-            className="inline-flex items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-accent"
+            style={{
+              border: "1px solid #C8A45D",
+              color: "#C8A45D",
+              padding: "10px 20px",
+              borderRadius: "8px",
+              fontSize: "14px",
+              fontWeight: 500,
+            }}
           >
             Go home
           </a>
@@ -77,19 +103,35 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Blackwood Keep | Creative Design & Digital Marketing Solutions" },
+      {
+        name: "description",
+        content:
+          "Blackwood Keep engineers high-converting marketing funnels for trades, facilities management, and B2B enterprises across the Wirral, Liverpool, and Cheshire.",
+      },
+      { property: "og:site_name", content: "Blackwood Keep" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
+      { rel: "stylesheet", href: appCss },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: appCss,
+        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@500&display=swap",
+      },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "Blackwood Keep Ltd",
+          email: "hello@blackwoodkeep.co.uk",
+          slogan: "Creative Design & Digital Marketing Solutions",
+        }),
       },
     ],
   }),
@@ -115,11 +157,10 @@ function RootShell({ children }: { children: ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
-
   return (
     <QueryClientProvider client={queryClient}>
-      {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
       <Outlet />
+      <CookieBanner />
     </QueryClientProvider>
   );
 }
