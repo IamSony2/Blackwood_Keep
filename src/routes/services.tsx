@@ -9,7 +9,7 @@ export const Route = createFileRoute("/services")({
       {
         name: "description",
         content:
-          "Comprehensive CRM automation, local map optimization, funnel architecture, SEO, and paid ad deployment. Master capabilities page serving the Wirral, Liverpool, and Chester.",
+          "Comprehensive CRM automation, local map optimisation, funnel architecture, SEO, and paid ad deployment. Master capabilities page serving the Wirral, Liverpool, and Chester.",
       },
       { property: "og:title", content: "Services & Capabilities | Blackwood Keep" },
       {
@@ -61,9 +61,9 @@ function ServicesPage() {
             <MasterPanel
               icon={<Cog size={56} style={{ color: gold }} />}
               title="CRM Automation & Lead Capture Sequences"
-              body="The primary source of revenue loss for regional trades and SMEs is lead response latency. If a customer inquires and waits two hours, they call your competitor. We program complete, automated CRM data frameworks that instantly ingest, tag, and follow up with inbound opportunities the second they arrive. Keep your pipeline moving flawlessly while your engineers operate on site or your leadership sits in boardrooms."
+              body="The primary source of revenue loss for regional trades and SMEs is lead response latency. If a customer inquires and waits two hours, they call your competitor. We program complete, automated CRM data frameworks that instantly ingest, tag, and follow up with inbound opportunities the second they arrive. Keep your pipeline moving flawlessly while your engineers operate on site and your leadership team drives strategic growth."
               included={[
-                "Zoho CRM, HubSpot, and custom pipeline staging",
+                "Blackwood CRM and custom pipeline staging",
                 "Instant automated SMS & email booking triggers",
                 "Multi-channel funnel capture forms",
                 "Plain-English sales pipeline reporting panels",
@@ -76,7 +76,7 @@ function ServicesPage() {
               body="Modern B2B and regional consumers execute deep local validation before engaging. If your regional competitors display extensive verified profiles and your presence is minimal, they secure the contract. We automate elite five-star review generation loops directly from your completed jobs, while strategically optimising your geographic index to capture high-intent commercial and domestic queries across the Wirral, Liverpool, and Chester."
               included={[
                 "Automated post-job review request deployment",
-                "Google Business Profile geospatial optimization",
+                "Google Business Profile geospatial optimisation",
                 "Active multi-platform review monitoring",
                 "Monthly regional authority audit metrics",
               ]}
@@ -92,7 +92,7 @@ function ServicesPage() {
                 "High-converting bespoke landing page deployment",
                 "End-to-end multi-touch ROI attribution mapping",
               ]}
-              target="B2B enterprise layers, facilities management operators, and aggressive growth firms looking for predictable, scalable inbound contract values."
+              target="B2B enterprise layers, facilities management operators, and aggressive growth companies looking for predictable, scalable inbound contract values."
             />
           </div>
         </div>
@@ -110,7 +110,7 @@ function ServicesPage() {
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
             <AuxCard
               title="Bespoke Web Development"
-              body="Flat, lightning-fast UI architecture built for sub-2-second conversion speed."
+              body="Clean, lightning-fast website funnel designed to load instantly so your visitors never get frustrated and leave before reaching out."
             />
             <AuxCard
               title="Nurture Campaign Automation"
@@ -118,7 +118,7 @@ function ServicesPage() {
             />
             <AuxCard
               title="Rigorous Competitor Benchmarking"
-              body="Real-time tracking of regional search positioning to keep your firm ahead."
+              body="Real-time tracking of regional search positioning to keep your company ahead."
             />
           </div>
         </div>
@@ -163,7 +163,7 @@ function ServicesPage() {
             Uncertain which capabilities fit your target growth?
           </h2>
           <p className="mt-4" style={{ color: silver, fontSize: "16px", lineHeight: 1.7 }}>
-            Book our strategic Pipeline Audit. We will analyze your infrastructure and define
+            Book our strategic Pipeline Audit. We will analyse your infrastructure and define
             exactly which modules will drive immediate cash flow—and which are completely
             unnecessary.
           </p>
