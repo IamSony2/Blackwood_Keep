@@ -11,7 +11,7 @@ export const Route = createFileRoute("/contact")({
       {
         name: "description",
         content:
-          "Contact Blackwood Keep to stabilize your corporate customer acquisition. Dedicated support for Wirral, Liverpool, Chester, and North Wales operators.",
+          "Contact Blackwood Keep to stabilise your corporate customer acquisition. Dedicated support for Wirral, Liverpool, Chester, and North Wales operators.",
       },
       { property: "og:title", content: "Contact Blackwood Keep" },
       {
