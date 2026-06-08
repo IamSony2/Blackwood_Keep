@@ -98,11 +98,11 @@ function AboutPage() {
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-2">
           <PullQuote
             label="Our Mission"
-            quote="To equip high-potential B2B enterprises and regional trades with ironclad automated funnels, allowing them to capture local markets and scale without operational chaos."
+            quote="To give regional trades and B2B enterprises the clarity, automated systems, and confidence to capture their markets and grow—removing digital confusion so they can focus entirely on executing what they do best."
           />
           <PullQuote
             label="Our Vision"
-            quote="To establish Blackwood Keep as the premier standard for plain-English, high-performance digital marketing, building data architectures that empower businesses across the UK."
+            quote="To establish Blackwood Keep to be the leading trusted partner in high-performance digital marketing, building transparent systems that empower regional businesses to thrive with complete confidence."
           />
         </div>
       </section>
@@ -151,7 +151,7 @@ function AboutPage() {
           </h2>
           <p className="mt-6" style={{ color: silver, fontSize: "16px", lineHeight: 1.7 }}>
             The core of our client portfolio is constructed through intentional industry referrals
-            and long-term asset performance. If your firm requires transparent growth, we invite
+            and long-term asset performance. If your business requires transparent growth, we invite
             you to experience our strategic process directly.
           </p>
           <Link to="/referrals" className="mt-6 inline-block" style={{ color: gold }}>
