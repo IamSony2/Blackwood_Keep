@@ -26,7 +26,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Blackwood Keep engineers high-converting marketing funnels, local SEO optimization, and scalable acquisition strategies for trades, facilities management, and B2B enterprises across the North West. Book your pipeline audit.",
+          "Blackwood Keep engineers high-converting marketing funnels, local SEO optimisation, and scalable acquisition strategies for trades, facilities management, and B2B enterprises across the North West. Book your pipeline audit.",
       },
       {
         property: "og:title",
@@ -35,7 +35,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Predictable pipeline. Measurable growth. Marketing clarity for trades, FM, and B2B enterprises across the Wirral, Liverpool, and Cheshire.",
+          "Marketing clarity. Measurable growth. Predictable pipeline for trades, FM, and B2B enterprises across the Wirral, Liverpool, and Cheshire.",
       },
       { property: "og:url", content: "/" },
     ],
@@ -239,7 +239,7 @@ function Home() {
               phase="Phase 03"
               title="The Velocity Scale"
               focus="We activate the campaigns and scale your inbound contract flow."
-              technical="Continuous multi-variant split testing, local algorithm optimization, automated review acquisition loops, and transparent attribution updates."
+              technical="Continuous multi-variant split testing, local algorithm optimisation, automated review acquisition loops, and transparent attribution updates."
               deliverable="24/7 access to live performance metrics and recurring commercial account reviews."
             />
           </div>
@@ -281,11 +281,11 @@ function Home() {
             <SectorCard
               icon={<Star size={28} style={{ color: gold }} />}
               title="Local Map Pack & Reputation Engineering"
-              body="Establish absolute regional authority across the Wirral, Liverpool, and Chester. We automate five-star review loops and optimize your local search profile to guarantee you are the primary firm selected."
+              body="Establish absolute regional authority across the Wirral, Liverpool, and Chester. We automate five-star review loops and optimise your local search profile to guarantee you are the primary firm selected."
             />
             <SectorCard
               icon={<Rocket size={28} style={{ color: gold }} />}
-              title="Funnel Optimization & Paid Campaigns"
+              title="Funnel Optimisation & Paid Campaigns"
               body="Eliminate marketing guesswork. We build bespoke lead capture engines and manage high-intent advertising budgets targeted directly at procurement managers and high-value domestic clients."
             />
           </div>
