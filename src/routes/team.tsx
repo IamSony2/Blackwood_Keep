@@ -44,7 +44,7 @@ function TeamPage() {
       >
         <div className="mx-auto max-w-3xl text-center">
           <h1 style={{ color: champagne, fontSize: "clamp(30px,4.5vw,48px)", lineHeight: 1.2 }}>
-            Dedicated digital growth engineers. No outsourced fluff.
+            Dedicated digital growth engineers. Nothing is outsourced.
           </h1>
           <p className="mt-6" style={{ color: silver, fontSize: "17px", lineHeight: 1.6 }}>
             We operate as a highly focused engineering group. We don't employ account handlers or
@@ -102,8 +102,8 @@ function TeamPage() {
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
             {[
               { initials: "MS", name: "Maggie Smith", role: "Founder & Strategic Director", bio: "Architect of the Blackwood Keep growth methodology. Leads diagnostic audits and account strategy across all engagements." },
-              { initials: "—", name: "Engineering Lead", role: "Funnel & CRM Engineering", bio: "Owns deployment of automated CRM and tracking infrastructure across client portfolios." },
-              { initials: "—", name: "Media Lead", role: "Paid Acquisition & SEO", bio: "Manages localised paid campaigns and technical SEO across the North West client base." },
+              { initials: "IS", name: "Ian the Engineering Lead", role: "Funnel & CRM Engineering", bio: "Owns deployment of automated CRM and tracking infrastructure across client portfolios." },
+              { initials: "JS", name: "James the Media Lead", role: "Paid Acquisition & SEO", bio: "Manages localised paid campaigns and technical SEO across the North West client base." },
             ].map((m) => (
               <div
                 key={m.name}
