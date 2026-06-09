@@ -11,7 +11,7 @@ export const Route = createFileRoute("/free-audit")({
       {
         name: "description",
         content:
-          "Submit your digital profile for a comprehensive video audit. We expose exactly where your website is dropping leads—completely free of jargon, with no obligation.",
+          "Submit your digital profile for a comprehensive video audit. We expose exactly where your website is dropping leads—providing complete transparency, with no obligation.",
       },
       { property: "og:title", content: "Free Pipeline Audit | Blackwood Keep" },
       {
