@@ -25,7 +25,7 @@ export const Route = createFileRoute("/testimonials")({
         type: "application/ld+json",
         children: JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "Organization",
+          "@type": "Organisation",
           name: "Blackwood Keep Ltd",
           aggregateRating: {
             "@type": "AggregateRating",
@@ -35,14 +35,14 @@ export const Route = createFileRoute("/testimonials")({
           review: [
             {
               "@type": "Review",
-              author: { "@type": "Organization", name: "Commercial M&E Contractor, Wirral" },
+              author: { "@type": "Organisation", name: "Commercial M&E Contractor, Wirral" },
               reviewRating: { "@type": "Rating", ratingValue: "5" },
               reviewBody:
-                "Our inbound corporate service contracts spiked over 45% in 90 days following our map optimization.",
+                "Our inbound corporate service contracts spiked over 45% in 90 days following our map optimisation.",
             },
             {
               "@type": "Review",
-              author: { "@type": "Organization", name: "Commercial Heating Firm, Liverpool" },
+              author: { "@type": "Organisation", name: "Commercial Heating Firm, Liverpool" },
               reviewRating: { "@type": "Rating", ratingValue: "5" },
               reviewBody:
                 "Automated SMS sequences capture leads perfectly while our guys are on tools. Essential system.",
