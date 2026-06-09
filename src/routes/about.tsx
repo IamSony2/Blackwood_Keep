@@ -74,7 +74,7 @@ function AboutPage() {
           <div className="mt-10 space-y-6" style={{ color: "#374151", lineHeight: 1.8, fontSize: "16px" }}>
             <p>
               Digital marketing shouldn't feel like a mysterious variable. Most local trade
-              operators, facilities directors, and B2B leaders are exhausted by abstract metrics
+              operators, facilities directors, B2C and B2B leaders are exhausted by abstract metrics
               like 'impressions' and 'brand awareness' while their baseline sales pipelines remain
               unpredictable. We built this firm to execute with complete commercial transparency.
             </p>
