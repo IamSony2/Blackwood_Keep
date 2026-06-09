@@ -226,7 +226,7 @@ function Home() {
               title="The Pipeline Audit"
               focus="We pinpoint exactly where your digital pipeline is leaking revenue."
               technical="A comprehensive diagnostic review of your historical ad account metrics, domain architecture, and organic search index vulnerabilities."
-              deliverable="Includes a 30-minute discovery strategy session and a transparent, jargon-free digital growth map."
+              deliverable="Includes a 30-minute discovery strategy session and a transparent, understandable digital growth map."
             />
             <PhaseCard
               phase="Phase 02"
