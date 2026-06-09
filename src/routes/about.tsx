@@ -10,7 +10,7 @@ export const Route = createFileRoute("/about")({
       {
         name: "description",
         content:
-          "Led by Maggie Smith, Blackwood Keep engineers reliable, jargon-free lead acquisition funnels and digital automation systems for North West businesses. Discover our operational standards.",
+          "Led by Maggie Smith, Blackwood Keep engineers reliable, nonesense-free lead acquisition funnels and digital automation systems for North West businesses. Discover our operational standards.",
       },
       { property: "og:title", content: "About Blackwood Keep" },
       {
