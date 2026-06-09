@@ -242,7 +242,7 @@ function PricingPage() {
             Desire an accurate commercial scope proposal?
           </h2>
           <p className="mt-4" style={{ color: silver, fontSize: "16px", lineHeight: 1.7 }}>
-            Request your free video-led Pipeline Audit. We will analyze your competitors and
+            Request your free video-led Pipeline Audit. We will analyse your competitors and
             present an exact, performance-backed investment layout.
           </p>
           <a
