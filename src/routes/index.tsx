@@ -99,7 +99,7 @@ function Home() {
               lineHeight: 1.15,
             }}
           >
-            Predictable pipeline. Measurable growth. Marketing clarity.
+            Marketing clarity. Measurable growth. Predictable pipeline.
           </h1>
           <p
             className="mt-6"
@@ -107,7 +107,7 @@ function Home() {
           >
             We design and deploy high-converting digital marketing systems, local market dominance
             frameworks, and multi-channel paid campaigns that convert clicks into commercial
-            contracts. Built specifically for trades, facilities management, and B2B enterprises
+            contracts. Built specifically for trades, facilities management, B2C and B2B enterprises
             across the Wirral, Liverpool, and Cheshire.
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
@@ -390,7 +390,7 @@ function Home() {
         <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
           <CastleShield size={60} />
           <h2 className="mt-6" style={{ color: champagne, fontSize: "36px" }}>
-            Terminate Pipeline Chaos. Secure Your Growth Plan.
+            Eliminate Pipeline Chaos. Secure Your Growth Plan.
           </h2>
           <p className="mt-4" style={{ color: silver, fontSize: "16px", lineHeight: 1.7 }}>
             Book your comprehensive, plain-English Growth Audit today. No high-pressure sales
