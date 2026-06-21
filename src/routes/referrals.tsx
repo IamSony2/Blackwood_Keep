@@ -23,13 +23,13 @@ export const Route = createFileRoute("/referrals")({
   component: ReferralsPage,
 });
 
-const dark = "#0B0B0D";
-const navy = "#111827";
-const gold = "#C8A45D";
-const goldAntique = "#B68B3A";
-const champagne = "#E5D2A0";
-const silver = "#D1D5DB";
-const white = "#F8F9FA";
+const dark = "var(--color-bk-black)";
+const navy = "var(--color-bk-navy)";
+const gold = "var(--color-bk-gold)";
+const goldAntique = "var(--color-bk-gold-antique)";
+const champagne = "var(--color-bk-gold-champagne)";
+const silver = "var(--color-bk-silver)";
+const white = "var(--color-bk-white)";
 
 function ReferralsPage() {
   return (
@@ -71,7 +71,7 @@ function ReferralsPage() {
               </div>
             ))}
           </div>
-          <p className="mt-10 text-center" style={{ color: "#888780", fontSize: "13px", fontStyle: "italic" }}>
+          <p className="mt-10 text-center" style={{ color: "var(--muted-foreground)", fontSize: "13px", fontStyle: "italic" }}>
             Formal portal access and tracking parameters launching Q4 2026. Register early intake below.
           </p>
         </div>
@@ -123,7 +123,7 @@ function ReferralsPage() {
               <p style={{ color: navy, fontWeight: 500, marginBottom: 12 }}>
                 Zoho Forms — Referral Intake
               </p>
-              <p style={{ color: "#888780", fontSize: "13px", lineHeight: 1.7 }}>
+              <p style={{ color: "var(--muted-foreground)", fontSize: "13px", lineHeight: 1.7 }}>
                 Field Inputs: Your Corporate Identity · Your Verified Email · Target Firm Name ·
                 Decision Maker Identity · Target Contact Coordinates · Strategic Context Notes
               </p>
