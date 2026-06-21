@@ -18,19 +18,19 @@ export const Route = createFileRoute("/privacy")({
 function Privacy() {
   return (
     <PageLayout>
-      <section style={{ backgroundColor: "#0B0B0D", minHeight: "30vh" }} className="flex items-center justify-center px-6 py-16">
-        <h1 style={{ color: "#E5D2A0", fontSize: "clamp(28px,4vw,40px)" }}>Privacy Policy</h1>
+      <section style={{ backgroundColor: "var(--color-bk-black)", minHeight: "30vh" }} className="flex items-center justify-center px-6 py-16">
+        <h1 style={{ color: "var(--color-bk-gold-champagne)", fontSize: "clamp(28px,4vw,40px)" }}>Privacy Policy</h1>
       </section>
-      <section style={{ backgroundColor: "#F8F9FA" }} className="px-6 py-16">
+      <section style={{ backgroundColor: "var(--color-bk-white)" }} className="px-6 py-16">
         <div className="mx-auto max-w-3xl space-y-6" style={{ color: "#374151", fontSize: "15px", lineHeight: 1.8 }}>
           <p><em>Placeholder content. To be replaced with a full GDPR-aligned privacy policy.</em></p>
-          <h2 style={{ color: "#111827", fontSize: "22px" }}>Data we collect</h2>
+          <h2 style={{ color: "var(--color-bk-navy)", fontSize: "22px" }}>Data we collect</h2>
           <p>When you submit an enquiry, audit request, or referral via Blackwood Keep, we collect the personal and corporate details you provide (name, email, phone, business details) for the sole purpose of responding to your request.</p>
-          <h2 style={{ color: "#111827", fontSize: "22px" }}>How we use it</h2>
+          <h2 style={{ color: "var(--color-bk-navy)", fontSize: "22px" }}>How we use it</h2>
           <p>We use your details to contact you about Blackwood Keep services. We never sell or share your data with unrelated third parties.</p>
-          <h2 style={{ color: "#111827", fontSize: "22px" }}>Your rights</h2>
+          <h2 style={{ color: "var(--color-bk-navy)", fontSize: "22px" }}>Your rights</h2>
           <p>You may request access, correction, or deletion of your data at any time by emailing hello@blackwoodkeep.co.uk.</p>
-          <h2 style={{ color: "#111827", fontSize: "22px" }}>ICO</h2>
+          <h2 style={{ color: "var(--color-bk-navy)", fontSize: "22px" }}>ICO</h2>
           <p>Blackwood Keep Ltd is registered with the UK Information Commissioner's Office.</p>
         </div>
       </section>
