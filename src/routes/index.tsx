@@ -99,7 +99,7 @@ function Home() {
               lineHeight: 1.15,
             }}
           >
-            Marketing clarity. Measurable growth. Predictable pipeline.
+            Your Stronghold for Business Growth. Predictable Pipeline and Marketing Clarity.
           </h1>
           <p
             className="mt-6"
@@ -350,7 +350,7 @@ function Home() {
               className="mt-6 inline-block"
               style={{ color: gold, fontSize: "15px" }}
             >
-              Explore our referral program details →
+              Explore our referral programme details →
             </Link>
           </div>
           <div
