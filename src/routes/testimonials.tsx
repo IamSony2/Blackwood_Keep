@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageLayout } from "@/components/PageLayout";
 import { ZohoPlaceholder } from "@/components/ZohoPlaceholder";
 
@@ -25,7 +25,7 @@ export const Route = createFileRoute("/testimonials")({
         type: "application/ld+json",
         children: JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "Organisation",
+          "@type": "Organization",
           name: "Blackwood Keep Ltd",
           aggregateRating: {
             "@type": "AggregateRating",
@@ -35,14 +35,14 @@ export const Route = createFileRoute("/testimonials")({
           review: [
             {
               "@type": "Review",
-              author: { "@type": "Organisation", name: "Commercial M&E Contractor, Wirral" },
+              author: { "@type": "Organization", name: "Commercial M&E Contractor, Wirral" },
               reviewRating: { "@type": "Rating", ratingValue: "5" },
               reviewBody:
                 "Our inbound corporate service contracts spiked over 45% in 90 days following our map optimisation.",
             },
             {
               "@type": "Review",
-              author: { "@type": "Organisation", name: "Commercial Heating Firm, Liverpool" },
+              author: { "@type": "Organization", name: "Commercial Heating Firm, Liverpool" },
               reviewRating: { "@type": "Rating", ratingValue: "5" },
               reviewBody:
                 "Automated SMS sequences capture leads perfectly while our guys are on tools. Essential system.",
@@ -64,7 +64,7 @@ const silver = "#D1D5DB";
 const white = "#F8F9FA";
 
 const testimonials = [
-  { who: "Commercial M&E Contractor, Wirral", quote: "Our inbound corporate service contracts spiked over 45% in 90 days following our map optimization." },
+  { who: "Commercial M&E Contractor, Wirral", quote: "Our inbound corporate service contracts spiked over 45% in 90 days following our map optimisation." },
   { who: "Commercial Heating Firm, Liverpool", quote: "Automated SMS sequences capture leads perfectly while our guys are on tools. Essential system." },
   { who: "Asset & Facilities Provider, Chester", quote: "We finally hold an online presence that reflects our structural capability. Completely transformed our tender process." },
   { who: "Regional Engineering SME, Cheshire West", quote: "Absolute relief. We have full metric visibility and have eliminated thousands in wasted agency click-spend." },
@@ -183,8 +183,8 @@ function TestimonialsPage() {
           <h2 style={{ color: champagne, fontSize: "clamp(24px,3vw,32px)" }}>
             Command your regional territory today.
           </h2>
-          <a
-            href="/free-audit"
+          <Link
+            to="/free-audit"
             className="mt-6 inline-block"
             style={{
               backgroundColor: gold,
@@ -195,7 +195,7 @@ function TestimonialsPage() {
             }}
           >
             Secure Your Growth Audit
-          </a>
+          </Link>
         </div>
       </section>
     </PageLayout>
