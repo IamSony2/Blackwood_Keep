@@ -24,15 +24,15 @@ export const Route = createFileRoute("/team")({
   component: TeamPage,
 });
 
-const dark = "#0B0B0D";
-const navy = "#111827";
-const gold = "#C8A45D";
-const goldAntique = "#B68B3A";
-const champagne = "#E5D2A0";
-const silver = "#D1D5DB";
-const subtle = "#9CA3AF";
-const slate = "#1F2937";
-const white = "#F8F9FA";
+const dark = "var(--color-bk-black)";
+const navy = "var(--color-bk-navy)";
+const gold = "var(--color-bk-gold)";
+const goldAntique = "var(--color-bk-gold-antique)";
+const champagne = "var(--color-bk-gold-champagne)";
+const silver = "var(--color-bk-silver)";
+const subtle = "var(--color-bk-subtle)";
+const slate = "var(--color-bk-slate)";
+const white = "var(--color-bk-white)";
 
 function TeamPage() {
   return (
