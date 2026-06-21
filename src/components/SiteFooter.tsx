@@ -36,7 +36,7 @@ export function SiteFooter({ minimal = false }: Props) {
       >
         <div className="mx-auto flex max-w-7xl flex-col items-center gap-3 text-center">
           <CastleShield size={36} />
-          <p style={{ color: "#888780", fontSize: "12px" }}>
+          <p style={{ color: "var(--muted-foreground)", fontSize: "12px" }}>
             © 2026 Blackwood Keep Ltd · Registered in England and Wales
           </p>
         </div>
@@ -106,7 +106,7 @@ export function SiteFooter({ minimal = false }: Props) {
         {/* Row 5 */}
         <div
           className="flex flex-wrap justify-center gap-x-4 gap-y-1 text-center"
-          style={{ color: "#888780", fontSize: "12px" }}
+          style={{ color: "var(--muted-foreground)", fontSize: "12px" }}
         >
           <span>© 2026 Blackwood Keep Ltd</span>
           <span>·</span>
