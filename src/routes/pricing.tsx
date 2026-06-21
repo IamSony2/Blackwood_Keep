@@ -1,4 +1,4 @@
-import { createFileRoute, useNavigate } from "@tanstack/react-router";
+import { createFileRoute, useNavigate, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { PageLayout } from "@/components/PageLayout";
 import { Accordion } from "@/components/Accordion";
@@ -245,8 +245,8 @@ function PricingPage() {
             Request your free video-led Pipeline Audit. We will analyse your competitors and
             present an exact, performance-backed investment layout.
           </p>
-          <a
-            href="/free-audit"
+          <Link
+            to="/free-audit"
             className="mt-8 inline-block"
             style={{
               backgroundColor: gold,
@@ -257,7 +257,7 @@ function PricingPage() {
             }}
           >
             Request Custom Scope Audit
-          </a>
+          </Link>
         </div>
       </section>
     </PageLayout>
