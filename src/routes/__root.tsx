@@ -127,7 +127,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         type: "application/ld+json",
         children: JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "Organisation",
+          "@type": "Organization",
           name: "Blackwood Keep Ltd",
           email: "hello@blackwoodkeep.co.uk",
           slogan: "Creative Design & Digital Marketing Solutions",
