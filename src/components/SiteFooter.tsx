@@ -31,7 +31,7 @@ export function SiteFooter({ minimal = false }: Props) {
   if (minimal) {
     return (
       <footer
-        style={{ backgroundColor: "#0B0B0D", borderTop: "1px solid #B68B3A" }}
+        style={{ backgroundColor: "var(--color-bk-black)", borderTop: "1px solid var(--color-bk-gold-antique)" }}
         className="px-6 py-8"
       >
         <div className="mx-auto flex max-w-7xl flex-col items-center gap-3 text-center">
@@ -46,7 +46,7 @@ export function SiteFooter({ minimal = false }: Props) {
 
   return (
     <footer
-      style={{ backgroundColor: "#0B0B0D", borderTop: "1px solid #B68B3A" }}
+      style={{ backgroundColor: "var(--color-bk-black)", borderTop: "1px solid var(--color-bk-gold-antique)" }}
       className="px-6 py-12"
     >
       <div className="mx-auto max-w-7xl space-y-8">
@@ -59,11 +59,11 @@ export function SiteFooter({ minimal = false }: Props) {
           </div>
           <p
             className="text-center"
-            style={{ color: "#E5D2A0", fontFamily: "var(--font-display)", fontSize: "16px" }}
+            style={{ color: "var(--color-bk-gold-champagne)", fontFamily: "var(--font-display)", fontSize: "16px" }}
           >
             Creative Design &amp; Digital Marketing Solutions
           </p>
-          <div className="flex justify-center gap-4 md:justify-end" style={{ color: "#C8A45D" }}>
+          <div className="flex justify-center gap-4 md:justify-end" style={{ color: "var(--color-bk-gold)" }}>
             <a href="#" aria-label="Facebook"><Facebook size={20} /></a>
             <a href="#" aria-label="Instagram"><Instagram size={20} /></a>
             <a href="#" aria-label="TikTok"><TikTok /></a>
@@ -75,11 +75,11 @@ export function SiteFooter({ minimal = false }: Props) {
         <nav aria-label="Footer">
           <ul
             className="flex flex-wrap justify-center gap-x-6 gap-y-2"
-            style={{ color: "#D1D5DB", fontSize: "14px" }}
+            style={{ color: "var(--color-bk-silver)", fontSize: "14px" }}
           >
             {navLinks.map((l) => (
               <li key={l.to}>
-                <Link to={l.to} className="hover:text-[#C8A45D]">
+                <Link to={l.to} className="hover:text-bk-gold">
                   {l.label}
                 </Link>
               </li>
@@ -90,7 +90,7 @@ export function SiteFooter({ minimal = false }: Props) {
         {/* Row 3 */}
         <div
           className="flex flex-wrap justify-center gap-x-6 gap-y-2"
-          style={{ color: "#C8A45D", fontSize: "14px" }}
+          style={{ color: "var(--color-bk-gold)", fontSize: "14px" }}
         >
           <a href="mailto:hello@blackwoodkeep.co.uk">hello@blackwoodkeep.co.uk</a>
           <span>·</span>
@@ -98,7 +98,7 @@ export function SiteFooter({ minimal = false }: Props) {
         </div>
 
         {/* Row 4 */}
-        <p className="text-center" style={{ color: "#D1D5DB", fontSize: "13px" }}>
+        <p className="text-center" style={{ color: "var(--color-bk-silver)", fontSize: "13px" }}>
           Serving businesses across the Wirral, Liverpool, Chester, Cheshire West, Cheshire East,
           and North Wales
         </p>
