@@ -57,7 +57,7 @@ function ReferralsPage() {
             {[
               { n: "1", t: "Introduce the Entity", b: "Identify a regional business leader or facilities operator struggling to maintain lead generation consistency, and supply their metrics via our intake module below." },
               { n: "2", t: "We Run Diagnostics", b: "We provide them with our comprehensive, high-value video Growth Audit. No pressure, completely transparent." },
-              { n: "3", t: "Secure Ongoing Allocation", b: "When the entity activates a monthly framework contract, your referral validation registers instantly. Full program execution goes live Q4 2026." },
+              { n: "3", t: "Secure Ongoing Allocation", b: "When the entity activates a monthly framework contract, your referral validation registers instantly. Full programme execution goes live Q4 2026." },
             ].map((s) => (
               <div key={s.n} className="text-center">
                 <div
