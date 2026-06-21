@@ -66,13 +66,13 @@ export const Route = createFileRoute("/")({
   component: Home,
 });
 
-const dark = "#0B0B0D";
-const navy = "#111827";
-const gold = "#C8A45D";
-const goldAntique = "#B68B3A";
-const champagne = "#E5D2A0";
-const silver = "#D1D5DB";
-const white = "#F8F9FA";
+const dark = "var(--color-bk-black)";
+const navy = "var(--color-bk-navy)";
+const gold = "var(--color-bk-gold)";
+const goldAntique = "var(--color-bk-gold-antique)";
+const champagne = "var(--color-bk-gold-champagne)";
+const silver = "var(--color-bk-silver)";
+const white = "var(--color-bk-white)";
 
 function Home() {
   const scrollTo = (id: string) => {
