@@ -37,6 +37,8 @@ export const Route = createFileRoute("/")({
         content:
           "Marketing clarity. Measurable growth. Predictable pipeline for trades, FM, and B2B enterprises across the Wirral, Liverpool, and Cheshire.",
       },
+      // TODO: replace with final brand social-share image once available
+      { property: "og:image", content: "/og-placeholder.jpg" },
       { property: "og:url", content: "/" },
     ],
     links: [{ rel: "canonical", href: "/" }],
