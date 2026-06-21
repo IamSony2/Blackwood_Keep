@@ -101,7 +101,7 @@ function Home() {
               lineHeight: 1.15,
             }}
           >
-            Your !!Stronghold for Business Growth. Predictable Pipeline and Marketing Clarity.
+            Your Stronghold for Business Growth. Predictable Pipeline and Marketing Clarity.
           </h1>
           <p
             className="mt-6"
