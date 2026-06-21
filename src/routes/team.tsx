@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { Lightbulb, ShieldCheck, Settings, Heart } from "lucide-react";
 import { PageLayout } from "@/components/PageLayout";
 
@@ -91,11 +91,10 @@ function TeamPage() {
         </div>
       </section>
 
-      {/* DEVELOPER FRAMEWORK — Remove display:none to activate founder profiles */}
+      {/* FOUNDERS & ENGINEERS */}
       <section
-        style={{ backgroundColor: white, display: "none" }}
+        style={{ backgroundColor: white }}
         className="px-6 py-20"
-        aria-hidden="true"
       >
         <div className="mx-auto max-w-6xl">
           <h2 className="text-center" style={{ color: navy }}>Founders & Engineers</h2>
@@ -136,8 +135,8 @@ function TeamPage() {
           <h2 style={{ color: champagne, fontSize: "clamp(24px,3vw,32px)" }}>
             Partner with dedicated operations experts.
           </h2>
-          <a
-            href="/free-audit"
+          <Link
+            to="/free-audit"
             className="mt-6 inline-block"
             style={{
               backgroundColor: gold,
@@ -148,7 +147,7 @@ function TeamPage() {
             }}
           >
             Request Custom Strategic Audit
-          </a>
+          </Link>
         </div>
       </section>
     </PageLayout>
