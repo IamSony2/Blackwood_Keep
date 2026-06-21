@@ -31,12 +31,12 @@ export const Route = createFileRoute("/free-audit")({
   }),
 });
 
-const dark = "#0B0B0D";
-const navy = "#111827";
-const gold = "#C8A45D";
-const champagne = "#E5D2A0";
-const silver = "#D1D5DB";
-const white = "#F8F9FA";
+const dark = "var(--color-bk-black)";
+const navy = "var(--color-bk-navy)";
+const gold = "var(--color-bk-gold)";
+const champagne = "var(--color-bk-gold-champagne)";
+const silver = "var(--color-bk-silver)";
+const white = "var(--color-bk-white)";
 
 function FreeAuditPage() {
   return (
@@ -99,7 +99,7 @@ function FreeAuditPage() {
             >
               Option A: Submit Profile Details
             </h2>
-            <p className="mt-2" style={{ color: "#888780", fontSize: "14px" }}>
+            <p className="mt-2" style={{ color: "var(--muted-foreground)", fontSize: "14px" }}>
               We run the technical diagnostics and email your video blueprint within 24 hours.
             </p>
             {/* ZOHO FORM EMBED — connect Zoho Forms here */}
@@ -112,7 +112,7 @@ function FreeAuditPage() {
                 <p style={{ color: navy, fontWeight: 500, marginBottom: 12 }}>
                   Zoho Forms — Growth Audit Intake
                 </p>
-                <p style={{ color: "#888780", fontSize: "13px", lineHeight: 1.7 }}>
+                <p style={{ color: "var(--muted-foreground)", fontSize: "13px", lineHeight: 1.7 }}>
                   Intake Fields: Full Name · Corporate Email · Phone Number · Company URL ·
                   Primary Competitor · Monthly Budget Target
                 </p>
@@ -161,7 +161,7 @@ function FreeAuditPage() {
             >
               Option B: Schedule Immediate Strategy Briefing
             </h2>
-            <p className="mt-2" style={{ color: "#888780", fontSize: "14px" }}>
+            <p className="mt-2" style={{ color: "var(--muted-foreground)", fontSize: "14px" }}>
               Select a live call window to map out your architecture directly with our leadership
               team.
             </p>
