@@ -23,8 +23,8 @@ export function SiteHeader({ minimal = false }: Props) {
     <header
       className="sticky top-0 z-50 w-full"
       style={{
-        backgroundColor: "#0B0B0D",
-        borderBottom: "1px solid #B68B3A",
+        backgroundColor: "var(--color-bk-black)",
+        borderBottom: "1px solid var(--color-bk-gold-antique)",
       }}
     >
       <nav
@@ -35,7 +35,7 @@ export function SiteHeader({ minimal = false }: Props) {
           <CastleShield size={40} />
           <span
             className="hidden sm:inline"
-            style={{ fontFamily: "var(--font-display)", color: "#E5D2A0", fontSize: "18px" }}
+            style={{ fontFamily: "var(--font-display)", color: "var(--color-bk-gold-champagne)", fontSize: "18px" }}
           >
             Blackwood Keep
           </span>
@@ -50,11 +50,8 @@ export function SiteHeader({ minimal = false }: Props) {
               <li key={l.to}>
                 <Link
                   to={l.to}
-                  className="transition-colors"
-                  style={{ color: "#E5D2A0" }}
-                  activeProps={{ style: { color: "#C8A45D" } }}
-                  onMouseEnter={(e) => (e.currentTarget.style.color = "#C8A45D")}
-                  onMouseLeave={(e) => (e.currentTarget.style.color = "#E5D2A0")}
+                  className="nav-link"
+                  activeProps={{ className: "nav-link is-active" }}
                   activeOptions={{ exact: l.to === "/" }}
                 >
                   {l.label}
@@ -69,8 +66,8 @@ export function SiteHeader({ minimal = false }: Props) {
             to="/free-audit"
             className="hidden md:inline-block transition-opacity hover:opacity-90"
             style={{
-              backgroundColor: "#C8A45D",
-              color: "#0B0B0D",
+              backgroundColor: "var(--color-bk-gold)",
+              color: "var(--color-bk-black)",
               borderRadius: "8px",
               padding: "10px 20px",
               fontSize: "14px",
@@ -85,7 +82,7 @@ export function SiteHeader({ minimal = false }: Props) {
               onClick={() => setOpen(true)}
               className="md:hidden"
               aria-label="Open menu"
-              style={{ color: "#C8A45D" }}
+              style={{ color: "var(--color-bk-gold)" }}
             >
               <Menu size={28} />
             </button>
@@ -96,14 +93,14 @@ export function SiteHeader({ minimal = false }: Props) {
       {open && !minimal && (
         <div
           className="fixed inset-0 z-50 flex flex-col items-center justify-center gap-8"
-          style={{ backgroundColor: "#0B0B0D" }}
+          style={{ backgroundColor: "var(--color-bk-black)" }}
         >
           <button
             type="button"
             onClick={() => setOpen(false)}
             className="absolute right-6 top-6"
             aria-label="Close menu"
-            style={{ color: "#C8A45D" }}
+            style={{ color: "var(--color-bk-gold)" }}
           >
             <X size={32} />
           </button>
@@ -112,7 +109,7 @@ export function SiteHeader({ minimal = false }: Props) {
               key={l.to}
               to={l.to}
               onClick={() => setOpen(false)}
-              style={{ color: "#E5D2A0", fontSize: "20px", fontFamily: "var(--font-sans)" }}
+              style={{ color: "var(--color-bk-gold-champagne)", fontSize: "20px", fontFamily: "var(--font-sans)" }}
             >
               {l.label}
             </Link>
@@ -121,8 +118,8 @@ export function SiteHeader({ minimal = false }: Props) {
             to="/free-audit"
             onClick={() => setOpen(false)}
             style={{
-              backgroundColor: "#C8A45D",
-              color: "#0B0B0D",
+              backgroundColor: "var(--color-bk-gold)",
+              color: "var(--color-bk-black)",
               borderRadius: "8px",
               padding: "12px 28px",
               fontWeight: 500,
