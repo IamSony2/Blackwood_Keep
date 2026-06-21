@@ -46,12 +46,12 @@ export const Route = createFileRoute("/contact")({
   component: ContactPage,
 });
 
-const dark = "#0B0B0D";
-const navy = "#111827";
-const gold = "#C8A45D";
-const champagne = "#E5D2A0";
-const silver = "#D1D5DB";
-const white = "#F8F9FA";
+const dark = "var(--color-bk-black)";
+const navy = "var(--color-bk-navy)";
+const gold = "var(--color-bk-gold)";
+const champagne = "var(--color-bk-gold-champagne)";
+const silver = "var(--color-bk-silver)";
+const white = "var(--color-bk-white)";
 
 function ContactPage() {
   return (
@@ -77,7 +77,7 @@ function ContactPage() {
             <h2 style={{ color: navy, fontFamily: "var(--font-sans)", fontWeight: 500, fontSize: "22px" }}>
               Route A: Direct Electronic Briefing
             </h2>
-            <p className="mt-2" style={{ color: "#888780", fontSize: "14px" }}>
+            <p className="mt-2" style={{ color: "var(--muted-foreground)", fontSize: "14px" }}>
               Our engineering team responds with complete account feedback within one standard
               working day.
             </p>
@@ -133,7 +133,7 @@ function ContactPage() {
             <h2 style={{ color: navy, fontFamily: "var(--font-sans)", fontWeight: 500, fontSize: "22px" }}>
               Route B: Direct Calendar Allocation
             </h2>
-            <p className="mt-2" style={{ color: "#888780", fontSize: "14px" }}>
+            <p className="mt-2" style={{ color: "var(--muted-foreground)", fontSize: "14px" }}>
               Secure an immediate strategic briefing block directly inside our active database
               scheduler.
             </p>
