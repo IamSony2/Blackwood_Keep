@@ -13,14 +13,14 @@ export function CookieBanner() {
   return (
     <div
       className="fixed inset-x-0 bottom-0 z-50 px-6 py-4"
-      style={{ backgroundColor: "#0B0B0D", borderTop: "1px solid #B68B3A" }}
+      style={{ backgroundColor: "var(--color-bk-black)", borderTop: "1px solid var(--border)" }}
       role="dialog"
       aria-label="Cookie consent"
     >
       <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-3 md:flex-row">
-        <p style={{ color: "#D1D5DB", fontSize: "13px" }} className="text-center md:text-left">
+        <p style={{ color: "var(--muted-foreground)", fontSize: "13px" }} className="text-center md:text-left">
           We use cookies to improve your browsing experience and analyse site performance. See our{" "}
-          <a href="/cookies" style={{ color: "#C8A45D" }}>
+          <a href="/cookies" style={{ color: "var(--color-bk-gold)" }}>
             Cookie Policy
           </a>
           .
@@ -32,8 +32,8 @@ export function CookieBanner() {
             setShow(false);
           }}
           style={{
-            backgroundColor: "#C8A45D",
-            color: "#0B0B0D",
+            backgroundColor: "var(--color-bk-gold)",
+            color: "var(--color-bk-black)",
             borderRadius: "8px",
             padding: "10px 22px",
             fontWeight: 500,
