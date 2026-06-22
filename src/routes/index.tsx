@@ -68,13 +68,14 @@ export const Route = createFileRoute("/")({
   component: Home,
 });
 
-const dark = "var(--color-bk-black)";
-const navy = "var(--color-bk-navy)";
+// 60/30/10 brand rule: black = dominant canvas, slate = structure, white = typography, gold/champagne = accents only
+const black = "var(--color-bk-black)";
+const slate = "var(--color-bk-slate)";
 const gold = "var(--color-bk-gold)";
-const goldAntique = "var(--color-bk-gold-antique)";
 const champagne = "var(--color-bk-gold-champagne)";
-const silver = "var(--color-bk-silver)";
 const white = "var(--color-bk-white)";
+const muted = "var(--muted-foreground)";
+const structuralBorder = "var(--border)";
 
 function Home() {
   const scrollTo = (id: string) => {
@@ -86,7 +87,7 @@ function Home() {
     <PageLayout>
       {/* SECTION 1 — HERO */}
       <section
-        style={{ backgroundColor: dark, minHeight: "95vh" }}
+        style={{ backgroundColor: black, minHeight: "95vh" }}
         className="flex items-center justify-center px-6 py-20"
       >
         <div className="mx-auto flex max-w-4xl flex-col items-center text-center">
@@ -94,7 +95,7 @@ function Home() {
           <h1
             className="mt-8"
             style={{
-              color: champagne,
+              color: white,
               fontFamily: "var(--font-display)",
               fontWeight: 500,
               fontSize: "clamp(32px, 5vw, 56px)",
@@ -105,7 +106,7 @@ function Home() {
           </h1>
           <p
             className="mt-6"
-            style={{ color: silver, fontSize: "18px", maxWidth: "720px", lineHeight: 1.6 }}
+            style={{ color: muted, fontSize: "18px", maxWidth: "720px", lineHeight: 1.6 }}
           >
             We design and deploy high-converting digital marketing systems, local market dominance
             frameworks, and multi-channel paid campaigns that convert clicks into commercial
@@ -117,7 +118,7 @@ function Home() {
               to="/free-audit"
               style={{
                 backgroundColor: gold,
-                color: dark,
+                color: black,
                 borderRadius: "8px",
                 padding: "14px 28px",
                 fontWeight: 500,
@@ -149,7 +150,7 @@ function Home() {
       </section>
 
       {/* SECTION 2 — SEGMENTATION GATEWAY */}
-      <section style={{ backgroundColor: navy }} className="px-6 py-20">
+      <section style={{ backgroundColor: slate }} className="px-6 py-20">
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-0 md:grid-cols-2">
           <SegmentCard
             heading="Local Trades & Facilities Management"
@@ -178,9 +179,9 @@ function Home() {
       </section>
 
       {/* SECTION 3 — PROBLEM / SOLUTION */}
-      <section style={{ backgroundColor: white }} className="px-6 py-20">
+      <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl text-center">
-          <h2 style={{ color: navy, fontSize: "clamp(28px,3.5vw,40px)" }}>
+          <h2 style={{ color: white, fontSize: "clamp(28px,3.5vw,40px)" }}>
             Does any of this sound familiar?
           </h2>
           <div className="mt-4 flex justify-center">
@@ -188,19 +189,19 @@ function Home() {
           </div>
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
             <ProblemCard
-              icon={<Clock size={28} style={{ color: gold }} />}
+              icon={<Clock size={28} style={{ color: champagne }} />}
               title="You're too busy on site to capture incoming inquiries"
               body="Every day your team means to handle incoming leads. Every day field logistics and jobs take over while your phone rings out."
               solution="We engineer automated capture."
             />
             <ProblemCard
-              icon={<PoundSterling size={28} style={{ color: gold }} />}
+              icon={<PoundSterling size={28} style={{ color: champagne }} />}
               title="You've spent heavily on ads before with zero visibility"
               body="Wasted spend on generic ad agencies who gave you clicks instead of signed commercial contracts. Sound familiar?"
               solution="We measure commercial contract wins, not clicks."
             />
             <ProblemCard
-              icon={<TrendingUp size={28} style={{ color: gold }} />}
+              icon={<TrendingUp size={28} style={{ color: champagne }} />}
               title="You are operating on a volatile feast-or-famine cycle"
               body="Fully booked this month, worried about pipeline health the next. No automated system smoothing your client acquisition."
               solution="We build a predictable revenue engine."
@@ -210,14 +211,14 @@ function Home() {
       </section>
 
       {/* SECTION 4 — ONBOARDING MATRIX */}
-      <section id="how-it-works" style={{ backgroundColor: white }} className="px-6 py-20">
+      <section id="how-it-works" style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl text-center">
-          <h2 style={{ color: navy, fontSize: "clamp(28px,3.5vw,40px)" }}>
+          <h2 style={{ color: white, fontSize: "clamp(28px,3.5vw,40px)" }}>
             The Blueprint to Predictable Growth
           </h2>
           <p
             className="mx-auto mt-4 max-w-3xl"
-            style={{ color: "#374151", fontSize: "16px", lineHeight: 1.7 }}
+            style={{ color: muted, fontSize: "16px", lineHeight: 1.7 }}
           >
             A structured, dual-speed onboarding process engineered to eliminate launch friction
             while protecting enterprise compliance.
@@ -245,7 +246,7 @@ function Home() {
               deliverable="24/7 access to live performance metrics and recurring commercial account reviews."
             />
           </div>
-          <p className="mt-10" style={{ color: "#6B7280", fontSize: "14px" }}>
+          <p className="mt-10" style={{ color: muted, fontSize: "14px" }}>
             Average onboarding timeline from discovery audit to live market execution: 14 to 21
             business days.
           </p>
@@ -254,7 +255,7 @@ function Home() {
             className="mt-8 inline-block"
             style={{
               backgroundColor: gold,
-              color: dark,
+              color: black,
               borderRadius: "8px",
               padding: "14px 28px",
               fontWeight: 500,
@@ -266,27 +267,27 @@ function Home() {
       </section>
 
       {/* SECTION 5 — SECTORS & SERVICES */}
-      <section id="sectors" style={{ backgroundColor: navy }} className="px-6 py-20">
+      <section id="sectors" style={{ backgroundColor: slate }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl text-center">
-          <h2 style={{ color: champagne, fontSize: "clamp(28px,3.5vw,40px)" }}>
+          <h2 style={{ color: white, fontSize: "clamp(28px,3.5vw,40px)" }}>
             Engineered Growth Frameworks
           </h2>
-          <p className="mx-auto mt-4 max-w-3xl" style={{ color: silver, fontSize: "16px" }}>
+          <p className="mx-auto mt-4 max-w-3xl" style={{ color: muted, fontSize: "16px" }}>
             Advanced digital architecture tailored to your specific commercial operations.
           </p>
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
             <SectorCard
-              icon={<Settings2 size={28} style={{ color: gold }} />}
+              icon={<Settings2 size={28} style={{ color: champagne }} />}
               title="CRM Automation & Lead Nurturing"
               body="Never allow an enterprise or domestic lead to go cold. We engineer rapid automated response protocols and follow-up infrastructure so enquiries are captured instantly while you operate your daily business."
             />
             <SectorCard
-              icon={<Star size={28} style={{ color: gold }} />}
+              icon={<Star size={28} style={{ color: champagne }} />}
               title="Local Map Pack & Reputation Engineering"
               body="Establish absolute regional authority across the Wirral, Liverpool, and Chester. We automate five-star review loops and optimise your local search profile to guarantee you are the primary firm selected."
             />
             <SectorCard
-              icon={<Rocket size={28} style={{ color: gold }} />}
+              icon={<Rocket size={28} style={{ color: champagne }} />}
               title="Funnel Optimisation & Paid Campaigns"
               body="Eliminate marketing guesswork. We build bespoke lead capture engines and manage high-intent advertising budgets targeted directly at procurement managers and high-value domestic clients."
             />
@@ -302,9 +303,9 @@ function Home() {
       </section>
 
       {/* SECTION 6 — TESTIMONIALS STRIP */}
-      <section style={{ backgroundColor: dark }} className="px-6 py-20">
+      <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl text-center">
-          <h2 style={{ color: champagne, fontSize: "clamp(28px,3.5vw,40px)" }}>
+          <h2 style={{ color: white, fontSize: "clamp(28px,3.5vw,40px)" }}>
             Validated Commercial Success
           </h2>
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -332,15 +333,15 @@ function Home() {
       </section>
 
       {/* SECTION 7 — REFERRALS MENTION */}
-      <section style={{ backgroundColor: white }} className="px-6 py-20">
+      <section style={{ backgroundColor: slate }} className="px-6 py-20">
         <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 md:grid-cols-2">
           <div>
-            <h2 style={{ color: navy, fontSize: "clamp(26px,3vw,36px)" }}>
+            <h2 style={{ color: white, fontSize: "clamp(26px,3vw,36px)" }}>
               Partner with Blackwood Keep
             </h2>
             <p
               className="mt-6"
-              style={{ color: "#374151", fontSize: "16px", lineHeight: 1.7 }}
+              style={{ color: muted, fontSize: "16px", lineHeight: 1.7 }}
             >
               Our growth is anchored directly to regional trust and executive word of mouth. If you
               introduce our engineering capabilities to a regional business or facilities company
@@ -357,26 +358,26 @@ function Home() {
           </div>
           <div
             style={{
-              backgroundColor: dark,
-              border: `1px solid ${gold}`,
+              backgroundColor: black,
+              border: `1px solid ${structuralBorder}`,
               borderRadius: "12px",
               padding: "1.5rem",
             }}
           >
-            <h3 style={{ color: champagne, fontSize: "22px" }}>Strategic Alliances</h3>
-            <ul className="mt-4 space-y-3" style={{ color: silver, fontSize: "15px" }}>
+            <h3 style={{ color: white, fontSize: "22px" }}>Strategic Alliances</h3>
+            <ul className="mt-4 space-y-3" style={{ color: muted, fontSize: "15px" }}>
               <li className="flex gap-3">
-                <Check size={18} style={{ color: gold, flexShrink: 0, marginTop: 3 }} />
+                <Check size={18} style={{ color: champagne, flexShrink: 0, marginTop: 3 }} />
                 <span>
                   Regional Trade Networks — Mechanical, electrical, structural, building contractors
                 </span>
               </li>
               <li className="flex gap-3">
-                <Check size={18} style={{ color: gold, flexShrink: 0, marginTop: 3 }} />
+                <Check size={18} style={{ color: champagne, flexShrink: 0, marginTop: 3 }} />
                 <span>Facilities & Asset Management Providers</span>
               </li>
               <li className="flex gap-3">
-                <Check size={18} style={{ color: gold, flexShrink: 0, marginTop: 3 }} />
+                <Check size={18} style={{ color: champagne, flexShrink: 0, marginTop: 3 }} />
                 <span>High-Growth B2B Operations seeking automated pipeline stability</span>
               </li>
             </ul>
@@ -386,15 +387,15 @@ function Home() {
 
       {/* SECTION 8 — FINAL CTA */}
       <section
-        style={{ backgroundColor: dark, borderTop: `1px solid ${goldAntique}` }}
+        style={{ backgroundColor: black, borderTop: `1px solid ${structuralBorder}` }}
         className="px-6 py-20"
       >
         <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
           <CastleShield size={60} />
-          <h2 className="mt-6" style={{ color: champagne, fontSize: "36px" }}>
+          <h2 className="mt-6" style={{ color: white, fontSize: "36px" }}>
             Eliminate Pipeline Chaos. Secure Your Growth Plan.
           </h2>
-          <p className="mt-4" style={{ color: silver, fontSize: "16px", lineHeight: 1.7 }}>
+          <p className="mt-4" style={{ color: muted, fontSize: "16px", lineHeight: 1.7 }}>
             Book your comprehensive, plain-English Growth Audit today. No high-pressure sales
             scripts. Just an objective analysis of your market vulnerabilities and absolute
             pipeline opportunities.
@@ -404,7 +405,7 @@ function Home() {
             className="mt-8 inline-block"
             style={{
               backgroundColor: gold,
-              color: dark,
+              color: black,
               padding: "14px 32px",
               borderRadius: "8px",
               fontWeight: 500,
@@ -437,18 +438,18 @@ function SegmentCard({
     <div
       className="p-8 md:p-10"
       style={{
-        borderRight: border === "right" ? `0.5px solid ${goldAntique}` : undefined,
-        borderBottom: `0.5px solid ${goldAntique}`,
+        borderRight: border === "right" ? `0.5px solid ${structuralBorder}` : undefined,
+        borderBottom: `0.5px solid ${structuralBorder}`,
       }}
     >
-      <h3 style={{ color: champagne, fontSize: "24px" }}>{heading}</h3>
-      <p className="mt-4" style={{ color: silver, fontSize: "15px", lineHeight: 1.7 }}>
+      <h3 style={{ color: white, fontSize: "24px" }}>{heading}</h3>
+      <p className="mt-4" style={{ color: muted, fontSize: "15px", lineHeight: 1.7 }}>
         {body}
       </p>
       <ul className="mt-6 space-y-3">
         {bullets.map((b, i) => (
-          <li key={i} className="flex items-center gap-3" style={{ color: silver, fontSize: "14px" }}>
-            <span style={{ color: gold }}>{b.icon}</span>
+          <li key={i} className="flex items-center gap-3" style={{ color: muted, fontSize: "14px" }}>
+            <span style={{ color: champagne }}>{b.icon}</span>
             <span>{b.text}</span>
           </li>
         ))}
@@ -459,7 +460,7 @@ function SegmentCard({
         className="mt-8"
         style={{
           backgroundColor: gold,
-          color: dark,
+          color: black,
           padding: "12px 24px",
           borderRadius: "8px",
           fontWeight: 500,
@@ -487,18 +488,18 @@ function ProblemCard({
     <div className="text-left">
       <div
         style={{
-          backgroundColor: "#FFFFFF",
-          border: `0.5px solid ${silver}`,
+          backgroundColor: slate,
+          border: `0.5px solid ${structuralBorder}`,
           borderRadius: "12px",
           padding: "1.5rem",
           minHeight: "260px",
         }}
       >
         {icon}
-        <h3 className="mt-4" style={{ color: navy, fontSize: "18px" }}>
+        <h3 className="mt-4" style={{ color: white, fontSize: "18px" }}>
           {title}
         </h3>
-        <p className="mt-3" style={{ color: "#374151", fontSize: "14px", lineHeight: 1.6 }}>
+        <p className="mt-3" style={{ color: muted, fontSize: "14px", lineHeight: 1.6 }}>
           {body}
         </p>
       </div>
@@ -529,8 +530,8 @@ function PhaseCard({
     <div
       className="flex flex-col text-left"
       style={{
-        backgroundColor: "#FFFFFF",
-        border: `0.5px solid ${silver}`,
+        backgroundColor: slate,
+        border: `0.5px solid ${structuralBorder}`,
         borderRadius: "12px",
         padding: "1.75rem",
       }}
@@ -538,7 +539,7 @@ function PhaseCard({
       <span
         className="self-start"
         style={{
-          backgroundColor: dark,
+          backgroundColor: black,
           color: champagne,
           padding: "4px 10px",
           borderRadius: "999px",
@@ -549,16 +550,16 @@ function PhaseCard({
       >
         {phase}
       </span>
-      <h3 className="mt-4" style={{ color: navy, fontFamily: "var(--font-sans)", fontSize: "18px", fontWeight: 500 }}>
+      <h3 className="mt-4" style={{ color: white, fontFamily: "var(--font-sans)", fontSize: "18px", fontWeight: 500 }}>
         {title}
       </h3>
-      <p className="mt-4" style={{ color: navy, fontSize: "15px", fontWeight: 500 }}>
+      <p className="mt-4" style={{ color: white, fontSize: "15px", fontWeight: 500 }}>
         {focus}
       </p>
-      <p className="mt-3" style={{ color: "#374151", fontSize: "14px", lineHeight: 1.6 }}>
+      <p className="mt-3" style={{ color: muted, fontSize: "14px", lineHeight: 1.6 }}>
         {technical}
       </p>
-      <p className="mt-3" style={{ color: "#6B7280", fontSize: "13px", fontStyle: "italic" }}>
+      <p className="mt-3" style={{ color: muted, fontSize: "13px", fontStyle: "italic" }}>
         {deliverable}
       </p>
     </div>
@@ -578,17 +579,17 @@ function SectorCard({
     <div
       className="text-left"
       style={{
-        backgroundColor: dark,
-        border: `0.5px solid ${goldAntique}`,
+        backgroundColor: black,
+        border: `0.5px solid ${structuralBorder}`,
         borderRadius: "12px",
         padding: "1.75rem",
       }}
     >
       {icon}
-      <h3 className="mt-4" style={{ color: gold, fontSize: "18px" }}>
+      <h3 className="mt-4" style={{ color: white, fontSize: "18px" }}>
         {title}
       </h3>
-      <p className="mt-3" style={{ color: silver, fontSize: "14px", lineHeight: 1.6 }}>
+      <p className="mt-3" style={{ color: muted, fontSize: "14px", lineHeight: 1.6 }}>
         {body}
       </p>
     </div>
@@ -600,8 +601,8 @@ function TestimonialCard({ quote, attr }: { quote: string; attr: string }) {
     <div
       className="text-left"
       style={{
-        backgroundColor: navy,
-        border: `0.5px solid ${goldAntique}`,
+        backgroundColor: slate,
+        border: `0.5px solid ${structuralBorder}`,
         borderRadius: "12px",
         padding: "1.5rem",
       }}
@@ -618,7 +619,7 @@ function TestimonialCard({ quote, attr }: { quote: string; attr: string }) {
       </div>
       <p
         className="mt-2"
-        style={{ color: silver, fontStyle: "italic", fontSize: "14px", lineHeight: 1.7 }}
+        style={{ color: muted, fontStyle: "italic", fontSize: "14px", lineHeight: 1.7 }}
       >
         {quote}
       </p>
