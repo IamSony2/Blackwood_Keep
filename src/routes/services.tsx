@@ -24,27 +24,27 @@ export const Route = createFileRoute("/services")({
   component: ServicesPage,
 });
 
-const dark = "var(--color-bk-black)";
-const navy = "var(--color-bk-navy)";
+const black = "var(--color-bk-black)";
+const slate = "var(--color-bk-slate)";
 const gold = "var(--color-bk-gold)";
-const goldAntique = "var(--color-bk-gold-antique)";
 const champagne = "var(--color-bk-gold-champagne)";
-const silver = "var(--color-bk-silver)";
 const white = "var(--color-bk-white)";
+const muted = "var(--muted-foreground)";
+const structuralBorder = "var(--border)";
 
 function ServicesPage() {
   return (
     <PageLayout>
       {/* HERO */}
       <section
-        style={{ backgroundColor: dark, minHeight: "60vh" }}
+        style={{ backgroundColor: black, minHeight: "60vh" }}
         className="flex items-center justify-center px-6 py-20"
       >
         <div className="mx-auto max-w-3xl text-center">
-          <h1 style={{ color: champagne, fontSize: "clamp(30px,4.5vw,48px)", lineHeight: 1.2 }}>
+          <h1 style={{ color: white, fontSize: "clamp(30px,4.5vw,48px)", lineHeight: 1.2 }}>
             High-performance digital infrastructure. Engineered for conversion.
           </h1>
-          <p className="mt-6" style={{ color: silver, fontSize: "17px", lineHeight: 1.6 }}>
+          <p className="mt-6" style={{ color: muted, fontSize: "17px", lineHeight: 1.6 }}>
             We manage and deploy your complete digital customer acquisition layout. No fragmented
             tools, no loose ends. All systems contained within a unified master framework.
           </p>
@@ -52,14 +52,14 @@ function ServicesPage() {
       </section>
 
       {/* MASTER CORE CAPABILITIES */}
-      <section style={{ backgroundColor: white }} className="px-6 py-20">
+      <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-center" style={{ color: navy, fontSize: "clamp(26px,3vw,36px)" }}>
+          <h2 className="text-center" style={{ color: white, fontSize: "clamp(26px,3vw,36px)" }}>
             Core Performance Modules
           </h2>
           <div className="mt-12 space-y-10">
             <MasterPanel
-              icon={<Cog size={56} style={{ color: gold }} />}
+              icon={<Cog size={56} style={{ color: champagne }} />}
               title="CRM Automation & Lead Capture Sequences"
               body="The primary source of revenue loss for regional trades and SMEs is lead response latency. If a customer inquires and waits two hours, they call your competitor. We program complete, automated CRM data frameworks that instantly ingest, tag, and follow up with inbound opportunities the second they arrive. Keep your pipeline moving flawlessly while your engineers operate on site and your leadership team drives strategic growth."
               included={[
@@ -71,7 +71,7 @@ function ServicesPage() {
               target="Regional trades, facilities companies, and complex business operations looking to systematically eliminate manual lead tracking error."
             />
             <MasterPanel
-              icon={<Star size={56} style={{ color: gold }} />}
+              icon={<Star size={56} style={{ color: champagne }} />}
               title="Local Postcode Dominance & Authority Systems"
               body="Modern B2B and regional consumers execute deep local validation before engaging. If your regional competitors display extensive verified profiles and your presence is minimal, they secure the contract. We automate elite five-star review generation loops directly from your completed jobs, while strategically optimising your geographic index to capture high-intent commercial and domestic queries across the Wirral, Liverpool, and Chester."
               included={[
@@ -83,7 +83,7 @@ function ServicesPage() {
               target="Contractors, specialised engineering firms, and local service networks dependent on local search superiority and total corporate credibility."
             />
             <MasterPanel
-              icon={<Rocket size={56} style={{ color: gold }} />}
+              icon={<Rocket size={56} style={{ color: champagne }} />}
               title="High-Intent Customer Acquisition Engines"
               body="Stop burning investment capital on broad keyword matching or vague agency traffic reports. We engineer conversion-first digital architectures backed by highly precise paid media positioning (Google Ads, Meta, LinkedIn). We zero in exclusively on targeted decision-makers and high-value search criteria, ensuring your media allocation lands in front of ready-to-buy users."
               included={[
@@ -99,12 +99,12 @@ function ServicesPage() {
       </section>
 
       {/* AUXILIARY SEGMENTS */}
-      <section style={{ backgroundColor: navy }} className="px-6 py-20">
+      <section style={{ backgroundColor: slate }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl text-center">
-          <h2 style={{ color: champagne, fontSize: "clamp(26px,3vw,36px)" }}>
+          <h2 style={{ color: white, fontSize: "clamp(26px,3vw,36px)" }}>
             Integrated Systems Included in All Scopes
           </h2>
-          <p className="mx-auto mt-4 max-w-3xl" style={{ color: silver, fontSize: "16px" }}>
+          <p className="mx-auto mt-4 max-w-3xl" style={{ color: muted, fontSize: "16px" }}>
             Deployed automatically to support and secure your main customer acquisition engine.
           </p>
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -125,9 +125,9 @@ function ServicesPage() {
       </section>
 
       {/* USER PERSONAS */}
-      <section style={{ backgroundColor: white }} className="px-6 py-20">
+      <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-center" style={{ color: navy, fontSize: "clamp(26px,3vw,36px)" }}>
+          <h2 className="text-center" style={{ color: white, fontSize: "clamp(26px,3vw,36px)" }}>
             Who We Engineer For
           </h2>
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -155,14 +155,14 @@ function ServicesPage() {
 
       {/* CTA */}
       <section
-        style={{ backgroundColor: dark, borderTop: `1px solid ${goldAntique}` }}
+        style={{ backgroundColor: black, borderTop: `1px solid ${structuralBorder}` }}
         className="px-6 py-16"
       >
         <div className="mx-auto max-w-3xl text-center">
-          <h2 style={{ color: champagne, fontSize: "clamp(24px,3vw,32px)" }}>
+          <h2 style={{ color: white, fontSize: "clamp(24px,3vw,32px)" }}>
             Uncertain which capabilities fit your target growth?
           </h2>
-          <p className="mt-4" style={{ color: silver, fontSize: "16px", lineHeight: 1.7 }}>
+          <p className="mt-4" style={{ color: muted, fontSize: "16px", lineHeight: 1.7 }}>
             Book our strategic Pipeline Audit. We will analyse your infrastructure and define
             exactly which modules will drive immediate cash flow—and which are completely
             unnecessary.
@@ -172,7 +172,7 @@ function ServicesPage() {
             className="mt-8 inline-block"
             style={{
               backgroundColor: gold,
-              color: dark,
+              color: black,
               padding: "14px 28px",
               borderRadius: "8px",
               fontWeight: 500,
@@ -203,39 +203,39 @@ function MasterPanel({
     <article
       className="grid grid-cols-1 gap-8 overflow-hidden md:grid-cols-[200px_1fr]"
       style={{
-        backgroundColor: "#FFFFFF",
-        border: `0.5px solid ${silver}`,
+        backgroundColor: slate,
+        border: `0.5px solid ${structuralBorder}`,
         borderRadius: "12px",
       }}
     >
       <div
         className="flex items-center justify-center p-8"
-        style={{ backgroundColor: dark }}
+        style={{ backgroundColor: black }}
       >
         {icon}
       </div>
       <div className="p-8">
-        <h3 style={{ color: gold, fontSize: "22px" }}>{title}</h3>
-        <p className="mt-4" style={{ color: "#374151", fontSize: "15px", lineHeight: 1.7 }}>
+        <h3 style={{ color: white, fontSize: "22px" }}>{title}</h3>
+        <p className="mt-4" style={{ color: muted, fontSize: "15px", lineHeight: 1.7 }}>
           {body}
         </p>
         <div className="mt-6">
-          <p style={{ color: navy, fontWeight: 500, fontSize: "14px" }}>What's included:</p>
+          <p style={{ color: white, fontWeight: 500, fontSize: "14px" }}>What's included:</p>
           <ul className="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-2">
             {included.map((i) => (
               <li
                 key={i}
                 className="flex gap-2"
-                style={{ color: "#374151", fontSize: "14px" }}
+                style={{ color: muted, fontSize: "14px" }}
               >
-                <Check size={16} style={{ color: gold, flexShrink: 0, marginTop: 4 }} />
+                <Check size={16} style={{ color: champagne, flexShrink: 0, marginTop: 4 }} />
                 <span>{i}</span>
               </li>
             ))}
           </ul>
         </div>
-        <p className="mt-6" style={{ color: "#6B7280", fontSize: "13px", fontStyle: "italic" }}>
-          <strong style={{ color: navy }}>Target Profile:</strong> {target}
+        <p className="mt-6" style={{ color: muted, fontSize: "13px", fontStyle: "italic" }}>
+          <strong style={{ color: white }}>Target Profile:</strong> {target}
         </p>
         <Link
           to="/free-audit"
@@ -254,14 +254,14 @@ function AuxCard({ title, body }: { title: string; body: string }) {
     <div
       className="text-left"
       style={{
-        backgroundColor: dark,
-        border: `0.5px solid ${goldAntique}`,
+        backgroundColor: black,
+        border: `0.5px solid ${structuralBorder}`,
         borderRadius: "12px",
         padding: "1.5rem",
       }}
     >
-      <h3 style={{ color: gold, fontSize: "18px" }}>{title}</h3>
-      <p className="mt-3" style={{ color: silver, fontSize: "14px", lineHeight: 1.6 }}>
+      <h3 style={{ color: white, fontSize: "18px" }}>{title}</h3>
+      <p className="mt-3" style={{ color: muted, fontSize: "14px", lineHeight: 1.6 }}>
         {body}
       </p>
     </div>
@@ -282,21 +282,21 @@ function PersonaCard({
   return (
     <div
       style={{
-        backgroundColor: "#FFFFFF",
-        border: `0.5px solid ${silver}`,
+        backgroundColor: slate,
+        border: `0.5px solid ${structuralBorder}`,
         borderRadius: "12px",
         padding: "1.5rem",
       }}
     >
-      <h3 style={{ color: navy, fontSize: "20px" }}>{name}</h3>
-      <p className="mt-2" style={{ color: gold, fontSize: "13px" }}>
+      <h3 style={{ color: white, fontSize: "20px" }}>{name}</h3>
+      <p className="mt-2" style={{ color: champagne, fontSize: "13px" }}>
         {who}
       </p>
-      <p className="mt-4" style={{ color: "#374151", fontSize: "14px", lineHeight: 1.6 }}>
-        <strong style={{ color: navy }}>Friction:</strong> {friction}
+      <p className="mt-4" style={{ color: muted, fontSize: "14px", lineHeight: 1.6 }}>
+        <strong style={{ color: white }}>Friction:</strong> {friction}
       </p>
-      <p className="mt-2" style={{ color: "#374151", fontSize: "14px", lineHeight: 1.6 }}>
-        <strong style={{ color: navy }}>Resolution:</strong> {resolution}
+      <p className="mt-2" style={{ color: muted, fontSize: "14px", lineHeight: 1.6 }}>
+        <strong style={{ color: white }}>Resolution:</strong> {resolution}
       </p>
     </div>
   );
