@@ -31,7 +31,7 @@ export function SiteFooter({ minimal = false }: Props) {
   if (minimal) {
     return (
       <footer
-        style={{ backgroundColor: "var(--color-bk-black)", borderTop: "1px solid var(--color-bk-gold-antique)" }}
+        style={{ backgroundColor: "var(--color-bk-black)", borderTop: "1px solid var(--border)" }}
         className="px-6 py-8"
       >
         <div className="mx-auto flex max-w-7xl flex-col items-center gap-3 text-center">
@@ -46,7 +46,7 @@ export function SiteFooter({ minimal = false }: Props) {
 
   return (
     <footer
-      style={{ backgroundColor: "var(--color-bk-black)", borderTop: "1px solid var(--color-bk-gold-antique)" }}
+      style={{ backgroundColor: "var(--color-bk-black)", borderTop: "1px solid var(--border)" }}
       className="px-6 py-12"
     >
       <div className="mx-auto max-w-7xl space-y-8">
@@ -59,7 +59,7 @@ export function SiteFooter({ minimal = false }: Props) {
           </div>
           <p
             className="text-center"
-            style={{ color: "var(--color-bk-gold-champagne)", fontFamily: "var(--font-display)", fontSize: "16px" }}
+            style={{ color: "var(--color-bk-white)", fontFamily: "var(--font-display)", fontSize: "16px" }}
           >
             Creative Design &amp; Digital Marketing Solutions
           </p>
@@ -75,7 +75,7 @@ export function SiteFooter({ minimal = false }: Props) {
         <nav aria-label="Footer">
           <ul
             className="flex flex-wrap justify-center gap-x-6 gap-y-2"
-            style={{ color: "var(--color-bk-silver)", fontSize: "14px" }}
+            style={{ color: "var(--muted-foreground)", fontSize: "14px" }}
           >
             {navLinks.map((l) => (
               <li key={l.to}>
@@ -90,15 +90,15 @@ export function SiteFooter({ minimal = false }: Props) {
         {/* Row 3 */}
         <div
           className="flex flex-wrap justify-center gap-x-6 gap-y-2"
-          style={{ color: "var(--color-bk-gold)", fontSize: "14px" }}
+          style={{ color: "var(--color-bk-white)", fontSize: "14px" }}
         >
-          <a href="mailto:hello@blackwoodkeep.co.uk">hello@blackwoodkeep.co.uk</a>
+          <a href="mailto:hello@blackwoodkeep.co.uk" className="hover:text-bk-gold">hello@blackwoodkeep.co.uk</a>
           <span>·</span>
           <span>[Swytch phone number]</span>
         </div>
 
         {/* Row 4 */}
-        <p className="text-center" style={{ color: "var(--color-bk-silver)", fontSize: "13px" }}>
+        <p className="text-center" style={{ color: "var(--muted-foreground)", fontSize: "13px" }}>
           Serving businesses across the Wirral, Liverpool, Chester, Cheshire West, Cheshire East,
           and North Wales
         </p>
@@ -112,9 +112,9 @@ export function SiteFooter({ minimal = false }: Props) {
           <span>·</span>
           <span>Registered in England and Wales</span>
           <span>·</span>
-          <Link to="/privacy">Privacy Policy</Link>
+          <Link to="/privacy" className="hover:text-bk-gold">Privacy Policy</Link>
           <span>·</span>
-          <Link to="/cookies">Cookie Policy</Link>
+          <Link to="/cookies" className="hover:text-bk-gold">Cookie Policy</Link>
           <span>·</span>
           <span>ICO Registration</span>
         </div>
