@@ -25,26 +25,26 @@ export const Route = createFileRoute("/about")({
   component: AboutPage,
 });
 
-const dark = "var(--color-bk-black)";
-const navy = "var(--color-bk-navy)";
+const black = "var(--color-bk-black)";
+const slate = "var(--color-bk-slate)";
 const gold = "var(--color-bk-gold)";
-const goldAntique = "var(--color-bk-gold-antique)";
 const champagne = "var(--color-bk-gold-champagne)";
-const silver = "var(--color-bk-silver)";
 const white = "var(--color-bk-white)";
+const muted = "var(--muted-foreground)";
+const structuralBorder = "var(--border)";
 
 function AboutPage() {
   return (
     <PageLayout>
       {/* HERO */}
       <section
-        style={{ backgroundColor: dark, minHeight: "60vh" }}
+        style={{ backgroundColor: black, minHeight: "60vh" }}
         className="flex items-center justify-center px-6 py-20"
       >
         <div className="mx-auto max-w-3xl text-center">
           <h1
             style={{
-              color: champagne,
+              color: white,
               fontSize: "clamp(32px,5vw,52px)",
               lineHeight: 1.15,
             }}
@@ -53,7 +53,7 @@ function AboutPage() {
           </h1>
           <p
             className="mx-auto mt-6"
-            style={{ color: silver, fontSize: "17px", maxWidth: "600px", lineHeight: 1.6 }}
+            style={{ color: muted, fontSize: "17px", maxWidth: "600px", lineHeight: 1.6 }}
           >
             We founded Blackwood Keep to eradicate the empty noise, vanity reports, and misaligned
             incentives that cause modern agencies to fail their clients. We build technical systems
@@ -63,15 +63,15 @@ function AboutPage() {
       </section>
 
       {/* OPERATIONAL STANDARDS */}
-      <section style={{ backgroundColor: white }} className="px-6 py-20">
+      <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-3xl">
-          <h2 className="text-center" style={{ color: navy, fontSize: "clamp(26px,3vw,36px)" }}>
+          <h2 className="text-center" style={{ color: white, fontSize: "clamp(26px,3vw,36px)" }}>
             The Blackwood Keep Charter
           </h2>
           <div className="mt-4 flex justify-center">
             <GoldDivider />
           </div>
-          <div className="mt-10 space-y-6" style={{ color: "#374151", lineHeight: 1.8, fontSize: "16px" }}>
+          <div className="mt-10 space-y-6" style={{ color: muted, lineHeight: 1.8, fontSize: "16px" }}>
             <p>
               Digital marketing shouldn't feel like a mysterious variable. Most local trade
               operators, facilities directors, B2C and B2B leaders are exhausted by abstract metrics
@@ -94,7 +94,7 @@ function AboutPage() {
       </section>
 
       {/* MISSION & VISION */}
-      <section style={{ backgroundColor: navy }} className="px-6 py-20">
+      <section style={{ backgroundColor: slate }} className="px-6 py-20">
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-2">
           <PullQuote
             label="Our Mission"
@@ -108,34 +108,34 @@ function AboutPage() {
       </section>
 
       {/* CORE PILLARS */}
-      <section style={{ backgroundColor: white }} className="px-6 py-20">
+      <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-center" style={{ color: navy, fontSize: "clamp(26px,3vw,36px)" }}>
+          <h2 className="text-center" style={{ color: white, fontSize: "clamp(26px,3vw,36px)" }}>
             Our Non-Negotiables
           </h2>
           <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             <ValueCard
-              icon={<Lightbulb size={24} style={{ color: gold }} />}
+              icon={<Lightbulb size={24} style={{ color: champagne }} />}
               title="Absolute Clarity"
               body="We present every strategy in clear, actionable business terms. If a campaign metric cannot be broken down in under 30 seconds, it does not belong in our pipeline architecture."
             />
             <ValueCard
-              icon={<Award size={24} style={{ color: gold }} />}
+              icon={<Award size={24} style={{ color: champagne }} />}
               title="Commercial ROI Focus"
               body="We measure campaign health purely by inbound lead quality, closed commercial values, and customer acquisition efficiency—never by random social platform clicks."
             />
             <ValueCard
-              icon={<Heart size={24} style={{ color: gold }} />}
+              icon={<Heart size={24} style={{ color: champagne }} />}
               title="Deep Strategic Alignment"
               body="We thoroughly study prospective clients before onboarding. We only initiate partnerships where our funnel development can guarantee a measurable revenue impact."
             />
             <ValueCard
-              icon={<Settings size={24} style={{ color: gold }} />}
+              icon={<Settings size={24} style={{ color: champagne }} />}
               title="Systems Architecture"
               body="We specialise in hands-off infrastructure, developing methodical, automated automation protocols that liberate your management layer from data entry tasks."
             />
             <ValueCard
-              icon={<ShieldCheck size={24} style={{ color: gold }} />}
+              icon={<ShieldCheck size={24} style={{ color: champagne }} />}
               title="Direct Candour"
               body="We remain conscientiously realistic regarding target timelines, required media budgets, and market realities. No inflated projections—just predictable execution."
             />
@@ -144,12 +144,12 @@ function AboutPage() {
       </section>
 
       {/* ALLIANCE HIGHLIGHT */}
-      <section style={{ backgroundColor: dark }} className="px-6 py-16">
+      <section style={{ backgroundColor: slate }} className="px-6 py-16">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 style={{ color: champagne, fontSize: "clamp(24px,3vw,32px)" }}>
+          <h2 style={{ color: white, fontSize: "clamp(24px,3vw,32px)" }}>
             Built on Performance, Not Advertising.
           </h2>
-          <p className="mt-6" style={{ color: silver, fontSize: "16px", lineHeight: 1.7 }}>
+          <p className="mt-6" style={{ color: muted, fontSize: "16px", lineHeight: 1.7 }}>
             The core of our client portfolio is constructed through intentional industry referrals
             and long-term asset performance. If your business requires transparent growth, we invite
             you to experience our strategic process directly.
@@ -162,11 +162,11 @@ function AboutPage() {
 
       {/* CTA */}
       <section
-        style={{ backgroundColor: navy, borderTop: `1px solid ${goldAntique}` }}
+        style={{ backgroundColor: black, borderTop: `1px solid ${structuralBorder}` }}
         className="px-6 py-16"
       >
         <div className="mx-auto max-w-3xl text-center">
-          <h2 style={{ color: champagne, fontSize: "clamp(24px,3vw,32px)" }}>
+          <h2 style={{ color: white, fontSize: "clamp(24px,3vw,32px)" }}>
             Evaluate your current marketing spend efficiency.
           </h2>
           <Link
@@ -174,7 +174,7 @@ function AboutPage() {
             className="mt-6 inline-block"
             style={{
               backgroundColor: gold,
-              color: dark,
+              color: black,
               padding: "14px 28px",
               borderRadius: "8px",
               fontWeight: 500,
@@ -193,14 +193,14 @@ function PullQuote({ label, quote }: { label: string; quote: string }) {
     <div
       style={{
         borderLeft: `3px solid ${gold}`,
-        backgroundColor: dark,
+        backgroundColor: black,
         borderRadius: "0 12px 12px 0",
         padding: "1.5rem",
       }}
     >
       <p
         style={{
-          color: goldAntique,
+          color: champagne,
           fontSize: "11px",
           textTransform: "uppercase",
           letterSpacing: "0.12em",
@@ -211,7 +211,7 @@ function PullQuote({ label, quote }: { label: string; quote: string }) {
       <p
         className="mt-4"
         style={{
-          color: champagne,
+          color: white,
           fontFamily: "var(--font-display)",
           fontStyle: "italic",
           fontSize: "20px",
@@ -236,17 +236,17 @@ function ValueCard({
   return (
     <div
       style={{
-        backgroundColor: "#FFFFFF",
-        border: `0.5px solid ${silver}`,
+        backgroundColor: slate,
+        border: `0.5px solid ${structuralBorder}`,
         borderRadius: "12px",
         padding: "1.25rem",
       }}
     >
       {icon}
-      <h3 className="mt-4" style={{ color: navy, fontFamily: "var(--font-sans)", fontWeight: 500, fontSize: "17px" }}>
+      <h3 className="mt-4" style={{ color: white, fontFamily: "var(--font-sans)", fontWeight: 500, fontSize: "17px" }}>
         {title}
       </h3>
-      <p className="mt-2" style={{ color: "#374151", fontSize: "14px", lineHeight: 1.6 }}>
+      <p className="mt-2" style={{ color: muted, fontSize: "14px", lineHeight: 1.6 }}>
         {body}
       </p>
     </div>
