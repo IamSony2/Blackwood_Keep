@@ -13,20 +13,20 @@ export function Accordion({ items }: { items: Item[] }) {
       {items.map((item, i) => {
         const isOpen = open === i;
         return (
-          <div key={i} style={{ borderBottom: "0.5px solid #D1D5DB" }}>
+          <div key={i} style={{ borderBottom: "0.5px solid var(--border)" }}>
             <button
               type="button"
               onClick={() => setOpen(isOpen ? null : i)}
               className="flex w-full items-center justify-between py-5 text-left"
               aria-expanded={isOpen}
             >
-              <span style={{ color: "#111827", fontSize: "16px", fontWeight: 500 }}>
+              <span style={{ color: "var(--color-bk-white)", fontSize: "16px", fontWeight: 500 }}>
                 {item.q}
               </span>
               <ChevronDown
                 size={20}
                 style={{
-                  color: "#C8A45D",
+                  color: "var(--color-bk-gold)",
                   transition: "transform 0.2s",
                   transform: isOpen ? "rotate(180deg)" : "rotate(0deg)",
                 }}
@@ -35,7 +35,7 @@ export function Accordion({ items }: { items: Item[] }) {
             {isOpen && (
               <p
                 className="pb-5 pr-8"
-                style={{ color: "#374151", fontSize: "15px", lineHeight: 1.7 }}
+                style={{ color: "var(--muted-foreground)", fontSize: "15px", lineHeight: 1.7 }}
               >
                 {item.a}
               </p>
