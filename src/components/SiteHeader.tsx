@@ -24,7 +24,7 @@ export function SiteHeader({ minimal = false }: Props) {
       className="sticky top-0 z-50 w-full"
       style={{
         backgroundColor: "var(--color-bk-black)",
-        borderBottom: "1px solid var(--color-bk-gold-antique)",
+        borderBottom: "1px solid var(--border)",
       }}
     >
       <nav
@@ -109,7 +109,7 @@ export function SiteHeader({ minimal = false }: Props) {
               key={l.to}
               to={l.to}
               onClick={() => setOpen(false)}
-              style={{ color: "var(--color-bk-gold-champagne)", fontSize: "20px", fontFamily: "var(--font-sans)" }}
+              style={{ color: "var(--color-bk-white)", fontSize: "20px", fontFamily: "var(--font-sans)" }}
             >
               {l.label}
             </Link>
