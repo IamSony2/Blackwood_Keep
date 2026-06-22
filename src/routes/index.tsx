@@ -87,13 +87,13 @@ function Home() {
     <PageLayout>
       {/* SECTION 1 — HERO */}
       <section
-        style={{ backgroundColor: black, minHeight: "95vh" }}
-        className="flex items-center justify-center px-6 py-20"
+        style={{ backgroundColor: black }}
+        className="flex items-center justify-center px-6 py-24 md:py-32"
       >
         <div className="mx-auto flex max-w-4xl flex-col items-center text-center">
-          <CastleShield size={80} />
+          <CastleShield size={72} />
           <h1
-            className="mt-8"
+            className="mt-6"
             style={{
               color: white,
               fontFamily: "var(--font-display)",
@@ -113,7 +113,7 @@ function Home() {
             contracts. Built specifically for trades, facilities management, B2C and B2B enterprises
             across the Wirral, Liverpool, and Cheshire.
           </p>
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <Link
               to="/free-audit"
               style={{
@@ -143,7 +143,7 @@ function Home() {
               See How It Works
             </button>
           </div>
-          <div className="mt-16">
+          <div className="mt-10">
             <GoldDivider />
           </div>
         </div>
