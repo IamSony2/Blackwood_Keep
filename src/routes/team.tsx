@@ -24,29 +24,27 @@ export const Route = createFileRoute("/team")({
   component: TeamPage,
 });
 
-const dark = "var(--color-bk-black)";
-const navy = "var(--color-bk-navy)";
-const gold = "var(--color-bk-gold)";
-const goldAntique = "var(--color-bk-gold-antique)";
-const champagne = "var(--color-bk-gold-champagne)";
-const silver = "var(--color-bk-silver)";
-const subtle = "var(--color-bk-subtle)";
+const black = "var(--color-bk-black)";
 const slate = "var(--color-bk-slate)";
+const gold = "var(--color-bk-gold)";
+const champagne = "var(--color-bk-gold-champagne)";
 const white = "var(--color-bk-white)";
+const muted = "var(--muted-foreground)";
+const structuralBorder = "var(--border)";
 
 function TeamPage() {
   return (
     <PageLayout>
       {/* HERO */}
       <section
-        style={{ backgroundColor: dark, minHeight: "50vh" }}
+        style={{ backgroundColor: black, minHeight: "50vh" }}
         className="flex items-center justify-center px-6 py-20"
       >
         <div className="mx-auto max-w-3xl text-center">
-          <h1 style={{ color: champagne, fontSize: "clamp(30px,4.5vw,48px)", lineHeight: 1.2 }}>
+          <h1 style={{ color: white, fontSize: "clamp(30px,4.5vw,48px)", lineHeight: 1.2 }}>
             Dedicated digital growth engineers. Nothing is outsourced.
           </h1>
-          <p className="mt-6" style={{ color: silver, fontSize: "17px", lineHeight: 1.6 }}>
+          <p className="mt-6" style={{ color: muted, fontSize: "17px", lineHeight: 1.6 }}>
             We operate as a highly focused engineering group. We don't employ account handlers or
             generic salespeople; you collaborate directly with deep technical specialists.
           </p>
@@ -54,9 +52,9 @@ function TeamPage() {
       </section>
 
       {/* ETHOS */}
-      <section style={{ backgroundColor: white }} className="px-6 py-20">
+      <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-4xl">
-          <h2 className="text-center" style={{ color: navy, fontSize: "clamp(26px,3vw,36px)" }}>
+          <h2 className="text-center" style={{ color: white, fontSize: "clamp(26px,3vw,36px)" }}>
             What Informs Our Work
           </h2>
           <div className="mt-10 space-y-6">
@@ -77,27 +75,27 @@ function TeamPage() {
       </section>
 
       {/* PRINCIPLES */}
-      <section style={{ backgroundColor: navy }} className="px-6 py-20">
+      <section style={{ backgroundColor: slate }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-center" style={{ color: champagne, fontSize: "clamp(26px,3vw,36px)" }}>
+          <h2 className="text-center" style={{ color: white, fontSize: "clamp(26px,3vw,36px)" }}>
             The Code We Execute Daily
           </h2>
           <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            <Principle icon={<Lightbulb size={24} style={{ color: gold }} />} title="Technical Clarity" body="No creative verbosity. We communicate in costs, lead values, conversion percentages, and closed revenue values." />
-            <Principle icon={<ShieldCheck size={24} style={{ color: gold }} />} title="Radical Honesty" body="If a campaign is underperforming or a postcode territory is oversaturated, we declare it immediately." />
-            <Principle icon={<Settings size={24} style={{ color: gold }} />} title="Process Automation" body="We build programmatic systems designed to function seamlessly without demanding human maintenance." />
-            <Principle icon={<Heart size={24} style={{ color: gold }} />} title="Client Ownership" body="We treat your client pipeline as a mission-critical asset. When you win market territory, we win." />
+            <Principle icon={<Lightbulb size={24} style={{ color: champagne }} />} title="Technical Clarity" body="No creative verbosity. We communicate in costs, lead values, conversion percentages, and closed revenue values." />
+            <Principle icon={<ShieldCheck size={24} style={{ color: champagne }} />} title="Radical Honesty" body="If a campaign is underperforming or a postcode territory is oversaturated, we declare it immediately." />
+            <Principle icon={<Settings size={24} style={{ color: champagne }} />} title="Process Automation" body="We build programmatic systems designed to function seamlessly without demanding human maintenance." />
+            <Principle icon={<Heart size={24} style={{ color: champagne }} />} title="Client Ownership" body="We treat your client pipeline as a mission-critical asset. When you win market territory, we win." />
           </div>
         </div>
       </section>
 
       {/* FOUNDERS & ENGINEERS */}
       <section
-        style={{ backgroundColor: white }}
+        style={{ backgroundColor: black }}
         className="px-6 py-20"
       >
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-center" style={{ color: navy }}>Founders & Engineers</h2>
+          <h2 className="text-center" style={{ color: white }}>Founders & Engineers</h2>
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
             {[
               { initials: "MS", name: "Maggie Smith", role: "Founder & Strategic Director", bio: "Architect of the Blackwood Keep growth methodology. Leads diagnostic audits and account strategy across all engagements." },
@@ -107,8 +105,8 @@ function TeamPage() {
               <div
                 key={m.name}
                 style={{
-                  backgroundColor: dark,
-                  border: `0.5px solid ${goldAntique}`,
+                  backgroundColor: slate,
+                  border: `0.5px solid ${structuralBorder}`,
                   borderRadius: "12px",
                   padding: "1.75rem",
                   textAlign: "center",
@@ -116,13 +114,13 @@ function TeamPage() {
               >
                 <div
                   className="mx-auto flex h-16 w-16 items-center justify-center"
-                  style={{ backgroundColor: slate, color: gold, borderRadius: "999px", fontFamily: "var(--font-display)", fontSize: "20px" }}
+                  style={{ backgroundColor: black, color: gold, borderRadius: "999px", fontFamily: "var(--font-display)", fontSize: "20px" }}
                 >
                   {m.initials}
                 </div>
-                <h3 className="mt-4" style={{ color: champagne, fontSize: "20px" }}>{m.name}</h3>
-                <p style={{ color: silver, fontSize: "14px" }}>{m.role}</p>
-                <p className="mt-3" style={{ color: subtle, fontSize: "13px", lineHeight: 1.6 }}>{m.bio}</p>
+                <h3 className="mt-4" style={{ color: white, fontSize: "20px" }}>{m.name}</h3>
+                <p style={{ color: muted, fontSize: "14px" }}>{m.role}</p>
+                <p className="mt-3" style={{ color: muted, fontSize: "13px", lineHeight: 1.6 }}>{m.bio}</p>
               </div>
             ))}
           </div>
@@ -130,9 +128,9 @@ function TeamPage() {
       </section>
 
       {/* CTA */}
-      <section style={{ backgroundColor: dark, borderTop: `1px solid ${goldAntique}` }} className="px-6 py-16">
+      <section style={{ backgroundColor: black, borderTop: `1px solid ${structuralBorder}` }} className="px-6 py-16">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 style={{ color: champagne, fontSize: "clamp(24px,3vw,32px)" }}>
+          <h2 style={{ color: white, fontSize: "clamp(24px,3vw,32px)" }}>
             Partner with dedicated operations experts.
           </h2>
           <Link
@@ -140,7 +138,7 @@ function TeamPage() {
             className="mt-6 inline-block"
             style={{
               backgroundColor: gold,
-              color: dark,
+              color: black,
               padding: "14px 28px",
               borderRadius: "8px",
               fontWeight: 500,
@@ -157,10 +155,10 @@ function TeamPage() {
 function EthosBlock({ title, body }: { title: string; body: string }) {
   return (
     <div style={{ borderLeft: `3px solid ${gold}`, paddingLeft: "1.25rem" }}>
-      <h3 style={{ color: navy, fontFamily: "var(--font-sans)", fontWeight: 500, fontSize: "18px" }}>
+      <h3 style={{ color: white, fontFamily: "var(--font-sans)", fontWeight: 500, fontSize: "18px" }}>
         {title}
       </h3>
-      <p className="mt-2" style={{ color: "#374151", fontSize: "15px", lineHeight: 1.7 }}>
+      <p className="mt-2" style={{ color: muted, fontSize: "15px", lineHeight: 1.7 }}>
         {body}
       </p>
     </div>
@@ -171,15 +169,15 @@ function Principle({ icon, title, body }: { icon: React.ReactNode; title: string
   return (
     <div
       style={{
-        backgroundColor: dark,
-        border: `0.5px solid ${goldAntique}`,
+        backgroundColor: black,
+        border: `0.5px solid ${structuralBorder}`,
         borderRadius: "12px",
         padding: "1.5rem",
       }}
     >
       {icon}
-      <h3 className="mt-4" style={{ color: gold, fontSize: "16px" }}>{title}</h3>
-      <p className="mt-2" style={{ color: silver, fontSize: "13px", lineHeight: 1.6 }}>{body}</p>
+      <h3 className="mt-4" style={{ color: white, fontSize: "16px" }}>{title}</h3>
+      <p className="mt-2" style={{ color: muted, fontSize: "13px", lineHeight: 1.6 }}>{body}</p>
     </div>
   );
 }
