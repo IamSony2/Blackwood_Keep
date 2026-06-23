@@ -31,28 +31,28 @@ export const Route = createFileRoute("/free-audit")({
   }),
 });
 
-const dark = "var(--color-bk-black)";
-const navy = "var(--color-bk-navy)";
+const black = "var(--color-bk-black)";
+const slate = "var(--color-bk-slate)";
 const gold = "var(--color-bk-gold)";
-const champagne = "var(--color-bk-gold-champagne)";
-const silver = "var(--color-bk-silver)";
 const white = "var(--color-bk-white)";
+const muted = "var(--muted-foreground)";
+const structuralBorder = "var(--border)";
 
 function FreeAuditPage() {
   return (
     <PageLayout minimal>
       {/* HERO */}
       <section
-        style={{ backgroundColor: dark, minHeight: "50vh" }}
+        style={{ backgroundColor: black, minHeight: "50vh" }}
         className="flex items-center justify-center px-6 py-20"
       >
         <div className="mx-auto max-w-2xl text-center">
-          <h1 style={{ color: champagne, fontSize: "clamp(28px,4vw,44px)", lineHeight: 1.2 }}>
+          <h1 style={{ color: white, fontSize: "clamp(28px,4vw,44px)", lineHeight: 1.2 }}>
             Secure your customised digital growth roadmap.
           </h1>
           <p
             className="mx-auto mt-6"
-            style={{ color: silver, fontSize: "17px", maxWidth: "560px", lineHeight: 1.6 }}
+            style={{ color: muted, fontSize: "17px", maxWidth: "560px", lineHeight: 1.6 }}
           >
             Provide your basic business parameters below. We will deliver an elite, personal video
             breakdown detailing your regional search vulnerabilities and immediate lead
@@ -62,7 +62,7 @@ function FreeAuditPage() {
       </section>
 
       {/* DELIVERABLES */}
-      <section style={{ backgroundColor: navy }} className="px-6 py-16">
+      <section style={{ backgroundColor: slate }} className="px-6 py-16">
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-3">
           {[
             "A personalised Loom video breakdown dissecting your website and map performance",
@@ -81,7 +81,7 @@ function FreeAuditPage() {
               >
                 {i + 1}
               </div>
-              <p className="mt-4" style={{ color: silver, fontSize: "15px", lineHeight: 1.6 }}>
+              <p className="mt-4" style={{ color: muted, fontSize: "15px", lineHeight: 1.6 }}>
                 {d}
               </p>
             </div>
@@ -90,16 +90,16 @@ function FreeAuditPage() {
       </section>
 
       {/* TWO-PATH CONVERSION */}
-      <section style={{ backgroundColor: white }} className="px-6 py-20">
+      <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 md:grid-cols-2">
           {/* Option A */}
           <div>
             <h2
-              style={{ color: navy, fontFamily: "var(--font-sans)", fontWeight: 500, fontSize: "22px" }}
+              style={{ color: white, fontFamily: "var(--font-sans)", fontWeight: 500, fontSize: "22px" }}
             >
               Option A: Submit Profile Details
             </h2>
-            <p className="mt-2" style={{ color: "var(--muted-foreground)", fontSize: "14px" }}>
+            <p className="mt-2" style={{ color: muted, fontSize: "14px" }}>
               We run the technical diagnostics and email your video blueprint within 24 hours.
             </p>
             {/* ZOHO FORM EMBED — connect Zoho Forms here */}
@@ -109,10 +109,10 @@ function FreeAuditPage() {
                 variant="light"
                 minHeight={360}
               >
-                <p style={{ color: navy, fontWeight: 500, marginBottom: 12 }}>
+                <p style={{ color: white, fontWeight: 500, marginBottom: 12 }}>
                   Zoho Forms — Growth Audit Intake
                 </p>
-                <p style={{ color: "var(--muted-foreground)", fontSize: "13px", lineHeight: 1.7 }}>
+                <p style={{ color: muted, fontSize: "13px", lineHeight: 1.7 }}>
                   Intake Fields: Full Name · Corporate Email · Phone Number · Company URL ·
                   Primary Competitor · Monthly Budget Target
                 </p>
@@ -139,7 +139,7 @@ function FreeAuditPage() {
                 className="w-full"
                 style={{
                   backgroundColor: gold,
-                  color: dark,
+                  color: black,
                   padding: "12px 24px",
                   borderRadius: "8px",
                   fontWeight: 500,
@@ -154,14 +154,14 @@ function FreeAuditPage() {
           {/* Option B */}
           <div
             className="border-l-0 md:border-l md:pl-10"
-            style={{ borderColor: "#D1D5DB" }}
+            style={{ borderColor: structuralBorder }}
           >
             <h2
-              style={{ color: navy, fontFamily: "var(--font-sans)", fontWeight: 500, fontSize: "22px" }}
+              style={{ color: white, fontFamily: "var(--font-sans)", fontWeight: 500, fontSize: "22px" }}
             >
               Option B: Schedule Immediate Strategy Briefing
             </h2>
-            <p className="mt-2" style={{ color: "var(--muted-foreground)", fontSize: "14px" }}>
+            <p className="mt-2" style={{ color: muted, fontSize: "14px" }}>
               Select a live call window to map out your architecture directly with our leadership
               team.
             </p>
@@ -180,7 +180,7 @@ function FreeAuditPage() {
 
       {/* REASSURANCE */}
       <section
-        style={{ backgroundColor: white, borderTop: `0.5px solid ${silver}` }}
+        style={{ backgroundColor: black, borderTop: `0.5px solid ${structuralBorder}` }}
         className="px-6 py-12"
       >
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-3">
@@ -206,9 +206,9 @@ function FieldInput({
 }) {
   return (
     <label className="block">
-      <span style={{ color: navy, fontSize: "13px", fontWeight: 500 }}>
+      <span style={{ color: white, fontSize: "13px", fontWeight: 500 }}>
         {label}
-        {required && <span style={{ color: "#DC2626" }}> *</span>}
+        {required && <span style={{ color: "var(--destructive)" }}> *</span>}
       </span>
       <input
         name={name}
@@ -216,12 +216,12 @@ function FieldInput({
         required={required}
         className="mt-1 w-full"
         style={{
-          border: `1px solid ${silver}`,
+          border: `1px solid ${structuralBorder}`,
           borderRadius: "8px",
           padding: "10px 12px",
           fontSize: "14px",
-          color: navy,
-          backgroundColor: "#FFFFFF",
+          color: white,
+          backgroundColor: "var(--color-bk-slate)",
         }}
       />
     </label>
@@ -232,7 +232,7 @@ function Trust({ icon, text }: { icon: React.ReactNode; text: string }) {
   return (
     <div className="flex items-center justify-center gap-3 text-center">
       {icon}
-      <span style={{ color: "#374151", fontSize: "14px" }}>{text}</span>
+      <span style={{ color: muted, fontSize: "14px" }}>{text}</span>
     </div>
   );
 }
