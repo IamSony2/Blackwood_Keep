@@ -17,7 +17,7 @@ export function CastleShield({ size = 80, className = "" }: Props) {
       {/* Shield outline */}
       <path
         d="M50 4 L92 14 L92 56 C92 82 74 100 50 106 C26 100 8 82 8 56 L8 14 Z"
-        fill="#0B0B0D"
+        fill="#0D0E12"
         stroke="#C8A45D"
         strokeWidth="2"
       />
@@ -31,14 +31,14 @@ export function CastleShield({ size = 80, className = "" }: Props) {
       {/* Tower body */}
       <rect x="26" y="48" width="44" height="34" fill="#C8A45D" />
       {/* Door */}
-      <path d="M44 82 L44 68 Q50 60 56 68 L56 82 Z" fill="#0B0B0D" />
+      <path d="M44 82 L44 68 Q50 60 56 68 L56 82 Z" fill="#0D0E12" />
       {/* Windows */}
-      <rect x="32" y="56" width="6" height="10" fill="#0B0B0D" />
-      <rect x="58" y="56" width="6" height="10" fill="#0B0B0D" />
+      <rect x="32" y="56" width="6" height="10" fill="#0D0E12" />
+      <rect x="58" y="56" width="6" height="10" fill="#0D0E12" />
       {/* Centre tall tower */}
       <rect x="44" y="22" width="12" height="20" fill="#C8A45D" />
-      <rect x="44" y="22" width="4" height="6" fill="#0B0B0D" />
-      <rect x="52" y="22" width="4" height="6" fill="#0B0B0D" />
+      <rect x="44" y="22" width="4" height="6" fill="#0D0E12" />
+      <rect x="52" y="22" width="4" height="6" fill="#0D0E12" />
       {/* Flag pole */}
       <rect x="49" y="10" width="2" height="14" fill="#C8A45D" />
       <path d="M51 11 L60 14 L51 17 Z" fill="#C8A45D" />
