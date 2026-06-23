@@ -5,7 +5,7 @@ export function GoldDivider({ width = 40 }: { width?: number }) {
       style={{
         width: `${width}px`,
         height: "2px",
-        backgroundColor: "#C8A45D",
+        backgroundColor: "var(--color-bk-gold)",
         margin: "0 auto",
       }}
     />
