@@ -46,23 +46,23 @@ export const Route = createFileRoute("/contact")({
   component: ContactPage,
 });
 
-const dark = "var(--color-bk-black)";
-const navy = "var(--color-bk-navy)";
+const black = "var(--color-bk-black)";
+const slate = "var(--color-bk-slate)";
 const gold = "var(--color-bk-gold)";
-const champagne = "var(--color-bk-gold-champagne)";
-const silver = "var(--color-bk-silver)";
 const white = "var(--color-bk-white)";
+const muted = "var(--muted-foreground)";
+const structuralBorder = "var(--border)";
 
 function ContactPage() {
   return (
     <PageLayout>
       {/* HERO */}
-      <section style={{ backgroundColor: dark, minHeight: "40vh" }} className="flex items-center justify-center px-6 py-16">
+      <section style={{ backgroundColor: black, minHeight: "40vh" }} className="flex items-center justify-center px-6 py-16">
         <div className="mx-auto max-w-3xl text-center">
-          <h1 style={{ color: champagne, fontSize: "clamp(28px,4.5vw,44px)", lineHeight: 1.2 }}>
+          <h1 style={{ color: white, fontSize: "clamp(28px,4.5vw,44px)", lineHeight: 1.2 }}>
             Let's review your market opportunities.
           </h1>
-          <p className="mt-6" style={{ color: silver, fontSize: "17px", lineHeight: 1.6 }}>
+          <p className="mt-6" style={{ color: muted, fontSize: "17px", lineHeight: 1.6 }}>
             No generic sales presentations. Just an objective conversation regarding your
             acquisition pipeline and conversion targets.
           </p>
@@ -70,14 +70,14 @@ function ContactPage() {
       </section>
 
       {/* TWO INTAKE PLATFORMS */}
-      <section style={{ backgroundColor: white }} className="px-6 py-20">
+      <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 md:grid-cols-2">
           {/* Route A */}
-          <div className="md:pr-10" style={{ borderRight: "1px solid #D1D5DB" }}>
-            <h2 style={{ color: navy, fontFamily: "var(--font-sans)", fontWeight: 500, fontSize: "22px" }}>
+          <div className="md:pr-10" style={{ borderRight: `1px solid ${structuralBorder}` }}>
+            <h2 style={{ color: white, fontFamily: "var(--font-sans)", fontWeight: 500, fontSize: "22px" }}>
               Route A: Direct Electronic Briefing
             </h2>
-            <p className="mt-2" style={{ color: "var(--muted-foreground)", fontSize: "14px" }}>
+            <p className="mt-2" style={{ color: muted, fontSize: "14px" }}>
               Our engineering team responds with complete account feedback within one standard
               working day.
             </p>
@@ -93,19 +93,19 @@ function ContactPage() {
               <Field name="phone" label="Phone number" type="tel" />
               <Field name="business" label="Business name" />
               <label className="block">
-                <span style={{ color: navy, fontSize: "13px", fontWeight: 500 }}>Your message</span>
+                <span style={{ color: white, fontSize: "13px", fontWeight: 500 }}>Your message</span>
                 <textarea
                   name="message"
                   rows={4}
                   required
                   className="mt-1 w-full"
                   style={{
-                    border: "1px solid #D1D5DB",
+                    border: `1px solid ${structuralBorder}`,
                     borderRadius: "8px",
                     padding: "10px 12px",
                     fontSize: "14px",
-                    color: navy,
-                    backgroundColor: "#FFFFFF",
+                    color: white,
+                    backgroundColor: "var(--color-bk-slate)",
                   }}
                 />
               </label>
@@ -115,7 +115,7 @@ function ContactPage() {
                 className="w-full"
                 style={{
                   backgroundColor: gold,
-                  color: dark,
+                  color: black,
                   padding: "12px 24px",
                   borderRadius: "8px",
                   fontWeight: 500,
@@ -130,10 +130,10 @@ function ContactPage() {
 
           {/* Route B */}
           <div>
-            <h2 style={{ color: navy, fontFamily: "var(--font-sans)", fontWeight: 500, fontSize: "22px" }}>
+            <h2 style={{ color: white, fontFamily: "var(--font-sans)", fontWeight: 500, fontSize: "22px" }}>
               Route B: Direct Calendar Allocation
             </h2>
-            <p className="mt-2" style={{ color: "var(--muted-foreground)", fontSize: "14px" }}>
+            <p className="mt-2" style={{ color: muted, fontSize: "14px" }}>
               Secure an immediate strategic briefing block directly inside our active database
               scheduler.
             </p>
@@ -147,18 +147,18 @@ function ContactPage() {
       </section>
 
       {/* CONTACT GRID */}
-      <section style={{ backgroundColor: navy }} className="px-6 py-16">
+      <section style={{ backgroundColor: slate }} className="px-6 py-16">
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-3">
           <ContactItem icon={<Phone size={22} style={{ color: gold }} />}>
-            <a href="tel:+44" style={{ color: gold }}>[Swytch phone number]</a>
+            <a href="tel:+44" style={{ color: white }}>[Swytch phone number]</a>
           </ContactItem>
           <ContactItem icon={<Mail size={22} style={{ color: gold }} />}>
-            <a href="mailto:hello@blackwoodkeep.co.uk" style={{ color: gold }}>
+            <a href="mailto:hello@blackwoodkeep.co.uk" style={{ color: white }}>
               hello@blackwoodkeep.co.uk
             </a>
           </ContactItem>
           <ContactItem icon={<MapPin size={22} style={{ color: gold }} />}>
-            <span style={{ color: silver }}>
+            <span style={{ color: muted }}>
               Headquartered on the Wirral. Supplying technical local dominance across Liverpool,
               Chester, Cheshire, and North Wales.
             </span>
@@ -167,10 +167,10 @@ function ContactPage() {
       </section>
 
       {/* PROTOCOL PROMISE */}
-      <section style={{ backgroundColor: white }} className="px-6 py-10">
+      <section style={{ backgroundColor: black }} className="px-6 py-10">
         <div className="mx-auto flex max-w-3xl items-center justify-center gap-3 text-center">
           <Clock size={24} style={{ color: gold }} />
-          <p style={{ color: "#374151", fontSize: "15px" }}>
+          <p style={{ color: muted, fontSize: "15px" }}>
             All diagnostic intakes are verified and addressed within 24 working hours. Absolute
             efficiency guaranteed.
           </p>
@@ -183,9 +183,9 @@ function ContactPage() {
 function Field({ name, label, type = "text", required = false }: { name: string; label: string; type?: string; required?: boolean }) {
   return (
     <label className="block">
-      <span style={{ color: navy, fontSize: "13px", fontWeight: 500 }}>
+      <span style={{ color: white, fontSize: "13px", fontWeight: 500 }}>
         {label}
-        {required && <span style={{ color: "#DC2626" }}> *</span>}
+        {required && <span style={{ color: "var(--destructive)" }}> *</span>}
       </span>
       <input
         name={name}
@@ -193,12 +193,12 @@ function Field({ name, label, type = "text", required = false }: { name: string;
         required={required}
         className="mt-1 w-full"
         style={{
-          border: "1px solid #D1D5DB",
+          border: `1px solid ${structuralBorder}`,
           borderRadius: "8px",
           padding: "10px 12px",
           fontSize: "14px",
-          color: navy,
-          backgroundColor: "#FFFFFF",
+          color: white,
+          backgroundColor: "var(--color-bk-slate)",
         }}
       />
     </label>
