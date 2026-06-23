@@ -23,24 +23,23 @@ export const Route = createFileRoute("/referrals")({
   component: ReferralsPage,
 });
 
-const dark = "var(--color-bk-black)";
-const navy = "var(--color-bk-navy)";
+const black = "var(--color-bk-black)";
+const slate = "var(--color-bk-slate)";
 const gold = "var(--color-bk-gold)";
-const goldAntique = "var(--color-bk-gold-antique)";
-const champagne = "var(--color-bk-gold-champagne)";
-const silver = "var(--color-bk-silver)";
 const white = "var(--color-bk-white)";
+const muted = "var(--muted-foreground)";
+const structuralBorder = "var(--border)";
 
 function ReferralsPage() {
   return (
     <PageLayout>
       {/* HERO */}
-      <section style={{ backgroundColor: dark, minHeight: "50vh" }} className="flex items-center justify-center px-6 py-20">
+      <section style={{ backgroundColor: black, minHeight: "50vh" }} className="flex items-center justify-center px-6 py-20">
         <div className="mx-auto max-w-3xl text-center">
-          <h1 style={{ color: champagne, fontSize: "clamp(30px,4.5vw,48px)", lineHeight: 1.2 }}>
+          <h1 style={{ color: white, fontSize: "clamp(30px,4.5vw,48px)", lineHeight: 1.2 }}>
             Advocacy built on performance and trust.
           </h1>
-          <p className="mt-6" style={{ color: silver, fontSize: "17px", lineHeight: 1.6 }}>
+          <p className="mt-6" style={{ color: muted, fontSize: "17px", lineHeight: 1.6 }}>
             We scale regional operations through structural results, and we intentionally reward
             professionals who guide firms to our door.
           </p>
@@ -48,9 +47,9 @@ function ReferralsPage() {
       </section>
 
       {/* PROCESS */}
-      <section style={{ backgroundColor: white }} className="px-6 py-20">
+      <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-center" style={{ color: navy, fontSize: "clamp(26px,3vw,36px)" }}>
+          <h2 className="text-center" style={{ color: white, fontSize: "clamp(26px,3vw,36px)" }}>
             The Referral Mechanics
           </h2>
           <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -62,25 +61,25 @@ function ReferralsPage() {
               <div key={s.n} className="text-center">
                 <div
                   className="mx-auto flex h-14 w-14 items-center justify-center"
-                  style={{ backgroundColor: gold, color: dark, borderRadius: "999px", fontFamily: "var(--font-display)", fontSize: "22px" }}
+                  style={{ backgroundColor: gold, color: black, borderRadius: "999px", fontFamily: "var(--font-display)", fontSize: "22px" }}
                 >
                   {s.n}
                 </div>
-                <h3 className="mt-4" style={{ color: navy, fontSize: "20px" }}>{s.t}</h3>
-                <p className="mt-3" style={{ color: "#374151", fontSize: "14px", lineHeight: 1.7 }}>{s.b}</p>
+                <h3 className="mt-4" style={{ color: white, fontSize: "20px" }}>{s.t}</h3>
+                <p className="mt-3" style={{ color: muted, fontSize: "14px", lineHeight: 1.7 }}>{s.b}</p>
               </div>
             ))}
           </div>
-          <p className="mt-10 text-center" style={{ color: "var(--muted-foreground)", fontSize: "13px", fontStyle: "italic" }}>
+          <p className="mt-10 text-center" style={{ color: muted, fontSize: "13px", fontStyle: "italic" }}>
             Formal portal access and tracking parameters launching Q4 2026. Register early intake below.
           </p>
         </div>
       </section>
 
       {/* INTEGRATION PROFILE */}
-      <section style={{ backgroundColor: navy }} className="px-6 py-20">
+      <section style={{ backgroundColor: slate }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-center" style={{ color: champagne, fontSize: "clamp(26px,3vw,36px)" }}>
+          <h2 className="text-center" style={{ color: white, fontSize: "clamp(26px,3vw,36px)" }}>
             Ideal Introductions
           </h2>
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -92,14 +91,14 @@ function ReferralsPage() {
               <div
                 key={c.t}
                 style={{
-                  backgroundColor: dark,
-                  border: `0.5px solid ${goldAntique}`,
+                  backgroundColor: black,
+                  border: `0.5px solid ${structuralBorder}`,
                   borderRadius: "12px",
                   padding: "1.5rem",
                 }}
               >
-                <h3 style={{ color: gold, fontSize: "18px" }}>{c.t}</h3>
-                <p className="mt-2" style={{ color: silver, fontSize: "14px", lineHeight: 1.6 }}>{c.b}</p>
+                <h3 style={{ color: white, fontSize: "18px" }}>{c.t}</h3>
+                <p className="mt-2" style={{ color: muted, fontSize: "14px", lineHeight: 1.6 }}>{c.b}</p>
               </div>
             ))}
           </div>
@@ -107,12 +106,12 @@ function ReferralsPage() {
       </section>
 
       {/* INTAKE FORM */}
-      <section style={{ backgroundColor: white }} className="px-6 py-20">
+      <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-3xl">
-          <h2 className="text-center" style={{ color: navy, fontSize: "clamp(26px,3vw,36px)" }}>
+          <h2 className="text-center" style={{ color: white, fontSize: "clamp(26px,3vw,36px)" }}>
             Submit Strategic Referral
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-center" style={{ color: "#374151", fontSize: "15px" }}>
+          <p className="mx-auto mt-4 max-w-2xl text-center" style={{ color: muted, fontSize: "15px" }}>
             Provide the corporate profile information below and our engineering team will initiate
             tracking diagnostics.
           </p>
@@ -120,10 +119,10 @@ function ReferralsPage() {
           {/* REFERRAL FORM — connect Zoho Forms here */}
           <div className="mt-8">
             <ZohoPlaceholder label="" variant="light" minHeight={300}>
-              <p style={{ color: navy, fontWeight: 500, marginBottom: 12 }}>
+              <p style={{ color: white, fontWeight: 500, marginBottom: 12 }}>
                 Zoho Forms — Referral Intake
               </p>
-              <p style={{ color: "var(--muted-foreground)", fontSize: "13px", lineHeight: 1.7 }}>
+              <p style={{ color: muted, fontSize: "13px", lineHeight: 1.7 }}>
                 Field Inputs: Your Corporate Identity · Your Verified Email · Target Firm Name ·
                 Decision Maker Identity · Target Contact Coordinates · Strategic Context Notes
               </p>
@@ -134,7 +133,7 @@ function ReferralsPage() {
               type="button"
               style={{
                 backgroundColor: gold,
-                color: dark,
+                color: black,
                 padding: "14px 32px",
                 borderRadius: "8px",
                 fontWeight: 500,
