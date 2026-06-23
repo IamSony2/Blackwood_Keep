@@ -55,13 +55,12 @@ export const Route = createFileRoute("/testimonials")({
   component: TestimonialsPage,
 });
 
-const dark = "var(--color-bk-black)";
-const navy = "var(--color-bk-navy)";
+const black = "var(--color-bk-black)";
+const slate = "var(--color-bk-slate)";
 const gold = "var(--color-bk-gold)";
-const goldAntique = "var(--color-bk-gold-antique)";
-const champagne = "var(--color-bk-gold-champagne)";
-const silver = "var(--color-bk-silver)";
 const white = "var(--color-bk-white)";
+const muted = "var(--muted-foreground)";
+const structuralBorder = "var(--border)";
 
 const testimonials = [
   { who: "Commercial M&E Contractor, Wirral", quote: "Our inbound corporate service contracts spiked over 45% in 90 days following our map optimisation." },
@@ -77,14 +76,14 @@ function TestimonialsPage() {
     <PageLayout>
       {/* HERO */}
       <section
-        style={{ backgroundColor: dark, minHeight: "50vh" }}
+        style={{ backgroundColor: black, minHeight: "50vh" }}
         className="flex items-center justify-center px-6 py-20"
       >
         <div className="mx-auto max-w-3xl text-center">
-          <h1 style={{ color: champagne, fontSize: "clamp(30px,4.5vw,48px)", lineHeight: 1.2 }}>
+          <h1 style={{ color: white, fontSize: "clamp(30px,4.5vw,48px)", lineHeight: 1.2 }}>
             Undeniable proof. Verifiable commercial results.
           </h1>
-          <p className="mt-6" style={{ color: silver, fontSize: "17px", lineHeight: 1.6 }}>
+          <p className="mt-6" style={{ color: muted, fontSize: "17px", lineHeight: 1.6 }}>
             We scale businesses. Explore real feedback from operators who have secured their lead
             pipelines with our frameworks.
           </p>
@@ -92,9 +91,9 @@ function TestimonialsPage() {
       </section>
 
       {/* GRID */}
-      <section style={{ backgroundColor: white }} className="px-6 py-20">
+      <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-center" style={{ color: navy, fontSize: "clamp(26px,3vw,36px)" }}>
+          <h2 className="text-center" style={{ color: white, fontSize: "clamp(26px,3vw,36px)" }}>
             Client Growth Journeys
           </h2>
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -102,8 +101,8 @@ function TestimonialsPage() {
               <article
                 key={i}
                 style={{
-                  backgroundColor: "#FFFFFF",
-                  border: `0.5px solid ${silver}`,
+                  backgroundColor: slate,
+                  border: `0.5px solid ${structuralBorder}`,
                   borderRadius: "12px",
                   padding: "1.5rem",
                 }}
@@ -123,7 +122,7 @@ function TestimonialsPage() {
                 <p
                   className="mt-2"
                   itemProp="reviewBody"
-                  style={{ color: "#374151", fontStyle: "italic", fontSize: "14px", lineHeight: 1.7 }}
+                  style={{ color: muted, fontStyle: "italic", fontSize: "14px", lineHeight: 1.7 }}
                 >
                   {t.quote}
                 </p>
@@ -133,11 +132,11 @@ function TestimonialsPage() {
                 />
                 <p
                   itemProp="author"
-                  style={{ color: navy, fontSize: "14px", fontWeight: 500, fontFamily: "var(--font-sans)" }}
+                  style={{ color: white, fontSize: "14px", fontWeight: 500, fontFamily: "var(--font-sans)" }}
                 >
                   Verified Client
                 </p>
-                <p style={{ color: gold, fontSize: "13px" }}>{t.who}</p>
+                <p style={{ color: muted, fontSize: "13px" }}>{t.who}</p>
               </article>
             ))}
           </div>
@@ -145,9 +144,9 @@ function TestimonialsPage() {
       </section>
 
       {/* METRIC SNAPSHOT */}
-      <section style={{ backgroundColor: navy }} className="px-6 py-20">
+      <section style={{ backgroundColor: slate }} className="px-6 py-20">
         <div className="mx-auto max-w-5xl text-center">
-          <h2 style={{ color: champagne, fontSize: "clamp(26px,3vw,36px)" }}>
+          <h2 style={{ color: white, fontSize: "clamp(26px,3vw,36px)" }}>
             The Performance Delta
           </h2>
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -159,10 +158,10 @@ function TestimonialsPage() {
       </section>
 
       {/* GOOGLE VALIDATION */}
-      <section style={{ backgroundColor: white }} className="px-6 py-20">
+      <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 style={{ color: navy, fontSize: "clamp(26px,3vw,36px)" }}>Independent Verification</h2>
-          <p className="mx-auto mt-4 max-w-2xl" style={{ color: "#374151", fontSize: "16px" }}>
+          <h2 style={{ color: white, fontSize: "clamp(26px,3vw,36px)" }}>Independent Verification</h2>
+          <p className="mx-auto mt-4 max-w-2xl" style={{ color: muted, fontSize: "16px" }}>
             Track our live independent feedback matrix directly via Google Business Profile.
           </p>
           <div className="mt-8">
@@ -176,11 +175,11 @@ function TestimonialsPage() {
 
       {/* CTA */}
       <section
-        style={{ backgroundColor: dark, borderTop: `1px solid ${goldAntique}` }}
+        style={{ backgroundColor: black, borderTop: `1px solid ${structuralBorder}` }}
         className="px-6 py-16"
       >
         <div className="mx-auto max-w-3xl text-center">
-          <h2 style={{ color: champagne, fontSize: "clamp(24px,3vw,32px)" }}>
+          <h2 style={{ color: white, fontSize: "clamp(24px,3vw,32px)" }}>
             Command your regional territory today.
           </h2>
           <Link
@@ -188,7 +187,7 @@ function TestimonialsPage() {
             className="mt-6 inline-block"
             style={{
               backgroundColor: gold,
-              color: dark,
+              color: black,
               padding: "14px 28px",
               borderRadius: "8px",
               fontWeight: 500,
@@ -206,8 +205,8 @@ function Stat({ number, label }: { number: string; label: string }) {
   return (
     <div
       style={{
-        backgroundColor: dark,
-        border: `0.5px solid ${goldAntique}`,
+        backgroundColor: black,
+        border: `0.5px solid ${structuralBorder}`,
         borderRadius: "12px",
         padding: "2rem 1.5rem",
       }}
@@ -222,7 +221,7 @@ function Stat({ number, label }: { number: string; label: string }) {
       >
         {number}
       </div>
-      <p className="mt-3" style={{ color: silver, fontSize: "14px", lineHeight: 1.6 }}>
+      <p className="mt-3" style={{ color: muted, fontSize: "14px", lineHeight: 1.6 }}>
         {label}
       </p>
     </div>
