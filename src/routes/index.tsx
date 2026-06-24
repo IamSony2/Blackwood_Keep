@@ -106,11 +106,11 @@ function Home() {
           </h1>
           <p
             className="mt-6"
-            style={{ color: muted, fontSize: "18px", maxWidth: "720px", lineHeight: 1.6 }}
+            style={{ color: muted, fontSize: "1.125rem", maxWidth: "720px", lineHeight: 1.6 }}
           >
             We design and deploy high-converting digital marketing systems, local market dominance
             frameworks, and multi-channel paid campaigns that convert clicks into commercial
-            contracts. Built specifically for trades, facilities management, B2C and B2B enterprises
+            contracts. Built specifically for trades, facilities management, B2C & B2B enterprises
             across the Wirral, Liverpool, and Cheshire.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
