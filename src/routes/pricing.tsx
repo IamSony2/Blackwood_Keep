@@ -72,12 +72,12 @@ function PricingPage() {
         className="flex items-center justify-center px-6 py-20"
       >
         <div className="mx-auto max-w-3xl text-center">
-          <h1 style={{ color: white, fontSize: "clamp(30px,4.5vw,48px)", lineHeight: 1.2 }}>
+          <h1 style={{ color: white, fontSize: "clamp(2.0625rem, 4.5vw, 3.125rem)", lineHeight: 1.2 }}>
             Value-driven investment. Structured for performance.
           </h1>
           <p
             className="mx-auto mt-6"
-            style={{ color: muted, fontSize: "17px", maxWidth: "680px", lineHeight: 1.6 }}
+            style={{ color: muted, fontSize: "1.1875rem", maxWidth: "680px", lineHeight: 1.6 }}
           >
             We do not sell fixed, pre-packaged marketing commodities. We scope our digital
             retainers entirely around your commercial revenue targets, infrastructure footprint,
@@ -90,7 +90,7 @@ function PricingPage() {
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-12 lg:grid-cols-2">
           <div>
-            <h2 style={{ color: white, fontSize: "clamp(24px,3vw,32px)" }}>
+            <h2 style={{ color: white, fontSize: "clamp(1.625rem, 3vw, 2.125rem)" }}>
               How Your Investment Scope is Determined
             </h2>
             <div className="mt-8 space-y-6">
@@ -124,10 +124,10 @@ function PricingPage() {
                     {s.n}
                   </div>
                   <div>
-                    <h3 style={{ color: white, fontFamily: "var(--font-sans)", fontWeight: 500, fontSize: "17px" }}>
+                    <h3 style={{ color: white, fontFamily: "var(--font-sans)", fontWeight: 500, fontSize: "1.1875rem" }}>
                       {s.t}
                     </h3>
-                    <p className="mt-1" style={{ color: muted, fontSize: "14px", lineHeight: 1.6 }}>
+                    <p className="mt-1" style={{ color: muted, fontSize: "1rem", lineHeight: 1.6 }}>
                       {s.b}
                     </p>
                   </div>
@@ -144,7 +144,7 @@ function PricingPage() {
               padding: "2.5rem",
             }}
           >
-            <h3 style={{ color: white, fontFamily: "var(--font-sans)", fontWeight: 500, fontSize: "20px" }}>
+            <h3 style={{ color: white, fontFamily: "var(--font-sans)", fontWeight: 500, fontSize: "1.375rem" }}>
               Estimate Your Scope Requirements
             </h3>
             <form
@@ -188,7 +188,7 @@ function PricingPage() {
                   padding: "14px 24px",
                   borderRadius: "8px",
                   fontWeight: 500,
-                  fontSize: "14px",
+                  fontSize: "1rem",
                 }}
               >
                 Submit Scope Criteria for Full Performance Audit
@@ -200,7 +200,7 @@ function PricingPage() {
 
       {/* FAQ */}
       <section style={{ backgroundColor: slate }} className="px-6 py-20">
-        <h2 className="text-center" style={{ color: white, fontSize: "clamp(26px,3vw,36px)" }}>
+        <h2 className="text-center" style={{ color: white, fontSize: "clamp(1.75rem, 3vw, 2.375rem)" }}>
           Commercial Partnership Clarity
         </h2>
         <div className="mt-12">
@@ -237,10 +237,10 @@ function PricingPage() {
         className="px-6 py-16"
       >
         <div className="mx-auto max-w-3xl text-center">
-          <h2 style={{ color: white, fontSize: "clamp(24px,3vw,32px)" }}>
+          <h2 style={{ color: white, fontSize: "clamp(1.625rem, 3vw, 2.125rem)" }}>
             Desire an accurate commercial scope proposal?
           </h2>
-          <p className="mt-4" style={{ color: muted, fontSize: "16px", lineHeight: 1.7 }}>
+          <p className="mt-4" style={{ color: muted, fontSize: "1.125rem", lineHeight: 1.7 }}>
             Request your free video-led Pipeline Audit. We will analyse your competitors and
             present an exact, performance-backed investment layout.
           </p>
@@ -276,7 +276,7 @@ function ScopeSelect({
 }) {
   return (
     <label className="block">
-      <span style={{ color: white, fontSize: "14px", fontWeight: 500 }}>{label}</span>
+      <span style={{ color: white, fontSize: "1rem", fontWeight: 500 }}>{label}</span>
       <select
         value={value}
         onChange={(e) => onChange(e.target.value)}
@@ -288,7 +288,7 @@ function ScopeSelect({
           padding: "10px 12px",
           backgroundColor: "var(--color-bk-black)",
           color: white,
-          fontSize: "14px",
+          fontSize: "1rem",
         }}
       >
         <option value="">Select…</option>
