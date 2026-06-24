@@ -80,7 +80,7 @@ function TestimonialsPage() {
         className="flex items-center justify-center px-6 py-20"
       >
         <div className="mx-auto max-w-3xl text-center">
-          <h1 style={{ color: white, fontSize: "clamp(30px,4.5vw,48px)", lineHeight: 1.2 }}>
+          <h1 style={{ color: white, fontSize: "clamp(2.0625rem, 4.5vw, 3.125rem)", lineHeight: 1.2 }}>
             Undeniable proof. Verifiable commercial results.
           </h1>
           <p className="mt-6" style={{ color: muted, fontSize: "1.0625rem", lineHeight: 1.6 }}>
@@ -93,7 +93,7 @@ function TestimonialsPage() {
       {/* GRID */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-center" style={{ color: white, fontSize: "clamp(26px,3vw,36px)" }}>
+          <h2 className="text-center" style={{ color: white, fontSize: "clamp(1.75rem, 3vw, 2.375rem)" }}>
             Client Growth Journeys
           </h2>
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -113,7 +113,7 @@ function TestimonialsPage() {
                   style={{
                     color: gold,
                     fontFamily: "var(--font-display)",
-                    fontSize: "64px",
+                    fontSize: "4rem",
                     lineHeight: 0.8,
                   }}
                 >
@@ -132,11 +132,11 @@ function TestimonialsPage() {
                 />
                 <p
                   itemProp="author"
-                  style={{ color: white, fontSize: "14px", fontWeight: 500, fontFamily: "var(--font-sans)" }}
+                  style={{ color: white, fontSize: "1rem", fontWeight: 500, fontFamily: "var(--font-sans)" }}
                 >
                   Verified Client
                 </p>
-                <p style={{ color: muted, fontSize: "13px" }}>{t.who}</p>
+                <p style={{ color: muted, fontSize: "0.9375rem" }}>{t.who}</p>
               </article>
             ))}
           </div>
@@ -146,7 +146,7 @@ function TestimonialsPage() {
       {/* METRIC SNAPSHOT */}
       <section style={{ backgroundColor: slate }} className="px-6 py-20">
         <div className="mx-auto max-w-5xl text-center">
-          <h2 style={{ color: white, fontSize: "clamp(26px,3vw,36px)" }}>
+          <h2 style={{ color: white, fontSize: "clamp(1.75rem, 3vw, 2.375rem)" }}>
             The Performance Delta
           </h2>
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -160,8 +160,8 @@ function TestimonialsPage() {
       {/* GOOGLE VALIDATION */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 style={{ color: white, fontSize: "clamp(26px,3vw,36px)" }}>Independent Verification</h2>
-          <p className="mx-auto mt-4 max-w-2xl" style={{ color: muted, fontSize: "1rem" }}>
+          <h2 style={{ color: white, fontSize: "clamp(1.75rem, 3vw, 2.375rem)" }}>Independent Verification</h2>
+          <p className="mx-auto mt-4 max-w-2xl" style={{ color: muted, fontSize: "1.125rem" }}>
             Track our live independent feedback matrix directly via Google Business Profile.
           </p>
           <div className="mt-8">
@@ -179,7 +179,7 @@ function TestimonialsPage() {
         className="px-6 py-16"
       >
         <div className="mx-auto max-w-3xl text-center">
-          <h2 style={{ color: white, fontSize: "clamp(24px,3vw,32px)" }}>
+          <h2 style={{ color: white, fontSize: "clamp(1.625rem, 3vw, 2.125rem)" }}>
             Command your regional territory today.
           </h2>
           <Link
@@ -215,13 +215,13 @@ function Stat({ number, label }: { number: string; label: string }) {
         style={{
           color: gold,
           fontFamily: "var(--font-display)",
-          fontSize: "48px",
+          fontSize: "3.125rem",
           lineHeight: 1,
         }}
       >
         {number}
       </div>
-      <p className="mt-3" style={{ color: muted, fontSize: "1rem", lineHeight: 1.6 }}>
+      <p className="mt-3" style={{ color: muted, fontSize: "1.125rem", lineHeight: 1.6 }}>
         {label}
       </p>
     </div>
