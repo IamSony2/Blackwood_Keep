@@ -9,7 +9,7 @@ export function GdprCheckbox({ id = "gdpr-consent", name = "gdpr", required = tr
     <label
       htmlFor={id}
       className="flex cursor-pointer items-start gap-2 text-left"
-      style={{ color: "var(--muted-foreground)", fontSize: "13px" }}
+      style={{ color: "var(--muted-foreground)", fontSize: "0.9375rem" }}
     >
       <input
         id={id}
