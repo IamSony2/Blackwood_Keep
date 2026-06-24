@@ -20,7 +20,7 @@ export function Accordion({ items }: { items: Item[] }) {
               className="flex w-full items-center justify-between py-5 text-left"
               aria-expanded={isOpen}
             >
-              <span style={{ color: "var(--color-bk-white)", fontSize: "16px", fontWeight: 500 }}>
+              <span style={{ color: "var(--color-bk-white)", fontSize: "1.125rem", fontWeight: 500 }}>
                 {item.q}
               </span>
               <ChevronDown
@@ -35,7 +35,7 @@ export function Accordion({ items }: { items: Item[] }) {
             {isOpen && (
               <p
                 className="pb-5 pr-8"
-                style={{ color: "var(--muted-foreground)", fontSize: "15px", lineHeight: 1.7 }}
+                style={{ color: "var(--muted-foreground)", fontSize: "1.0625rem", lineHeight: 1.7 }}
               >
                 {item.a}
               </p>
