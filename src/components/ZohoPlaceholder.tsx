@@ -18,7 +18,7 @@ export function ZohoPlaceholder({ label, variant = "light", minHeight = 320, chi
         backgroundColor: bg,
         minHeight: `${minHeight}px`,
         color: "var(--muted-foreground)",
-        fontSize: "13px",
+        fontSize: "0.9375rem",
       }}
     >
       {children ?? <p style={{ color: "var(--color-bk-white)" }}>{label}</p>}
