@@ -98,7 +98,7 @@ function Home() {
               color: white,
               fontFamily: "var(--font-display)",
               fontWeight: 500,
-              fontSize: "clamp(32px, 5vw, 56px)",
+              fontSize: "clamp(2.125rem, 5vw, 3.625rem)",
               lineHeight: 1.15,
             }}
           >
@@ -122,7 +122,7 @@ function Home() {
                 borderRadius: "8px",
                 padding: "14px 28px",
                 fontWeight: 500,
-                fontSize: "15px",
+                fontSize: "1.0625rem",
               }}
             >
               Book a Pipeline Audit
@@ -136,7 +136,7 @@ function Home() {
                 borderRadius: "8px",
                 padding: "14px 28px",
                 fontWeight: 500,
-                fontSize: "15px",
+                fontSize: "1.0625rem",
                 background: "transparent",
               }}
             >
@@ -181,7 +181,7 @@ function Home() {
       {/* SECTION 3 — PROBLEM / SOLUTION */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl text-center">
-          <h2 style={{ color: white, fontSize: "clamp(28px,3.5vw,40px)" }}>
+          <h2 style={{ color: white, fontSize: "clamp(1.875rem, 3.5vw, 2.625rem)" }}>
             Does any of this sound familiar?
           </h2>
           <div className="mt-4 flex justify-center">
@@ -213,12 +213,12 @@ function Home() {
       {/* SECTION 4 — ONBOARDING MATRIX */}
       <section id="how-it-works" style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl text-center">
-          <h2 style={{ color: white, fontSize: "clamp(28px,3.5vw,40px)" }}>
+          <h2 style={{ color: white, fontSize: "clamp(1.875rem, 3.5vw, 2.625rem)" }}>
             The Blueprint to Predictable Growth
           </h2>
           <p
             className="mx-auto mt-4 max-w-3xl"
-            style={{ color: muted, fontSize: "16px", lineHeight: 1.7 }}
+            style={{ color: muted, fontSize: "1.125rem", lineHeight: 1.7 }}
           >
             A structured, dual-speed onboarding process engineered to eliminate launch friction
             while protecting enterprise compliance.
@@ -246,7 +246,7 @@ function Home() {
               deliverable="24/7 access to live performance metrics and recurring commercial account reviews."
             />
           </div>
-          <p className="mt-10" style={{ color: muted, fontSize: "14px" }}>
+          <p className="mt-10" style={{ color: muted, fontSize: "1rem" }}>
             Average onboarding timeline from discovery audit to live market execution: 14 to 21
             business days.
           </p>
@@ -269,10 +269,10 @@ function Home() {
       {/* SECTION 5 — SECTORS & SERVICES */}
       <section id="sectors" style={{ backgroundColor: slate }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl text-center">
-          <h2 style={{ color: white, fontSize: "clamp(28px,3.5vw,40px)" }}>
+          <h2 style={{ color: white, fontSize: "clamp(1.875rem, 3.5vw, 2.625rem)" }}>
             Engineered Growth Frameworks
           </h2>
-          <p className="mx-auto mt-4 max-w-3xl" style={{ color: muted, fontSize: "16px" }}>
+          <p className="mx-auto mt-4 max-w-3xl" style={{ color: muted, fontSize: "1.125rem" }}>
             Advanced digital architecture tailored to your specific commercial operations.
           </p>
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -295,7 +295,7 @@ function Home() {
           <Link
             to="/services"
             className="mt-10 inline-block"
-            style={{ color: gold, fontSize: "15px" }}
+            style={{ color: gold, fontSize: "1.0625rem" }}
           >
             Explore Full Capabilities Matrix →
           </Link>
@@ -305,7 +305,7 @@ function Home() {
       {/* SECTION 6 — TESTIMONIALS STRIP */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl text-center">
-          <h2 style={{ color: white, fontSize: "clamp(28px,3.5vw,40px)" }}>
+          <h2 style={{ color: white, fontSize: "clamp(1.875rem, 3.5vw, 2.625rem)" }}>
             Validated Commercial Success
           </h2>
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -325,7 +325,7 @@ function Home() {
           <Link
             to="/testimonials"
             className="mt-10 inline-block"
-            style={{ color: gold, fontSize: "15px" }}
+            style={{ color: gold, fontSize: "1.0625rem" }}
           >
             Read more testimonials →
           </Link>
@@ -336,12 +336,12 @@ function Home() {
       <section style={{ backgroundColor: slate }} className="px-6 py-20">
         <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 md:grid-cols-2">
           <div>
-            <h2 style={{ color: white, fontSize: "clamp(26px,3vw,36px)" }}>
+            <h2 style={{ color: white, fontSize: "clamp(1.75rem, 3vw, 2.375rem)" }}>
               Partner with Blackwood Keep
             </h2>
             <p
               className="mt-6"
-              style={{ color: muted, fontSize: "16px", lineHeight: 1.7 }}
+              style={{ color: muted, fontSize: "1.125rem", lineHeight: 1.7 }}
             >
               Our growth is anchored directly to regional trust and executive word of mouth. If you
               introduce our engineering capabilities to a regional business or facilities company
@@ -351,7 +351,7 @@ function Home() {
             <Link
               to="/referrals"
               className="mt-6 inline-block"
-              style={{ color: gold, fontSize: "15px" }}
+              style={{ color: gold, fontSize: "1.0625rem" }}
             >
               Explore our referral programme details →
             </Link>
@@ -364,8 +364,8 @@ function Home() {
               padding: "1.5rem",
             }}
           >
-            <h3 style={{ color: white, fontSize: "22px" }}>Strategic Alliances</h3>
-            <ul className="mt-4 space-y-3" style={{ color: muted, fontSize: "15px" }}>
+            <h3 style={{ color: white, fontSize: "1.5rem" }}>Strategic Alliances</h3>
+            <ul className="mt-4 space-y-3" style={{ color: muted, fontSize: "1.0625rem" }}>
               <li className="flex gap-3">
                 <Check size={18} style={{ color: champagne, flexShrink: 0, marginTop: 3 }} />
                 <span>
@@ -392,10 +392,10 @@ function Home() {
       >
         <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
           <CastleShield size={60} />
-          <h2 className="mt-6" style={{ color: white, fontSize: "36px" }}>
+          <h2 className="mt-6" style={{ color: white, fontSize: "2.375rem" }}>
             Eliminate Pipeline Chaos. Secure Your Growth Plan.
           </h2>
-          <p className="mt-4" style={{ color: muted, fontSize: "16px", lineHeight: 1.7 }}>
+          <p className="mt-4" style={{ color: muted, fontSize: "1.125rem", lineHeight: 1.7 }}>
             Book your comprehensive, plain-English Growth Audit today. No high-pressure sales
             scripts. Just an objective analysis of your market vulnerabilities and absolute
             pipeline opportunities.
@@ -442,13 +442,13 @@ function SegmentCard({
         borderBottom: `0.5px solid ${structuralBorder}`,
       }}
     >
-      <h3 style={{ color: white, fontSize: "24px" }}>{heading}</h3>
-      <p className="mt-4" style={{ color: muted, fontSize: "15px", lineHeight: 1.7 }}>
+      <h3 style={{ color: white, fontSize: "1.625rem" }}>{heading}</h3>
+      <p className="mt-4" style={{ color: muted, fontSize: "1.0625rem", lineHeight: 1.7 }}>
         {body}
       </p>
       <ul className="mt-6 space-y-3">
         {bullets.map((b, i) => (
-          <li key={i} className="flex items-center gap-3" style={{ color: muted, fontSize: "14px" }}>
+          <li key={i} className="flex items-center gap-3" style={{ color: muted, fontSize: "1rem" }}>
             <span style={{ color: champagne }}>{b.icon}</span>
             <span>{b.text}</span>
           </li>
@@ -464,7 +464,7 @@ function SegmentCard({
           padding: "12px 24px",
           borderRadius: "8px",
           fontWeight: 500,
-          fontSize: "14px",
+          fontSize: "1rem",
         }}
       >
         {cta}
@@ -496,16 +496,16 @@ function ProblemCard({
         }}
       >
         {icon}
-        <h3 className="mt-4" style={{ color: white, fontSize: "18px" }}>
+        <h3 className="mt-4" style={{ color: white, fontSize: "1.25rem" }}>
           {title}
         </h3>
-        <p className="mt-3" style={{ color: muted, fontSize: "14px", lineHeight: 1.6 }}>
+        <p className="mt-3" style={{ color: muted, fontSize: "1rem", lineHeight: 1.6 }}>
           {body}
         </p>
       </div>
       <div className="mt-4 flex flex-col items-center">
         <ArrowDown size={24} style={{ color: gold }} />
-        <p className="mt-2 text-center" style={{ color: gold, fontSize: "15px", fontWeight: 500 }}>
+        <p className="mt-2 text-center" style={{ color: gold, fontSize: "1.0625rem", fontWeight: 500 }}>
           {solution}
         </p>
       </div>
@@ -543,23 +543,23 @@ function PhaseCard({
           color: champagne,
           padding: "4px 10px",
           borderRadius: "999px",
-          fontSize: "11px",
+          fontSize: "0.8125rem",
           letterSpacing: "0.08em",
           textTransform: "uppercase",
         }}
       >
         {phase}
       </span>
-      <h3 className="mt-4" style={{ color: white, fontFamily: "var(--font-sans)", fontSize: "18px", fontWeight: 500 }}>
+      <h3 className="mt-4" style={{ color: white, fontFamily: "var(--font-sans)", fontSize: "1.25rem", fontWeight: 500 }}>
         {title}
       </h3>
-      <p className="mt-4" style={{ color: white, fontSize: "15px", fontWeight: 500 }}>
+      <p className="mt-4" style={{ color: white, fontSize: "1.0625rem", fontWeight: 500 }}>
         {focus}
       </p>
-      <p className="mt-3" style={{ color: muted, fontSize: "14px", lineHeight: 1.6 }}>
+      <p className="mt-3" style={{ color: muted, fontSize: "1rem", lineHeight: 1.6 }}>
         {technical}
       </p>
-      <p className="mt-3" style={{ color: muted, fontSize: "13px", fontStyle: "italic" }}>
+      <p className="mt-3" style={{ color: muted, fontSize: "0.9375rem", fontStyle: "italic" }}>
         {deliverable}
       </p>
     </div>
@@ -586,10 +586,10 @@ function SectorCard({
       }}
     >
       {icon}
-      <h3 className="mt-4" style={{ color: white, fontSize: "18px" }}>
+      <h3 className="mt-4" style={{ color: white, fontSize: "1.25rem" }}>
         {title}
       </h3>
-      <p className="mt-3" style={{ color: muted, fontSize: "14px", lineHeight: 1.6 }}>
+      <p className="mt-3" style={{ color: muted, fontSize: "1rem", lineHeight: 1.6 }}>
         {body}
       </p>
     </div>
@@ -611,7 +611,7 @@ function TestimonialCard({ quote, attr }: { quote: string; attr: string }) {
         style={{
           color: gold,
           fontFamily: "var(--font-display)",
-          fontSize: "48px",
+          fontSize: "3.125rem",
           lineHeight: 0.8,
         }}
       >
@@ -619,11 +619,11 @@ function TestimonialCard({ quote, attr }: { quote: string; attr: string }) {
       </div>
       <p
         className="mt-2"
-        style={{ color: muted, fontStyle: "italic", fontSize: "14px", lineHeight: 1.7 }}
+        style={{ color: muted, fontStyle: "italic", fontSize: "1rem", lineHeight: 1.7 }}
       >
         {quote}
       </p>
-      <p className="mt-4" style={{ color: gold, fontSize: "13px" }}>
+      <p className="mt-4" style={{ color: gold, fontSize: "0.9375rem" }}>
         — {attr}
       </p>
     </div>
