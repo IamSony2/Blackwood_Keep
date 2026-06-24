@@ -40,7 +40,7 @@ const structuralBorder = "var(--border)";
 
 function FreeAuditPage() {
   return (
-    <PageLayout minimal>
+    <PageLayout>
       {/* HERO */}
       <section
         style={{ backgroundColor: black, minHeight: "50vh" }}
@@ -52,7 +52,7 @@ function FreeAuditPage() {
           </h1>
           <p
             className="mx-auto mt-6"
-            style={{ color: muted, fontSize: "17px", maxWidth: "560px", lineHeight: 1.6 }}
+            style={{ color: muted, fontSize: "1.0625rem", maxWidth: "560px", lineHeight: 1.6 }}
           >
             Provide your basic business parameters below. We will deliver an elite, personal video
             breakdown detailing your regional search vulnerabilities and immediate lead
@@ -65,7 +65,7 @@ function FreeAuditPage() {
       <section style={{ backgroundColor: slate }} className="px-6 py-16">
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-3">
           {[
-            "A personalised Loom video breakdown dissecting your website and map performance",
+            "A personalised video breakdown dissecting your website and map performance",
             "Your absolute biggest operational bottleneck clearly exposed and solved",
             "A plain-English blueprint showing exactly how to outrank local competitors",
           ].map((d, i) => (
@@ -74,14 +74,14 @@ function FreeAuditPage() {
                 className="flex h-12 w-12 items-center justify-center"
                 style={{
                   borderRadius: "999px",
-                  border: `1px solid ${gold}`,
+                  border: `2px solid ${gold}`,
                   color: gold,
                   fontFamily: "var(--font-display)",
                 }}
               >
                 {i + 1}
               </div>
-              <p className="mt-4" style={{ color: muted, fontSize: "15px", lineHeight: 1.6 }}>
+              <p className="mt-4" style={{ color: muted, fontSize: "1.125rem", lineHeight: 1.6 }}>
                 {d}
               </p>
             </div>
@@ -99,7 +99,7 @@ function FreeAuditPage() {
             >
               Option A: Submit Profile Details
             </h2>
-            <p className="mt-2" style={{ color: muted, fontSize: "14px" }}>
+            <p className="mt-2" style={{ color: muted, fontSize: "1rem" }}>
               We run the technical diagnostics and email your video blueprint within 24 hours.
             </p>
             {/* ZOHO FORM EMBED — connect Zoho Forms here */}
@@ -112,7 +112,7 @@ function FreeAuditPage() {
                 <p style={{ color: white, fontWeight: 500, marginBottom: 12 }}>
                   Zoho Forms — Growth Audit Intake
                 </p>
-                <p style={{ color: muted, fontSize: "13px", lineHeight: 1.7 }}>
+                <p style={{ color: muted, fontSize: "0.9375rem", lineHeight: 1.7 }}>
                   Intake Fields: Full Name · Corporate Email · Phone Number · Company URL ·
                   Primary Competitor · Monthly Budget Target
                 </p>
@@ -161,7 +161,7 @@ function FreeAuditPage() {
             >
               Option B: Schedule Immediate Strategy Briefing
             </h2>
-            <p className="mt-2" style={{ color: muted, fontSize: "14px" }}>
+            <p className="mt-2" style={{ color: muted, fontSize: "1rem" }}>
               Select a live call window to map out your architecture directly with our leadership
               team.
             </p>
@@ -232,7 +232,7 @@ function Trust({ icon, text }: { icon: React.ReactNode; text: string }) {
   return (
     <div className="flex items-center justify-center gap-3 text-center">
       {icon}
-      <span style={{ color: muted, fontSize: "14px" }}>{text}</span>
+      <span style={{ color: muted, fontSize: "1rem" }}>{text}</span>
     </div>
   );
 }
