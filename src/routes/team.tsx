@@ -41,10 +41,10 @@ function TeamPage() {
         className="flex items-center justify-center px-6 py-20"
       >
         <div className="mx-auto max-w-3xl text-center">
-          <h1 style={{ color: white, fontSize: "clamp(30px,4.5vw,48px)", lineHeight: 1.2 }}>
+          <h1 style={{ color: white, fontSize: "clamp(2.0625rem, 4.5vw, 3.125rem)", lineHeight: 1.2 }}>
             Dedicated digital growth engineers. Nothing is outsourced.
           </h1>
-          <p className="mt-6" style={{ color: muted, fontSize: "17px", lineHeight: 1.6 }}>
+          <p className="mt-6" style={{ color: muted, fontSize: "1.1875rem", lineHeight: 1.6 }}>
             We operate as a highly focused engineering group. We don't employ account handlers or
             generic salespeople; you collaborate directly with deep technical specialists.
           </p>
@@ -54,7 +54,7 @@ function TeamPage() {
       {/* ETHOS */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-4xl">
-          <h2 className="text-center" style={{ color: white, fontSize: "clamp(26px,3vw,36px)" }}>
+          <h2 className="text-center" style={{ color: white, fontSize: "clamp(1.75rem, 3vw, 2.375rem)" }}>
             What Informs Our Work
           </h2>
           <div className="mt-10 space-y-6">
@@ -77,7 +77,7 @@ function TeamPage() {
       {/* PRINCIPLES */}
       <section style={{ backgroundColor: slate }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-center" style={{ color: white, fontSize: "clamp(26px,3vw,36px)" }}>
+          <h2 className="text-center" style={{ color: white, fontSize: "clamp(1.75rem, 3vw, 2.375rem)" }}>
             The Code We Execute Daily
           </h2>
           <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -114,13 +114,13 @@ function TeamPage() {
               >
                 <div
                   className="mx-auto flex h-16 w-16 items-center justify-center"
-                  style={{ backgroundColor: black, color: gold, borderRadius: "999px", fontFamily: "var(--font-display)", fontSize: "20px" }}
+                  style={{ backgroundColor: black, color: gold, borderRadius: "999px", fontFamily: "var(--font-display)", fontSize: "1.375rem" }}
                 >
                   {m.initials}
                 </div>
-                <h3 className="mt-4" style={{ color: white, fontSize: "20px" }}>{m.name}</h3>
-                <p style={{ color: muted, fontSize: "14px" }}>{m.role}</p>
-                <p className="mt-3" style={{ color: muted, fontSize: "13px", lineHeight: 1.6 }}>{m.bio}</p>
+                <h3 className="mt-4" style={{ color: white, fontSize: "1.375rem" }}>{m.name}</h3>
+                <p style={{ color: muted, fontSize: "1rem" }}>{m.role}</p>
+                <p className="mt-3" style={{ color: muted, fontSize: "0.9375rem", lineHeight: 1.6 }}>{m.bio}</p>
               </div>
             ))}
           </div>
@@ -130,7 +130,7 @@ function TeamPage() {
       {/* CTA */}
       <section style={{ backgroundColor: black, borderTop: `1px solid ${structuralBorder}` }} className="px-6 py-16">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 style={{ color: white, fontSize: "clamp(24px,3vw,32px)" }}>
+          <h2 style={{ color: white, fontSize: "clamp(1.625rem, 3vw, 2.125rem)" }}>
             Partner with dedicated operations experts.
           </h2>
           <Link
@@ -155,10 +155,10 @@ function TeamPage() {
 function EthosBlock({ title, body }: { title: string; body: string }) {
   return (
     <div style={{ borderLeft: `3px solid ${gold}`, paddingLeft: "1.25rem" }}>
-      <h3 style={{ color: white, fontFamily: "var(--font-sans)", fontWeight: 500, fontSize: "18px" }}>
+      <h3 style={{ color: white, fontFamily: "var(--font-sans)", fontWeight: 500, fontSize: "1.25rem" }}>
         {title}
       </h3>
-      <p className="mt-2" style={{ color: muted, fontSize: "15px", lineHeight: 1.7 }}>
+      <p className="mt-2" style={{ color: muted, fontSize: "1.0625rem", lineHeight: 1.7 }}>
         {body}
       </p>
     </div>
@@ -176,8 +176,8 @@ function Principle({ icon, title, body }: { icon: React.ReactNode; title: string
       }}
     >
       {icon}
-      <h3 className="mt-4" style={{ color: white, fontSize: "16px" }}>{title}</h3>
-      <p className="mt-2" style={{ color: muted, fontSize: "13px", lineHeight: 1.6 }}>{body}</p>
+      <h3 className="mt-4" style={{ color: white, fontSize: "1.125rem" }}>{title}</h3>
+      <p className="mt-2" style={{ color: muted, fontSize: "0.9375rem", lineHeight: 1.6 }}>{body}</p>
     </div>
   );
 }
