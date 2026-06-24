@@ -36,7 +36,7 @@ export function SiteFooter({ minimal = false }: Props) {
       >
         <div className="mx-auto flex max-w-7xl flex-col items-center gap-3 text-center">
           <CastleShield size={36} />
-          <p style={{ color: "var(--muted-foreground)", fontSize: "12px" }}>
+          <p style={{ color: "var(--muted-foreground)", fontSize: "0.875rem" }}>
             © 2026 Blackwood Keep Ltd · Registered in England and Wales
           </p>
         </div>
@@ -59,7 +59,7 @@ export function SiteFooter({ minimal = false }: Props) {
           </div>
           <p
             className="text-center"
-            style={{ color: "var(--color-bk-white)", fontFamily: "var(--font-display)", fontSize: "16px" }}
+            style={{ color: "var(--color-bk-white)", fontFamily: "var(--font-display)", fontSize: "1.125rem" }}
           >
             Creative Design &amp; Digital Marketing Solutions
           </p>
@@ -75,7 +75,7 @@ export function SiteFooter({ minimal = false }: Props) {
         <nav aria-label="Footer">
           <ul
             className="flex flex-wrap justify-center gap-x-6 gap-y-2"
-            style={{ color: "var(--muted-foreground)", fontSize: "14px" }}
+            style={{ color: "var(--muted-foreground)", fontSize: "1rem" }}
           >
             {navLinks.map((l) => (
               <li key={l.to}>
@@ -90,7 +90,7 @@ export function SiteFooter({ minimal = false }: Props) {
         {/* Row 3 */}
         <div
           className="flex flex-wrap justify-center gap-x-6 gap-y-2"
-          style={{ color: "var(--color-bk-white)", fontSize: "14px" }}
+          style={{ color: "var(--color-bk-white)", fontSize: "1rem" }}
         >
           <a href="mailto:hello@blackwoodkeep.co.uk" className="hover:text-bk-gold">hello@blackwoodkeep.co.uk</a>
           <span>·</span>
@@ -98,7 +98,7 @@ export function SiteFooter({ minimal = false }: Props) {
         </div>
 
         {/* Row 4 */}
-        <p className="text-center" style={{ color: "var(--muted-foreground)", fontSize: "13px" }}>
+        <p className="text-center" style={{ color: "var(--muted-foreground)", fontSize: "0.9375rem" }}>
           Serving businesses across the Wirral, Liverpool, Chester, Cheshire West, Cheshire East,
           and North Wales
         </p>
@@ -106,7 +106,7 @@ export function SiteFooter({ minimal = false }: Props) {
         {/* Row 5 */}
         <div
           className="flex flex-wrap justify-center gap-x-4 gap-y-1 text-center"
-          style={{ color: "var(--muted-foreground)", fontSize: "12px" }}
+          style={{ color: "var(--muted-foreground)", fontSize: "0.875rem" }}
         >
           <span>© 2026 Blackwood Keep Ltd</span>
           <span>·</span>
