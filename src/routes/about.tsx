@@ -53,7 +53,7 @@ function AboutPage() {
           </h1>
           <p
             className="mx-auto mt-6"
-            style={{ color: muted, fontSize: "17px", maxWidth: "600px", lineHeight: 1.6 }}
+            style={{ color: muted, fontSize: "1.0625rem", maxWidth: "600px", lineHeight: 1.6 }}
           >
             We founded Blackwood Keep to eradicate the empty noise, vanity reports, and misaligned
             incentives that cause modern agencies to fail their clients. We build technical systems
@@ -71,10 +71,10 @@ function AboutPage() {
           <div className="mt-4 flex justify-center">
             <GoldDivider />
           </div>
-          <div className="mt-10 space-y-6" style={{ color: muted, lineHeight: 1.8, fontSize: "16px" }}>
+          <div className="mt-10 space-y-6" style={{ color: muted, lineHeight: 1.8, fontSize: "1.125rem" }}>
             <p>
               Digital marketing shouldn't feel like a mysterious variable. Most local trade
-              operators, facilities directors, B2C and B2B leaders are exhausted by abstract metrics
+              operators, facilities directors, B2C & B2B leaders are exhausted by abstract metrics
               like 'impressions' and 'brand awareness' while their baseline sales pipelines remain
               unpredictable. We built this firm to execute with complete commercial transparency.
             </p>
@@ -149,7 +149,7 @@ function AboutPage() {
           <h2 style={{ color: white, fontSize: "clamp(24px,3vw,32px)" }}>
             Built on Performance, Not Advertising.
           </h2>
-          <p className="mt-6" style={{ color: muted, fontSize: "16px", lineHeight: 1.7 }}>
+          <p className="mt-6" style={{ color: muted, fontSize: "1rem", lineHeight: 1.7 }}>
             The core of our client portfolio is constructed through intentional industry referrals
             and long-term asset performance. If your business requires transparent growth, we invite
             you to experience our strategic process directly.
@@ -246,7 +246,7 @@ function ValueCard({
       <h3 className="mt-4" style={{ color: white, fontFamily: "var(--font-sans)", fontWeight: 500, fontSize: "17px" }}>
         {title}
       </h3>
-      <p className="mt-2" style={{ color: muted, fontSize: "14px", lineHeight: 1.6 }}>
+      <p className="mt-2" style={{ color: muted, fontSize: "0.9375rem", lineHeight: 1.6 }}>
         {body}
       </p>
     </div>
