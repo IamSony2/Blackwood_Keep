@@ -35,7 +35,7 @@ export function SiteHeader({ minimal = false }: Props) {
           <CastleShield size={40} />
           <span
             className="hidden sm:inline"
-            style={{ fontFamily: "var(--font-display)", color: "var(--color-bk-gold-champagne)", fontSize: "18px" }}
+            style={{ fontFamily: "var(--font-display)", color: "var(--color-bk-gold-champagne)", fontSize: "1.25rem" }}
           >
             Blackwood Keep
           </span>
@@ -44,7 +44,7 @@ export function SiteHeader({ minimal = false }: Props) {
         {!minimal && (
           <ul
             className="hidden items-center gap-8 md:flex"
-            style={{ fontFamily: "var(--font-sans)", fontSize: "14px" }}
+            style={{ fontFamily: "var(--font-sans)", fontSize: "1rem" }}
           >
             {links.map((l) => (
               <li key={l.to}>
@@ -70,7 +70,7 @@ export function SiteHeader({ minimal = false }: Props) {
               color: "var(--color-bk-black)",
               borderRadius: "8px",
               padding: "10px 20px",
-              fontSize: "14px",
+              fontSize: "1rem",
               fontWeight: 500,
             }}
           >
@@ -109,7 +109,7 @@ export function SiteHeader({ minimal = false }: Props) {
               key={l.to}
               to={l.to}
               onClick={() => setOpen(false)}
-              style={{ color: "var(--color-bk-white)", fontSize: "20px", fontFamily: "var(--font-sans)" }}
+              style={{ color: "var(--color-bk-white)", fontSize: "1.375rem", fontFamily: "var(--font-sans)" }}
             >
               {l.label}
             </Link>
