@@ -41,10 +41,10 @@ function ServicesPage() {
         className="flex items-center justify-center px-6 py-20"
       >
         <div className="mx-auto max-w-3xl text-center">
-          <h1 style={{ color: white, fontSize: "clamp(30px,4.5vw,48px)", lineHeight: 1.2 }}>
+          <h1 style={{ color: white, fontSize: "clamp(2.0625rem, 4.5vw, 3.125rem)", lineHeight: 1.2 }}>
             High-performance digital infrastructure. Engineered for conversion.
           </h1>
-          <p className="mt-6" style={{ color: muted, fontSize: "17px", lineHeight: 1.6 }}>
+          <p className="mt-6" style={{ color: muted, fontSize: "1.1875rem", lineHeight: 1.6 }}>
             We manage and deploy your complete digital customer acquisition layout. No fragmented
             tools, no loose ends. All systems contained within a unified master framework.
           </p>
@@ -54,7 +54,7 @@ function ServicesPage() {
       {/* MASTER CORE CAPABILITIES */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-center" style={{ color: white, fontSize: "clamp(26px,3vw,36px)" }}>
+          <h2 className="text-center" style={{ color: white, fontSize: "clamp(1.75rem, 3vw, 2.375rem)" }}>
             Core Performance Modules
           </h2>
           <div className="mt-12 space-y-10">
@@ -101,10 +101,10 @@ function ServicesPage() {
       {/* AUXILIARY SEGMENTS */}
       <section style={{ backgroundColor: slate }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl text-center">
-          <h2 style={{ color: white, fontSize: "clamp(26px,3vw,36px)" }}>
+          <h2 style={{ color: white, fontSize: "clamp(1.75rem, 3vw, 2.375rem)" }}>
             Integrated Systems Included in All Scopes
           </h2>
-          <p className="mx-auto mt-4 max-w-3xl" style={{ color: muted, fontSize: "16px" }}>
+          <p className="mx-auto mt-4 max-w-3xl" style={{ color: muted, fontSize: "1.125rem" }}>
             Deployed automatically to support and secure your main customer acquisition engine.
           </p>
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -127,7 +127,7 @@ function ServicesPage() {
       {/* USER PERSONAS */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-center" style={{ color: white, fontSize: "clamp(26px,3vw,36px)" }}>
+          <h2 className="text-center" style={{ color: white, fontSize: "clamp(1.75rem, 3vw, 2.375rem)" }}>
             Who We Engineer For
           </h2>
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -159,10 +159,10 @@ function ServicesPage() {
         className="px-6 py-16"
       >
         <div className="mx-auto max-w-3xl text-center">
-          <h2 style={{ color: white, fontSize: "clamp(24px,3vw,32px)" }}>
+          <h2 style={{ color: white, fontSize: "clamp(1.625rem, 3vw, 2.125rem)" }}>
             Uncertain which capabilities fit your target growth?
           </h2>
-          <p className="mt-4" style={{ color: muted, fontSize: "16px", lineHeight: 1.7 }}>
+          <p className="mt-4" style={{ color: muted, fontSize: "1.125rem", lineHeight: 1.7 }}>
             Book our strategic Pipeline Audit. We will analyse your infrastructure and define
             exactly which modules will drive immediate cash flow—and which are completely
             unnecessary.
@@ -215,18 +215,18 @@ function MasterPanel({
         {icon}
       </div>
       <div className="p-8">
-        <h3 style={{ color: white, fontSize: "22px" }}>{title}</h3>
-        <p className="mt-4" style={{ color: muted, fontSize: "15px", lineHeight: 1.7 }}>
+        <h3 style={{ color: white, fontSize: "1.5rem" }}>{title}</h3>
+        <p className="mt-4" style={{ color: muted, fontSize: "1.0625rem", lineHeight: 1.7 }}>
           {body}
         </p>
         <div className="mt-6">
-          <p style={{ color: white, fontWeight: 500, fontSize: "14px" }}>What's included:</p>
+          <p style={{ color: white, fontWeight: 500, fontSize: "1rem" }}>What's included:</p>
           <ul className="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-2">
             {included.map((i) => (
               <li
                 key={i}
                 className="flex gap-2"
-                style={{ color: muted, fontSize: "14px" }}
+                style={{ color: muted, fontSize: "1rem" }}
               >
                 <Check size={16} style={{ color: champagne, flexShrink: 0, marginTop: 4 }} />
                 <span>{i}</span>
@@ -234,13 +234,13 @@ function MasterPanel({
             ))}
           </ul>
         </div>
-        <p className="mt-6" style={{ color: muted, fontSize: "13px", fontStyle: "italic" }}>
+        <p className="mt-6" style={{ color: muted, fontSize: "0.9375rem", fontStyle: "italic" }}>
           <strong style={{ color: white }}>Target Profile:</strong> {target}
         </p>
         <Link
           to="/free-audit"
           className="mt-6 inline-block"
-          style={{ color: gold, fontSize: "14px" }}
+          style={{ color: gold, fontSize: "1rem" }}
         >
           Select this module for audit framework →
         </Link>
@@ -260,8 +260,8 @@ function AuxCard({ title, body }: { title: string; body: string }) {
         padding: "1.5rem",
       }}
     >
-      <h3 style={{ color: white, fontSize: "18px" }}>{title}</h3>
-      <p className="mt-3" style={{ color: muted, fontSize: "14px", lineHeight: 1.6 }}>
+      <h3 style={{ color: white, fontSize: "1.25rem" }}>{title}</h3>
+      <p className="mt-3" style={{ color: muted, fontSize: "1rem", lineHeight: 1.6 }}>
         {body}
       </p>
     </div>
@@ -288,14 +288,14 @@ function PersonaCard({
         padding: "1.5rem",
       }}
     >
-      <h3 style={{ color: white, fontSize: "20px" }}>{name}</h3>
-      <p className="mt-2" style={{ color: champagne, fontSize: "13px" }}>
+      <h3 style={{ color: white, fontSize: "1.375rem" }}>{name}</h3>
+      <p className="mt-2" style={{ color: champagne, fontSize: "0.9375rem" }}>
         {who}
       </p>
-      <p className="mt-4" style={{ color: muted, fontSize: "14px", lineHeight: 1.6 }}>
+      <p className="mt-4" style={{ color: muted, fontSize: "1rem", lineHeight: 1.6 }}>
         <strong style={{ color: white }}>Friction:</strong> {friction}
       </p>
-      <p className="mt-2" style={{ color: muted, fontSize: "14px", lineHeight: 1.6 }}>
+      <p className="mt-2" style={{ color: muted, fontSize: "1rem", lineHeight: 1.6 }}>
         <strong style={{ color: white }}>Resolution:</strong> {resolution}
       </p>
     </div>
