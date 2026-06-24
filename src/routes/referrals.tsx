@@ -39,7 +39,7 @@ function ReferralsPage() {
           <h1 style={{ color: white, fontSize: "clamp(30px,4.5vw,48px)", lineHeight: 1.2 }}>
             Advocacy built on performance and trust.
           </h1>
-          <p className="mt-6" style={{ color: muted, fontSize: "17px", lineHeight: 1.6 }}>
+          <p className="mt-6" style={{ color: muted, fontSize: "1.0625rem", lineHeight: 1.6 }}>
             We scale regional operations through structural results, and we intentionally reward
             professionals who guide firms to our door.
           </p>
@@ -61,12 +61,12 @@ function ReferralsPage() {
               <div key={s.n} className="text-center">
                 <div
                   className="mx-auto flex h-14 w-14 items-center justify-center"
-                  style={{ backgroundColor: gold, color: black, borderRadius: "999px", fontFamily: "var(--font-display)", fontSize: "22px" }}
+                  style={{ backgroundColor: gold, color: black, borderRadius: "999px", fontFamily: "var(--font-display)", fontSize: "26px" }}
                 >
                   {s.n}
                 </div>
                 <h3 className="mt-4" style={{ color: white, fontSize: "20px" }}>{s.t}</h3>
-                <p className="mt-3" style={{ color: muted, fontSize: "14px", lineHeight: 1.7 }}>{s.b}</p>
+                <p className="mt-3" style={{ color: muted, fontSize: "1.125rem", lineHeight: 1.7 }}>{s.b}</p>
               </div>
             ))}
           </div>
@@ -98,7 +98,7 @@ function ReferralsPage() {
                 }}
               >
                 <h3 style={{ color: white, fontSize: "18px" }}>{c.t}</h3>
-                <p className="mt-2" style={{ color: muted, fontSize: "14px", lineHeight: 1.6 }}>{c.b}</p>
+                <p className="mt-2" style={{ color: muted, fontSize: "1.125rem", lineHeight: 1.6 }}>{c.b}</p>
               </div>
             ))}
           </div>
@@ -111,7 +111,7 @@ function ReferralsPage() {
           <h2 className="text-center" style={{ color: white, fontSize: "clamp(26px,3vw,36px)" }}>
             Submit Strategic Referral
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-center" style={{ color: muted, fontSize: "15px" }}>
+          <p className="mx-auto mt-4 max-w-2xl text-center" style={{ color: muted, fontSize: "1.0625rem" }}>
             Provide the corporate profile information below and our engineering team will initiate
             tracking diagnostics.
           </p>
@@ -122,7 +122,7 @@ function ReferralsPage() {
               <p style={{ color: white, fontWeight: 500, marginBottom: 12 }}>
                 Zoho Forms — Referral Intake
               </p>
-              <p style={{ color: muted, fontSize: "13px", lineHeight: 1.7 }}>
+              <p style={{ color: muted, fontSize: "0.9375rem", lineHeight: 1.7 }}>
                 Field Inputs: Your Corporate Identity · Your Verified Email · Target Firm Name ·
                 Decision Maker Identity · Target Contact Coordinates · Strategic Context Notes
               </p>
