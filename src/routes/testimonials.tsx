@@ -83,7 +83,7 @@ function TestimonialsPage() {
           <h1 style={{ color: white, fontSize: "clamp(30px,4.5vw,48px)", lineHeight: 1.2 }}>
             Undeniable proof. Verifiable commercial results.
           </h1>
-          <p className="mt-6" style={{ color: muted, fontSize: "17px", lineHeight: 1.6 }}>
+          <p className="mt-6" style={{ color: muted, fontSize: "1.0625rem", lineHeight: 1.6 }}>
             We scale businesses. Explore real feedback from operators who have secured their lead
             pipelines with our frameworks.
           </p>
@@ -122,7 +122,7 @@ function TestimonialsPage() {
                 <p
                   className="mt-2"
                   itemProp="reviewBody"
-                  style={{ color: muted, fontStyle: "italic", fontSize: "14px", lineHeight: 1.7 }}
+                  style={{ color: muted, fontStyle: "italic", fontSize: "1.125rem", lineHeight: 1.7 }}
                 >
                   {t.quote}
                 </p>
@@ -161,7 +161,7 @@ function TestimonialsPage() {
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-4xl text-center">
           <h2 style={{ color: white, fontSize: "clamp(26px,3vw,36px)" }}>Independent Verification</h2>
-          <p className="mx-auto mt-4 max-w-2xl" style={{ color: muted, fontSize: "16px" }}>
+          <p className="mx-auto mt-4 max-w-2xl" style={{ color: muted, fontSize: "1rem" }}>
             Track our live independent feedback matrix directly via Google Business Profile.
           </p>
           <div className="mt-8">
@@ -221,7 +221,7 @@ function Stat({ number, label }: { number: string; label: string }) {
       >
         {number}
       </div>
-      <p className="mt-3" style={{ color: muted, fontSize: "14px", lineHeight: 1.6 }}>
+      <p className="mt-3" style={{ color: muted, fontSize: "1rem", lineHeight: 1.6 }}>
         {label}
       </p>
     </div>
