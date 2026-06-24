@@ -18,7 +18,7 @@ export function CookieBanner() {
       aria-label="Cookie consent"
     >
       <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-3 md:flex-row">
-        <p style={{ color: "var(--muted-foreground)", fontSize: "13px" }} className="text-center md:text-left">
+        <p style={{ color: "var(--muted-foreground)", fontSize: "0.9375rem" }} className="text-center md:text-left">
           We use cookies to improve your browsing experience and analyse site performance. See our{" "}
           <a href="/cookies" style={{ color: "var(--color-bk-gold)" }}>
             Cookie Policy
@@ -37,7 +37,7 @@ export function CookieBanner() {
             borderRadius: "8px",
             padding: "10px 22px",
             fontWeight: 500,
-            fontSize: "14px",
+            fontSize: "1rem",
           }}
         >
           Accept
