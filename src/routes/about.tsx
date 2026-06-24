@@ -45,7 +45,7 @@ function AboutPage() {
           <h1
             style={{
               color: white,
-              fontSize: "clamp(32px,5vw,52px)",
+              fontSize: "clamp(2.125rem, 5vw, 3.375rem)",
               lineHeight: 1.15,
             }}
           >
@@ -65,7 +65,7 @@ function AboutPage() {
       {/* OPERATIONAL STANDARDS */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-3xl">
-          <h2 className="text-center" style={{ color: white, fontSize: "clamp(26px,3vw,36px)" }}>
+          <h2 className="text-center" style={{ color: white, fontSize: "clamp(1.75rem, 3vw, 2.375rem)" }}>
             The Blackwood Keep Charter
           </h2>
           <div className="mt-4 flex justify-center">
@@ -110,7 +110,7 @@ function AboutPage() {
       {/* CORE PILLARS */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-center" style={{ color: white, fontSize: "clamp(26px,3vw,36px)" }}>
+          <h2 className="text-center" style={{ color: white, fontSize: "clamp(1.75rem, 3vw, 2.375rem)" }}>
             Our Non-Negotiables
           </h2>
           <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -146,10 +146,10 @@ function AboutPage() {
       {/* ALLIANCE HIGHLIGHT */}
       <section style={{ backgroundColor: slate }} className="px-6 py-16">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 style={{ color: white, fontSize: "clamp(24px,3vw,32px)" }}>
+          <h2 style={{ color: white, fontSize: "clamp(1.625rem, 3vw, 2.125rem)" }}>
             Built on Performance, Not Advertising.
           </h2>
-          <p className="mt-6" style={{ color: muted, fontSize: "1rem", lineHeight: 1.7 }}>
+          <p className="mt-6" style={{ color: muted, fontSize: "1.125rem", lineHeight: 1.7 }}>
             The core of our client portfolio is constructed through intentional industry referrals
             and long-term asset performance. If your business requires transparent growth, we invite
             you to experience our strategic process directly.
@@ -166,7 +166,7 @@ function AboutPage() {
         className="px-6 py-16"
       >
         <div className="mx-auto max-w-3xl text-center">
-          <h2 style={{ color: white, fontSize: "clamp(24px,3vw,32px)" }}>
+          <h2 style={{ color: white, fontSize: "clamp(1.625rem, 3vw, 2.125rem)" }}>
             Evaluate your current marketing spend efficiency.
           </h2>
           <Link
@@ -201,7 +201,7 @@ function PullQuote({ label, quote }: { label: string; quote: string }) {
       <p
         style={{
           color: champagne,
-          fontSize: "11px",
+          fontSize: "0.8125rem",
           textTransform: "uppercase",
           letterSpacing: "0.12em",
         }}
@@ -214,7 +214,7 @@ function PullQuote({ label, quote }: { label: string; quote: string }) {
           color: white,
           fontFamily: "var(--font-display)",
           fontStyle: "italic",
-          fontSize: "20px",
+          fontSize: "1.375rem",
           lineHeight: 1.6,
         }}
       >
@@ -243,10 +243,10 @@ function ValueCard({
       }}
     >
       {icon}
-      <h3 className="mt-4" style={{ color: white, fontFamily: "var(--font-sans)", fontWeight: 500, fontSize: "17px" }}>
+      <h3 className="mt-4" style={{ color: white, fontFamily: "var(--font-sans)", fontWeight: 500, fontSize: "1.1875rem" }}>
         {title}
       </h3>
-      <p className="mt-2" style={{ color: muted, fontSize: "0.9375rem", lineHeight: 1.6 }}>
+      <p className="mt-2" style={{ color: muted, fontSize: "1.0625rem", lineHeight: 1.6 }}>
         {body}
       </p>
     </div>
