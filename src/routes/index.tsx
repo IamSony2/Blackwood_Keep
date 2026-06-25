@@ -143,9 +143,6 @@ function Home() {
               See How It Works
             </button>
           </div>
-          <div className="mt-10">
-            <GoldDivider />
-          </div>
         </div>
       </section>
 
