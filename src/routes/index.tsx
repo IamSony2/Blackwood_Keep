@@ -102,7 +102,7 @@ function Home() {
               lineHeight: 1.15,
             }}
           >
-            Your Stronghold for Business Growth. Predictable Pipeline and Marketing Clarity.
+            Predictable Pipeline. Measurable Growth. Marketing Clarity.
           </h1>
           <p
             className="mt-6"
@@ -188,7 +188,7 @@ function Home() {
             <ProblemCard
               icon={<Clock size={28} style={{ color: champagne }} />}
               title="You're too busy on site to capture incoming inquiries"
-              body="Every day your team means to handle incoming leads. Every day field logistics and jobs take over while your phone rings out."
+              body="Every day your team means to handle incoming leads, but field logistics and operational challenges take over while your phone rings out."
               solution="We engineer automated capture."
             />
             <ProblemCard
