@@ -80,7 +80,7 @@ function ServicesPage() {
                 "Active multi-platform review monitoring",
                 "Monthly regional authority audit metrics",
               ]}
-              target="Contractors, specialised engineering firms, and local service networks dependent on local search superiority and total corporate credibility."
+              target="Contractors, specialised engineering companies, and local service networks dependent on local search superiority and total corporate credibility."
             />
             <MasterPanel
               icon={<Rocket size={56} style={{ color: champagne }} />}
