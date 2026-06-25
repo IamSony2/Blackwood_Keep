@@ -36,7 +36,7 @@ function ReferralsPage() {
       {/* HERO */}
       <section style={{ backgroundColor: black, minHeight: "50vh" }} className="flex items-center justify-center px-6 py-20">
         <div className="mx-auto max-w-3xl text-center">
-          <h1 style={{ color: white, fontSize: "clamp(30px,4.5vw,48px)", lineHeight: 1.2 }}>
+          <h1 style={{ color: white, fontSize: "clamp(2.0625rem, 4.5vw, 3.125rem)", lineHeight: 1.2 }}>
             Advocacy built on performance and trust.
           </h1>
           <p className="mt-6" style={{ color: muted, fontSize: "1.0625rem", lineHeight: 1.6 }}>
@@ -49,7 +49,7 @@ function ReferralsPage() {
       {/* PROCESS */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-center" style={{ color: white, fontSize: "clamp(26px,3vw,36px)" }}>
+          <h2 className="text-center" style={{ color: white, fontSize: "clamp(1.75rem, 3vw, 2.375rem)" }}>
             The Referral Mechanics
           </h2>
           <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -65,12 +65,12 @@ function ReferralsPage() {
                 >
                   {s.n}
                 </div>
-                <h3 className="mt-4" style={{ color: white, fontSize: "20px" }}>{s.t}</h3>
+                <h3 className="mt-4" style={{ color: white, fontSize: "1.375rem" }}>{s.t}</h3>
                 <p className="mt-3" style={{ color: muted, fontSize: "1.125rem", lineHeight: 1.7 }}>{s.b}</p>
               </div>
             ))}
           </div>
-          <p className="mt-10 text-center" style={{ color: muted, fontSize: "13px", fontStyle: "italic" }}>
+          <p className="mt-10 text-center" style={{ color: muted, fontSize: "0.9375rem", fontStyle: "italic" }}>
             Formal portal access and tracking parameters launching Q4 2026. Register early intake below.
           </p>
         </div>
@@ -79,7 +79,7 @@ function ReferralsPage() {
       {/* INTEGRATION PROFILE */}
       <section style={{ backgroundColor: slate }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-center" style={{ color: white, fontSize: "clamp(26px,3vw,36px)" }}>
+          <h2 className="text-center" style={{ color: white, fontSize: "clamp(1.75rem, 3vw, 2.375rem)" }}>
             Ideal Introductions
           </h2>
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -97,7 +97,7 @@ function ReferralsPage() {
                   padding: "1.5rem",
                 }}
               >
-                <h3 style={{ color: white, fontSize: "18px" }}>{c.t}</h3>
+                <h3 style={{ color: white, fontSize: "1.25rem" }}>{c.t}</h3>
                 <p className="mt-2" style={{ color: muted, fontSize: "1.125rem", lineHeight: 1.6 }}>{c.b}</p>
               </div>
             ))}
@@ -108,7 +108,7 @@ function ReferralsPage() {
       {/* INTAKE FORM */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-3xl">
-          <h2 className="text-center" style={{ color: white, fontSize: "clamp(26px,3vw,36px)" }}>
+          <h2 className="text-center" style={{ color: white, fontSize: "clamp(1.75rem, 3vw, 2.375rem)" }}>
             Submit Strategic Referral
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-center" style={{ color: muted, fontSize: "1.0625rem" }}>
@@ -122,7 +122,7 @@ function ReferralsPage() {
               <p style={{ color: white, fontWeight: 500, marginBottom: 12 }}>
                 Zoho Forms — Referral Intake
               </p>
-              <p style={{ color: muted, fontSize: "0.9375rem", lineHeight: 1.7 }}>
+              <p style={{ color: muted, fontSize: "1.0625rem", lineHeight: 1.7 }}>
                 Field Inputs: Your Corporate Identity · Your Verified Email · Target Firm Name ·
                 Decision Maker Identity · Target Contact Coordinates · Strategic Context Notes
               </p>
