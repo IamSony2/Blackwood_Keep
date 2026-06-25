@@ -59,10 +59,10 @@ function ContactPage() {
       {/* HERO */}
       <section style={{ backgroundColor: black, minHeight: "40vh" }} className="flex items-center justify-center px-6 py-16">
         <div className="mx-auto max-w-3xl text-center">
-          <h1 style={{ color: white, fontSize: "clamp(28px,4.5vw,44px)", lineHeight: 1.2 }}>
+          <h1 style={{ color: white, fontSize: "clamp(1.875rem, 4.5vw, 2.875rem)", lineHeight: 1.2 }}>
             Let's review your market opportunities.
           </h1>
-          <p className="mt-6" style={{ color: muted, fontSize: "17px", lineHeight: 1.6 }}>
+          <p className="mt-6" style={{ color: muted, fontSize: "1.1875rem", lineHeight: 1.6 }}>
             No generic sales presentations. Just an objective conversation regarding your
             acquisition pipeline and conversion targets.
           </p>
@@ -74,10 +74,10 @@ function ContactPage() {
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 md:grid-cols-2">
           {/* Route A */}
           <div className="md:pr-10" style={{ borderRight: `1px solid ${structuralBorder}` }}>
-            <h2 style={{ color: white, fontFamily: "var(--font-sans)", fontWeight: 500, fontSize: "22px" }}>
+            <h2 style={{ color: white, fontFamily: "var(--font-sans)", fontWeight: 500, fontSize: "1.5rem" }}>
               Route A: Direct Electronic Briefing
             </h2>
-            <p className="mt-2" style={{ color: muted, fontSize: "14px" }}>
+            <p className="mt-2" style={{ color: muted, fontSize: "1.125rem" }}>
               Our engineering team responds with complete account feedback within one standard
               working day.
             </p>
@@ -93,7 +93,7 @@ function ContactPage() {
               <Field name="phone" label="Phone number" type="tel" />
               <Field name="business" label="Business name" />
               <label className="block">
-                <span style={{ color: white, fontSize: "13px", fontWeight: 500 }}>Your message</span>
+                <span style={{ color: white, fontSize: "0.9375rem", fontWeight: 500 }}>Your message</span>
                 <textarea
                   name="message"
                   rows={4}
@@ -103,7 +103,7 @@ function ContactPage() {
                     border: `1px solid ${structuralBorder}`,
                     borderRadius: "8px",
                     padding: "10px 12px",
-                    fontSize: "14px",
+                    fontSize: "1rem",
                     color: white,
                     backgroundColor: "var(--color-bk-slate)",
                   }}
@@ -119,7 +119,7 @@ function ContactPage() {
                   padding: "12px 24px",
                   borderRadius: "8px",
                   fontWeight: 500,
-                  fontSize: "14px",
+                  fontSize: "1rem",
                 }}
               >
                 Submit briefing
@@ -130,10 +130,10 @@ function ContactPage() {
 
           {/* Route B */}
           <div>
-            <h2 style={{ color: white, fontFamily: "var(--font-sans)", fontWeight: 500, fontSize: "22px" }}>
+            <h2 style={{ color: white, fontFamily: "var(--font-sans)", fontWeight: 500, fontSize: "1.5rem" }}>
               Route B: Direct Calendar Allocation
             </h2>
-            <p className="mt-2" style={{ color: muted, fontSize: "14px" }}>
+            <p className="mt-2" style={{ color: muted, fontSize: "1.125rem" }}>
               Secure an immediate strategic briefing block directly inside our active database
               scheduler.
             </p>
@@ -170,7 +170,7 @@ function ContactPage() {
       <section style={{ backgroundColor: black }} className="px-6 py-10">
         <div className="mx-auto flex max-w-3xl items-center justify-center gap-3 text-center">
           <Clock size={24} style={{ color: gold }} />
-          <p style={{ color: muted, fontSize: "15px" }}>
+          <p style={{ color: muted, fontSize: "1.0625rem" }}>
             All diagnostic intakes are verified and addressed within 24 working hours. Absolute
             efficiency guaranteed.
           </p>
@@ -183,7 +183,7 @@ function ContactPage() {
 function Field({ name, label, type = "text", required = false }: { name: string; label: string; type?: string; required?: boolean }) {
   return (
     <label className="block">
-      <span style={{ color: white, fontSize: "13px", fontWeight: 500 }}>
+      <span style={{ color: white, fontSize: "0.9375rem", fontWeight: 500 }}>
         {label}
         {required && <span style={{ color: "var(--destructive)" }}> *</span>}
       </span>
@@ -196,7 +196,7 @@ function Field({ name, label, type = "text", required = false }: { name: string;
           border: `1px solid ${structuralBorder}`,
           borderRadius: "8px",
           padding: "10px 12px",
-          fontSize: "14px",
+          fontSize: "1rem",
           color: white,
           backgroundColor: "var(--color-bk-slate)",
         }}
@@ -209,7 +209,7 @@ function ContactItem({ icon, children }: { icon: React.ReactNode; children: Reac
   return (
     <div className="flex flex-col items-center gap-3 text-center">
       {icon}
-      <div style={{ fontSize: "14px", lineHeight: 1.6 }}>{children}</div>
+      <div style={{ fontSize: "1rem", lineHeight: 1.6 }}>{children}</div>
     </div>
   );
 }
