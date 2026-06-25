@@ -16,7 +16,7 @@ export const Route = createFileRoute("/about")({
       {
         property: "og:description",
         content:
-          "Rooted in clarity. Engineered for performance. Meet the principles behind Blackwood Keep.",
+          "Engineered for performance. Meet the principles behind Blackwood Keep.",
       },
       { property: "og:url", content: "/about" },
     ],
@@ -49,7 +49,7 @@ function AboutPage() {
               lineHeight: 1.15,
             }}
           >
-            Rooted in clarity. Engineered for performance.
+            Engineered for performance.
           </h1>
           <p
             className="mx-auto mt-6"
@@ -76,7 +76,7 @@ function AboutPage() {
               Digital marketing shouldn't feel like a mysterious variable. Most local trade
               operators, facilities directors, B2C & B2B leaders are exhausted by abstract metrics
               like 'impressions' and 'brand awareness' while their baseline sales pipelines remain
-              unpredictable. We built this firm to execute with complete commercial transparency.
+              unpredictable. We built this business to execute with complete commercial transparency.
             </p>
             <p>
               We position ourselves as a highly focused operational partner. We only deploy systems
@@ -214,7 +214,7 @@ function PullQuote({ label, quote }: { label: string; quote: string }) {
           color: white,
           fontFamily: "var(--font-display)",
           fontStyle: "italic",
-          fontSize: "1.375rem",
+          fontSize: "1.125rem",
           lineHeight: 1.6,
         }}
       >
