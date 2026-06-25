@@ -19,16 +19,16 @@ function Cookies() {
   return (
     <PageLayout>
       <section style={{ backgroundColor: "var(--color-bk-black)", minHeight: "30vh" }} className="flex items-center justify-center px-6 py-16">
-        <h1 style={{ color: "var(--color-bk-white)", fontSize: "clamp(28px,4vw,40px)" }}>Cookie Policy</h1>
+        <h1 style={{ color: "var(--color-bk-white)", fontSize: "clamp(1.875rem, 4vw, 2.625rem)" }}>Cookie Policy</h1>
       </section>
       <section style={{ backgroundColor: "var(--color-bk-black)" }} className="px-6 py-16">
-        <div className="mx-auto max-w-3xl space-y-6" style={{ color: "var(--muted-foreground)", fontSize: "15px", lineHeight: 1.8 }}>
+        <div className="mx-auto max-w-3xl space-y-6" style={{ color: "var(--muted-foreground)", fontSize: "1.0625rem", lineHeight: 1.8 }}>
           <p><em>Placeholder content. To be replaced with a full cookie policy.</em></p>
-          <h2 style={{ color: "var(--color-bk-white)", fontSize: "22px" }}>What are cookies?</h2>
+          <h2 style={{ color: "var(--color-bk-white)", fontSize: "1.5rem" }}>What are cookies?</h2>
           <p>Cookies are small text files stored on your device that help websites function and remember your preferences.</p>
-          <h2 style={{ color: "var(--color-bk-white)", fontSize: "22px" }}>How we use cookies</h2>
+          <h2 style={{ color: "var(--color-bk-white)", fontSize: "1.5rem" }}>How we use cookies</h2>
           <p>We use strictly necessary cookies to enable site functionality, and analytics cookies (with your consent) to understand how the site is used so we can improve it.</p>
-          <h2 style={{ color: "var(--color-bk-white)", fontSize: "22px" }}>Managing your preferences</h2>
+          <h2 style={{ color: "var(--color-bk-white)", fontSize: "1.5rem" }}>Managing your preferences</h2>
           <p>You can manage cookie preferences in your browser settings or by clearing your local storage to re-trigger our consent banner.</p>
         </div>
       </section>
