@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageLayout } from "@/components/PageLayout";
 import { ZohoPlaceholder } from "@/components/ZohoPlaceholder";
+import { GoldDivider } from "@/components/GoldDivider";
 
 export const Route = createFileRoute("/testimonials")({
   head: () => ({
@@ -96,6 +97,9 @@ function TestimonialsPage() {
           <h2 className="text-center" style={{ color: white, fontSize: "clamp(1.75rem, 3vw, 2.375rem)" }}>
             Client Growth Journeys
           </h2>
+          <div className="mt-4 flex justify-center">
+            <GoldDivider />
+          </div>
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {testimonials.map((t, i) => (
               <article
