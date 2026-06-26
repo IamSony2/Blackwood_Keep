@@ -219,7 +219,7 @@ function PricingPage() {
                 a: "Absolutely. Ad spending and territory targeting can be adjusted or scaled dynamically depending on your operational capacity, engineering availability, and commercial requirements.",
               },
               {
-                q: "What specific geographic territories does your firm support?",
+                q: "What specific geographic territories does your business support?",
                 a: "Our core local dominance engines are built for the Wirral, Liverpool, Chester, Cheshire West, Cheshire East, and North Wales. For enterprise operations, we manage nationwide digital footprints.",
               },
               {
@@ -238,7 +238,7 @@ function PricingPage() {
       >
         <div className="mx-auto max-w-3xl text-center">
           <h2 style={{ color: white, fontSize: "clamp(1.625rem, 3vw, 2.125rem)" }}>
-            Desire an accurate commercial scope proposal?
+            We will deliver an accurate commercial scope proposal.
           </h2>
           <p className="mt-4" style={{ color: muted, fontSize: "1.125rem", lineHeight: 1.7 }}>
             Request your free video-led Pipeline Audit. We will analyse your competitors and
