@@ -2,6 +2,7 @@ import { createFileRoute, useNavigate, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { PageLayout } from "@/components/PageLayout";
 import { Accordion } from "@/components/Accordion";
+import { GoldDivider } from "@/components/GoldDivider";
 
 export const Route = createFileRoute("/pricing")({
   head: () => ({
@@ -203,6 +204,9 @@ function PricingPage() {
         <h2 className="text-center" style={{ color: white, fontSize: "clamp(1.75rem, 3vw, 2.375rem)" }}>
           Commercial Partnership Clarity
         </h2>
+        <div className="mt-4 flex justify-center">
+          <GoldDivider />
+        </div>
         <div className="mt-12">
           <Accordion
             items={[
