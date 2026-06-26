@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Cog, Star, Rocket, Check } from "lucide-react";
 import { PageLayout } from "@/components/PageLayout";
+import { GoldDivider } from "@/components/GoldDivider";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
@@ -15,7 +16,7 @@ export const Route = createFileRoute("/services")({
       {
         property: "og:description",
         content:
-          "High-performance digital infrastructure engineered for conversion. CRM automation, local SEO, and paid media.",
+          "High-performance digital infrastructure. CRM automation, local SEO, and paid media.",
       },
       { property: "og:url", content: "/services" },
     ],
@@ -42,7 +43,7 @@ function ServicesPage() {
       >
         <div className="mx-auto max-w-3xl text-center">
           <h1 style={{ color: white, fontSize: "clamp(2.0625rem, 4.5vw, 3.125rem)", lineHeight: 1.2 }}>
-            High-performance digital infrastructure. Engineered for conversion.
+            High-performance digital infrastructure
           </h1>
           <p className="mt-6" style={{ color: muted, fontSize: "1.1875rem", lineHeight: 1.6 }}>
             We manage and deploy your complete digital customer acquisition layout. No fragmented
@@ -57,6 +58,9 @@ function ServicesPage() {
           <h2 className="text-center" style={{ color: white, fontSize: "clamp(1.75rem, 3vw, 2.375rem)" }}>
             Core Performance Modules
           </h2>
+          <div className="mt-4 flex justify-center">
+            <GoldDivider />
+          </div>
           <div className="mt-12 space-y-10">
             <MasterPanel
               icon={<Cog size={56} style={{ color: champagne }} />}
