@@ -15,7 +15,7 @@ export const Route = createFileRoute("/testimonials")({
       {
         property: "og:description",
         content:
-          "Undeniable proof. Verifiable commercial results from operators across the North West.",
+          "Verifiable commercial results from operators across the North West.",
       },
       { property: "og:url", content: "/testimonials" },
     ],
@@ -81,7 +81,7 @@ function TestimonialsPage() {
       >
         <div className="mx-auto max-w-3xl text-center">
           <h1 style={{ color: white, fontSize: "clamp(2.0625rem, 4.5vw, 3.125rem)", lineHeight: 1.2 }}>
-            Undeniable proof. Verifiable commercial results.
+            Verifiable commercial results.
           </h1>
           <p className="mt-6" style={{ color: muted, fontSize: "1.0625rem", lineHeight: 1.6 }}>
             We scale businesses. Explore real feedback from operators who have secured their lead
