@@ -19,6 +19,10 @@
   --color-bk-gold: #C8A45D;
   --color-bk-gold-antique: #B68B3A;
   --color-bk-gold-champagne: #E5D2A0;
+  /* Brighter accent reserved strictly for primary CTA buttons and micro-interactions
+     (hover/active states, checkbox ticks). Logo, icons, dividers, and stat numbers
+     keep using --color-bk-gold above. */
+  --color-bk-gold-pop: #FF8A00;
   --color-bk-white: #F9FAFB;
   --color-bk-silver: #D1D5DB;
   --color-bk-subtle: #9CA3AF;
@@ -54,7 +58,7 @@
   --card-foreground: #F9FAFB;
   --popover: #242936;
   --popover-foreground: #F9FAFB;
-  --primary: #C8A45D;
+  --primary: #FF8A00;
   --primary-foreground: #0D0E12;
   --secondary: #242936;
   --secondary-foreground: #F9FAFB;
@@ -66,7 +70,7 @@
   --destructive-foreground: #F9FAFB;
   --border: #3A4150;
   --input: #3A4150;
-  --ring: #C8A45D;
+  --ring: #FF8A00;
 }
 
 .nav-link {
@@ -74,10 +78,10 @@
   transition: color 0.15s ease;
 }
 .nav-link:hover {
-  color: var(--color-bk-gold);
+  color: var(--color-bk-gold-pop);
 }
 .nav-link.is-active {
-  color: var(--color-bk-gold);
+  color: var(--color-bk-gold-pop);
 }
 
 @layer base {
