@@ -69,9 +69,11 @@ export const Route = createFileRoute("/")({
 });
 
 // 60/30/10 brand rule: black = dominant canvas, slate = structure, white = typography, gold/champagne = accents only
+// goldPop is reserved strictly for primary CTA buttons (filled background) - not links, icons, or dividers
 const black = "var(--color-bk-black)";
 const slate = "var(--color-bk-slate)";
 const gold = "var(--color-bk-gold)";
+const goldPop = "var(--color-bk-gold-pop)";
 const champagne = "var(--color-bk-gold-champagne)";
 const white = "var(--color-bk-white)";
 const muted = "var(--muted-foreground)";
@@ -117,7 +119,7 @@ function Home() {
             <Link
               to="/free-audit"
               style={{
-                backgroundColor: gold,
+                backgroundColor: goldPop,
                 color: black,
                 borderRadius: "8px",
                 padding: "14px 28px",
@@ -251,7 +253,7 @@ function Home() {
             to="/free-audit"
             className="mt-8 inline-block"
             style={{
-              backgroundColor: gold,
+              backgroundColor: goldPop,
               color: black,
               borderRadius: "8px",
               padding: "14px 28px",
@@ -401,7 +403,7 @@ function Home() {
             to="/free-audit"
             className="mt-8 inline-block"
             style={{
-              backgroundColor: gold,
+              backgroundColor: goldPop,
               color: black,
               padding: "14px 32px",
               borderRadius: "8px",
@@ -456,7 +458,7 @@ function SegmentCard({
         onClick={onClick}
         className="mt-8"
         style={{
-          backgroundColor: gold,
+          backgroundColor: goldPop,
           color: black,
           padding: "12px 24px",
           borderRadius: "8px",
