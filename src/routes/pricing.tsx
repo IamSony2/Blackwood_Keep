@@ -55,6 +55,7 @@ export const Route = createFileRoute("/pricing")({
 const black = "var(--color-bk-black)";
 const slate = "var(--color-bk-slate)";
 const gold = "var(--color-bk-gold)";
+const goldPop = "var(--color-bk-gold-pop)";
 const white = "var(--color-bk-white)";
 const muted = "var(--muted-foreground)";
 const structuralBorder = "var(--border)";
@@ -184,7 +185,7 @@ function PricingPage() {
                 type="submit"
                 className="w-full"
                 style={{
-                  backgroundColor: gold,
+                  backgroundColor: goldPop,
                   color: black,
                   padding: "14px 24px",
                   borderRadius: "8px",
@@ -252,7 +253,7 @@ function PricingPage() {
             to="/free-audit"
             className="mt-8 inline-block"
             style={{
-              backgroundColor: gold,
+              backgroundColor: goldPop,
               color: black,
               padding: "14px 28px",
               borderRadius: "8px",
