@@ -66,7 +66,7 @@ export function SiteHeader({ minimal = false }: Props) {
             to="/free-audit"
             className="hidden md:inline-block transition-opacity hover:opacity-90"
             style={{
-              backgroundColor: "var(--color-bk-gold)",
+              backgroundColor: "var(--color-bk-gold-pop)",
               color: "var(--color-bk-black)",
               borderRadius: "8px",
               padding: "10px 20px",
@@ -118,7 +118,7 @@ export function SiteHeader({ minimal = false }: Props) {
             to="/free-audit"
             onClick={() => setOpen(false)}
             style={{
-              backgroundColor: "var(--color-bk-gold)",
+              backgroundColor: "var(--color-bk-gold-pop)",
               color: "var(--color-bk-black)",
               borderRadius: "8px",
               padding: "12px 28px",
