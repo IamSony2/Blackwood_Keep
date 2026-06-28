@@ -59,6 +59,7 @@ export const Route = createFileRoute("/testimonials")({
 const black = "var(--color-bk-black)";
 const slate = "var(--color-bk-slate)";
 const gold = "var(--color-bk-gold)";
+const goldPop = "var(--color-bk-gold-pop)";
 const white = "var(--color-bk-white)";
 const muted = "var(--muted-foreground)";
 const structuralBorder = "var(--border)";
@@ -190,7 +191,7 @@ function TestimonialsPage() {
             to="/free-audit"
             className="mt-6 inline-block"
             style={{
-              backgroundColor: gold,
+              backgroundColor: goldPop,
               color: black,
               padding: "14px 28px",
               borderRadius: "8px",
