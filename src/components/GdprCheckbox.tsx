@@ -17,7 +17,7 @@ export function GdprCheckbox({ id = "gdpr-consent", name = "gdpr", required = tr
         type="checkbox"
         required={required}
         className="mt-1"
-        style={{ accentColor: "var(--color-bk-gold)" }}
+        style={{ accentColor: "var(--color-bk-gold-pop)" }}
       />
       <span>
         I agree to my details being stored and used to contact me about Blackwood Keep services.{" "}
