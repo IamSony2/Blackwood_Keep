@@ -34,6 +34,7 @@ export const Route = createFileRoute("/free-audit")({
 const black = "var(--color-bk-black)";
 const slate = "var(--color-bk-slate)";
 const gold = "var(--color-bk-gold)";
+const goldPop = "var(--color-bk-gold-pop)";
 const white = "var(--color-bk-white)";
 const muted = "var(--muted-foreground)";
 const structuralBorder = "var(--border)";
@@ -138,7 +139,7 @@ function FreeAuditPage() {
                 type="submit"
                 className="w-full"
                 style={{
-                  backgroundColor: gold,
+                  backgroundColor: goldPop,
                   color: black,
                   padding: "12px 24px",
                   borderRadius: "8px",
