@@ -26,7 +26,7 @@ export function Accordion({ items }: { items: Item[] }) {
               <ChevronDown
                 size={20}
                 style={{
-                  color: "var(--color-bk-gold)",
+                  color: "var(--color-bk-gold-pop)",
                   transition: "transform 0.2s",
                   transform: isOpen ? "rotate(180deg)" : "rotate(0deg)",
                 }}
