@@ -26,6 +26,7 @@ export const Route = createFileRoute("/referrals")({
 const black = "var(--color-bk-black)";
 const slate = "var(--color-bk-slate)";
 const gold = "var(--color-bk-gold)";
+const goldPop = "var(--color-bk-gold-pop)";
 const white = "var(--color-bk-white)";
 const muted = "var(--muted-foreground)";
 const structuralBorder = "var(--border)";
@@ -132,7 +133,7 @@ function ReferralsPage() {
             <button
               type="button"
               style={{
-                backgroundColor: gold,
+                backgroundColor: goldPop,
                 color: black,
                 padding: "14px 32px",
                 borderRadius: "8px",
