@@ -83,11 +83,12 @@ function TestimonialsPage() {
       >
         <div className="mx-auto max-w-3xl text-center">
           <h1 style={{ color: white, fontSize: "clamp(2.0625rem, 4.5vw, 3.125rem)", lineHeight: 1.2 }}>
-            Verifiable commercial results.
+            Verifiable commercial results
           </h1>
           <p className="mt-6" style={{ color: muted, fontSize: "1.0625rem", lineHeight: 1.6 }}>
-            We scale businesses. Explore real feedback from operators who have secured their lead
-            pipelines with our frameworks.
+            We scale regional enterprises. Explore real feedback from trades, facilities management,
+            and B2B leaders who have secured their lead pipelines across the Wirral, Liverpool, and
+            Cheshire using our marketing frameworks.
           </p>
         </div>
       </section>
