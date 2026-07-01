@@ -43,11 +43,13 @@ function TeamPage() {
       >
         <div className="mx-auto max-w-3xl text-center">
           <h1 style={{ color: white, fontSize: "clamp(2.0625rem, 4.5vw, 3.125rem)", lineHeight: 1.2 }}>
-            Dedicated digital growth engineers. Nothing is outsourced.
+            Dedicated digital growth engineers.
           </h1>
           <p className="mt-6" style={{ color: muted, fontSize: "1.1875rem", lineHeight: 1.6 }}>
-            We operate as a highly focused engineering group. We don't employ account handlers or
-            generic salespeople; you collaborate directly with deep technical specialists.
+            Everything we build is handled entirely in-house—nothing is outsourced. We operate as a
+            highly focused digital marketing and lead generation engineering group. We don't employ
+            generic account handlers or salespeople; you collaborate directly with deep technical
+            specialists who build your acquisition systems.
           </p>
         </div>
       </section>
