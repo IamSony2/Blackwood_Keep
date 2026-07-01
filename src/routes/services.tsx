@@ -44,8 +44,11 @@ function ServicesPage() {
       >
         <div className="mx-auto max-w-3xl text-center">
           <h1 style={{ color: white, fontSize: "clamp(2.0625rem, 4.5vw, 3.125rem)", lineHeight: 1.2 }}>
-            Unified Acquisition Framework
+            Digital Marketing &amp; Lead Generation
           </h1>
+          <h2 className="mt-2" style={{ color: white, fontSize: "clamp(2.0625rem, 4.5vw, 3.125rem)", lineHeight: 1.2 }}>
+            Unified Acquisition Framework
+          </h2>
           <p className="mt-6" style={{ color: muted, fontSize: "1.1875rem", lineHeight: 1.6 }}>
             We design, deploy, and manage your complete digital marketing and customer acquisition
             systems. By eliminating fragmented tools and loose ends, we build a seamless,
@@ -178,7 +181,7 @@ function ServicesPage() {
             to="/free-audit"
             className="mt-8 inline-block"
             style={{
-              backgroundColor: goldPop,
+              backgroundColor: gold,
               color: black,
               padding: "14px 28px",
               borderRadius: "8px",
