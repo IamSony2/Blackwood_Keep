@@ -75,15 +75,20 @@ function PricingPage() {
       >
         <div className="mx-auto max-w-3xl text-center">
           <h1 style={{ color: white, fontSize: "clamp(2.0625rem, 4.5vw, 3.125rem)", lineHeight: 1.2 }}>
-            Value-driven investment. Structured for performance.
+            Transparent Retainer Structures
           </h1>
+          <h2 className="mt-2" style={{ color: white, fontSize: "clamp(2.0625rem, 4.5vw, 3.125rem)", lineHeight: 1.2 }}>
+            Performance-Driven Investments
+          </h2>
           <p
             className="mx-auto mt-6"
             style={{ color: muted, fontSize: "1.1875rem", maxWidth: "680px", lineHeight: 1.6 }}
           >
-            We do not sell fixed, pre-packaged marketing commodities. We scope our digital
-            retainers entirely around your commercial revenue targets, infrastructure footprint,
-            and target geographic reach.
+            We do not sell pre-packaged marketing commodities. Instead, we scope every digital
+            marketing retainer entirely around your unique commercial revenue targets, current
+            infrastructure footprint, and target geographic reach. You receive a structured,
+            value-driven asset built purely to scale your trade, facilities, or B2B enterprise
+            across the Wirral, Liverpool, Cheshire and North Wales.
           </p>
         </div>
       </section>
@@ -185,7 +190,7 @@ function PricingPage() {
                 type="submit"
                 className="w-full"
                 style={{
-                  backgroundColor: goldPop,
+                  backgroundColor: gold,
                   color: black,
                   padding: "14px 24px",
                   borderRadius: "8px",
@@ -253,7 +258,7 @@ function PricingPage() {
             to="/free-audit"
             className="mt-8 inline-block"
             style={{
-              backgroundColor: goldPop,
+              backgroundColor: gold,
               color: black,
               padding: "14px 28px",
               borderRadius: "8px",
