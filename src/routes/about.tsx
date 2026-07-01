@@ -50,8 +50,18 @@ function AboutPage() {
               lineHeight: 1.15,
             }}
           >
-            Tired of Marketing Guesswork?
+            Our Agency Philosophy
           </h1>
+          <h2
+            className="mt-2"
+            style={{
+              color: white,
+              fontSize: "clamp(2.125rem, 5vw, 3.375rem)",
+              lineHeight: 1.15,
+            }}
+          >
+            Tired of Marketing Guesswork?
+          </h2>
           <p
             className="mx-auto mt-6"
             style={{ color: muted, fontSize: "1.0625rem", maxWidth: "600px", lineHeight: 1.6 }}
@@ -181,7 +191,7 @@ function AboutPage() {
             to="/free-audit"
             className="mt-6 inline-block"
             style={{
-              backgroundColor: goldPop,
+              backgroundColor: gold,
               color: black,
               padding: "14px 28px",
               borderRadius: "8px",
