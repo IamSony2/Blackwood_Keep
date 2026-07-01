@@ -104,8 +104,20 @@ function Home() {
               lineHeight: 1.15,
             }}
           >
-            Your Marketing Stronghold
+            Digital Marketing &amp; Lead Generation
           </h1>
+          <h2
+            className="mt-4"
+            style={{
+              color: white,
+              fontFamily: "var(--font-display)",
+              fontWeight: 500,
+              fontSize: "clamp(2.125rem, 5vw, 3.625rem)",
+              lineHeight: 1.15,
+            }}
+          >
+            Your Marketing Stronghold
+          </h2>
           <p
             className="mt-6"
             style={{ color: muted, fontSize: "1.125rem", maxWidth: "720px", lineHeight: 1.6 }}
@@ -458,7 +470,7 @@ function SegmentCard({
         onClick={onClick}
         className="mt-8"
         style={{
-          backgroundColor: goldPop,
+          backgroundColor: gold,
           color: black,
           padding: "12px 24px",
           borderRadius: "8px",
