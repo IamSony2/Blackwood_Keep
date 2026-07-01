@@ -38,7 +38,7 @@ function ReferralsPage() {
       <section style={{ backgroundColor: black, minHeight: "50vh" }} className="flex items-center justify-center px-6 py-20">
         <div className="mx-auto max-w-3xl text-center">
           <h1 style={{ color: white, fontSize: "clamp(2.0625rem, 4.5vw, 3.125rem)", lineHeight: 1.2 }}>
-            Advocacy built on performance and trust.
+            Trusted Growth Partners
           </h1>
           <p className="mt-6" style={{ color: muted, fontSize: "1.0625rem", lineHeight: 1.6 }}>
             We scale regional operations through structural results, and we intentionally reward
@@ -55,9 +55,9 @@ function ReferralsPage() {
           </h2>
           <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
             {[
-              { n: "1", t: "Introduce the Entity", b: "Identify a regional business leader or facilities operator struggling to maintain lead generation consistency, and supply their metrics via our intake module below." },
-              { n: "2", t: "We Run Diagnostics", b: "We provide them with our comprehensive, high-value video Growth Audit. No pressure, completely transparent." },
-              { n: "3", t: "Secure Ongoing Allocation", b: "When the entity activates a monthly framework contract, your referral validation registers instantly. Full programme execution goes live Q4 2026." },
+              { n: "1", t: "Introduce the Lead", b: "Submit a regional business leader or facilities operator struggling with lead consistency via our intake module below." },
+              { n: "2", t: "We Deliver the Audit", b: "We review their setup and send them a comprehensive, high-value video Growth Audit—completely transparent and zero pressure." },
+              { n: "3", t: "Lock In Your Rewards", b: "Once they sign a monthly framework contract, your referral is validated. Full program execution goes live in Q4 2026." },
             ].map((s) => (
               <div key={s.n} className="text-center">
                 <div
