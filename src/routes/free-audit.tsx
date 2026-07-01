@@ -139,7 +139,7 @@ function FreeAuditPage() {
                 type="submit"
                 className="w-full"
                 style={{
-                  backgroundColor: goldPop,
+                  backgroundColor: gold,
                   color: black,
                   padding: "12px 24px",
                   borderRadius: "8px",
