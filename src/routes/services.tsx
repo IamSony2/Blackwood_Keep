@@ -44,11 +44,13 @@ function ServicesPage() {
       >
         <div className="mx-auto max-w-3xl text-center">
           <h1 style={{ color: white, fontSize: "clamp(2.0625rem, 4.5vw, 3.125rem)", lineHeight: 1.2 }}>
-            High-performance digital infrastructure
+            Unified Acquisition Framework
           </h1>
           <p className="mt-6" style={{ color: muted, fontSize: "1.1875rem", lineHeight: 1.6 }}>
-            We manage and deploy your complete digital customer acquisition layout. No fragmented
-            tools, no loose ends. All systems contained within a unified master framework.
+            We design, deploy, and manage your complete digital marketing and customer acquisition
+            systems. By eliminating fragmented tools and loose ends, we build a seamless,
+            high-performance ecosystem engineered solely to scale revenue for trades, facilities
+            management, and B2B enterprises across the Wirral, Liverpool, Cheshire and North Wales.
           </p>
         </div>
       </section>
