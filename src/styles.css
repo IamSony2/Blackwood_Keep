@@ -78,10 +78,10 @@
   transition: color 0.15s ease;
 }
 .nav-link:hover {
-  color: var(--color-bk-gold-pop);
+  color: var(--color-bk-gold);
 }
 .nav-link.is-active {
-  color: var(--color-bk-gold-pop);
+  color: var(--color-bk-gold);
 }
 
 @layer base {
