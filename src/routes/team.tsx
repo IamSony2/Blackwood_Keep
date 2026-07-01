@@ -43,8 +43,11 @@ function TeamPage() {
       >
         <div className="mx-auto max-w-3xl text-center">
           <h1 style={{ color: white, fontSize: "clamp(2.0625rem, 4.5vw, 3.125rem)", lineHeight: 1.2 }}>
-            Dedicated digital growth engineers.
+            Meet Our Specialists
           </h1>
+          <h2 className="mt-2" style={{ color: white, fontSize: "clamp(2.0625rem, 4.5vw, 3.125rem)", lineHeight: 1.2 }}>
+            Dedicated digital growth engineers.
+          </h2>
           <p className="mt-6" style={{ color: muted, fontSize: "1.1875rem", lineHeight: 1.6 }}>
             Everything we build is handled entirely in-house—nothing is outsourced. We operate as a
             highly focused digital marketing and lead generation engineering group. We don't employ
@@ -140,7 +143,7 @@ function TeamPage() {
             to="/free-audit"
             className="mt-6 inline-block"
             style={{
-              backgroundColor: goldPop,
+              backgroundColor: gold,
               color: black,
               padding: "14px 28px",
               borderRadius: "8px",
