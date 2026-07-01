@@ -44,7 +44,7 @@ function ServicesPage() {
       >
         <div className="mx-auto max-w-3xl text-center">
           <h1 style={{ color: white, fontSize: "clamp(2.0625rem, 4.5vw, 3.125rem)", lineHeight: 1.2 }}>
-            Digital Marketing &amp; Lead Generation
+            Acquisition Systems &amp; Pipeline Architecture
           </h1>
           <h2 className="mt-2" style={{ color: white, fontSize: "clamp(2.0625rem, 4.5vw, 3.125rem)", lineHeight: 1.2 }}>
             Unified Acquisition Framework
