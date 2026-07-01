@@ -50,15 +50,17 @@ function AboutPage() {
               lineHeight: 1.15,
             }}
           >
-            Engineered for performance.
+            Tired of Marketing Guesswork?
           </h1>
           <p
             className="mx-auto mt-6"
             style={{ color: muted, fontSize: "1.0625rem", maxWidth: "600px", lineHeight: 1.6 }}
           >
-            We founded Blackwood Keep to eradicate the empty noise, vanity reports, and misaligned
-            incentives that cause modern agencies to fail their clients. We build technical systems
-            that protect and scale your revenue.
+            Digital marketing shouldn't feel like a mystery. If you're a local trade operator,
+            facilities director, or business leader, you're likely exhausted by agency jargon like
+            "impressions" and "brand awareness" while your actual sales pipelines remain
+            unpredictable. We built our digital marketing agency to change that, offering complete
+            transparency and real financial results.
           </p>
         </div>
       </section>
@@ -67,28 +69,33 @@ function AboutPage() {
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-3xl">
           <h2 className="text-center" style={{ color: white, fontSize: "clamp(1.75rem, 3vw, 2.375rem)" }}>
-            The Blackwood Keep Charter
+            A Partner, Not Just a Monthly Bill
           </h2>
           <div className="mt-4 flex justify-center">
             <GoldDivider />
           </div>
           <div className="mt-10 space-y-6" style={{ color: muted, lineHeight: 1.8, fontSize: "1.125rem" }}>
             <p>
-              Digital marketing shouldn't feel like a mysterious variable. Most local trade
-              operators, facilities directors, B2C & B2B leaders are exhausted by abstract metrics
-              like 'impressions' and 'brand awareness' while their baseline sales pipelines remain
-              unpredictable. We built this business to execute with complete commercial transparency.
+              We don't just turn on paid ads and walk away. Before we launch anything, we work
+              backward to figure out exactly what a new lead should cost your business, and we
+              ensure your internal infrastructure has the capacity to handle the new client volume
+              we bring in. You will never be treated as just another monthly retainer checkbox.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section style={{ backgroundColor: black }} className="px-6 pb-20">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="text-center" style={{ color: white, fontSize: "clamp(1.75rem, 3vw, 2.375rem)" }}>
+            Driving Local Growth in the Background
+          </h2>
+          <div className="mt-10 space-y-6" style={{ color: muted, lineHeight: 1.8, fontSize: "1.125rem" }}>
             <p>
-              We position ourselves as a highly focused operational partner. We only deploy systems
-              when we have reverse-engineered your target Cost Per Lead (CPL) and verified that
-              your internal customer acquisition infrastructure can scale comfortably alongside
-              our lead engines. You will never be managed as a basic retainer checkbox.
-            </p>
-            <p>
-              From our operational hub serving the Wirral, Liverpool, Chester, and North Wales, we
-              implement data-first systems that generate elite enquiries, build regional trust,
-              and run flawlessly in the background while your team executes physical operations.
+              Operating across the Wirral, Liverpool, Chester, and North Wales, we build smart,
+              data-driven lead generation systems that bring in high-quality commercial enquiries
+              and build regional trust. The best part? It runs flawlessly in the background,
+              leaving you free to focus on executing your day-to-day physical operations.
             </p>
           </div>
         </div>
