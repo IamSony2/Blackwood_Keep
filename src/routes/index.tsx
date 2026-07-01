@@ -69,7 +69,7 @@ export const Route = createFileRoute("/")({
 });
 
 // 60/30/10 brand rule: black = dominant canvas, slate = structure, white = typography, gold/champagne = accents only
-// goldPop is reserved strictly for primary CTA buttons (filled background) - not links, icons, or dividers
+// goldPop is reserved strictly for the header nav "Book Free Audit" CTA (and its mobile-menu twin)
 const black = "var(--color-bk-black)";
 const slate = "var(--color-bk-slate)";
 const gold = "var(--color-bk-gold)";
@@ -131,7 +131,7 @@ function Home() {
             <Link
               to="/free-audit"
               style={{
-                backgroundColor: goldPop,
+                backgroundColor: gold,
                 color: black,
                 borderRadius: "8px",
                 padding: "14px 28px",
@@ -265,7 +265,7 @@ function Home() {
             to="/free-audit"
             className="mt-8 inline-block"
             style={{
-              backgroundColor: goldPop,
+              backgroundColor: gold,
               color: black,
               borderRadius: "8px",
               padding: "14px 28px",
@@ -415,7 +415,7 @@ function Home() {
             to="/free-audit"
             className="mt-8 inline-block"
             style={{
-              backgroundColor: goldPop,
+              backgroundColor: gold,
               color: black,
               padding: "14px 32px",
               borderRadius: "8px",
