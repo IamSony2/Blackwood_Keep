@@ -104,16 +104,16 @@ function Home() {
               lineHeight: 1.15,
             }}
           >
-            Predictable Pipeline. Measurable Growth. Marketing Clarity.
+            Your Marketing Stronghold
           </h1>
           <p
             className="mt-6"
             style={{ color: muted, fontSize: "1.125rem", maxWidth: "720px", lineHeight: 1.6 }}
           >
-            We design and deploy high-converting digital marketing systems, local market dominance
-            frameworks, and multi-channel paid campaigns that convert clicks into commercial
-            contracts. Built specifically for trades, facilities management, B2C & B2B enterprises
-            across the Wirral, Liverpool, and Cheshire.
+            Get marketing clarity, a predictable pipeline, and measurable growth. We build
+            high-converting digital marketing systems and multi-channel paid campaigns that turn
+            clicks into commercial contracts. Proudly serving trades, facilities management, and
+            B2B/B2C enterprises across the Wirral, Liverpool, Cheshire, and North Wales.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <Link
@@ -614,7 +614,7 @@ function TestimonialCard({ quote, attr }: { quote: string; attr: string }) {
           lineHeight: 0.8,
         }}
       >
-        “
+        "
       </div>
       <p
         className="mt-2"
