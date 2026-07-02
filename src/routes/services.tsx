@@ -43,10 +43,10 @@ function ServicesPage() {
         className="flex items-center justify-center px-6 py-20"
       >
         <div className="mx-auto max-w-3xl text-center">
-          <h1 style={{ color: white, fontSize: "clamp(2.0625rem, 4.5vw, 3.125rem)", lineHeight: 1.2 }}>
+          <h1 style={{ color: white, lineHeight: 1.2 }}>
             Acquisition Systems &amp; Pipeline Architecture
           </h1>
-          <h2 className="mt-3" style={{ color: white, fontSize: "clamp(1.75rem, 3vw, 2.375rem)", lineHeight: 1.2 }}>
+          <h2 className="mt-3" style={{ color: white, lineHeight: 1.2 }}>
             Unified Acquisition Framework
           </h2>
           <p className="mt-6" style={{ color: muted, fontSize: "1.1875rem", lineHeight: 1.6 }}>
@@ -61,7 +61,7 @@ function ServicesPage() {
       {/* MASTER CORE CAPABILITIES */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-center" style={{ color: white, fontSize: "clamp(1.75rem, 3vw, 2.375rem)" }}>
+          <h2 className="text-center" style={{ color: white }}>
             Core Performance Modules
           </h2>
           <div className="mt-4 flex justify-center">
@@ -111,7 +111,7 @@ function ServicesPage() {
       {/* AUXILIARY SEGMENTS */}
       <section style={{ backgroundColor: slate }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl text-center">
-          <h2 style={{ color: white, fontSize: "clamp(1.75rem, 3vw, 2.375rem)" }}>
+          <h2 style={{ color: white }}>
             Integrated Systems Included in All Scopes
           </h2>
           <p className="mx-auto mt-4 max-w-3xl" style={{ color: muted, fontSize: "1.125rem" }}>
@@ -137,7 +137,7 @@ function ServicesPage() {
       {/* USER PERSONAS */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-center" style={{ color: white, fontSize: "clamp(1.75rem, 3vw, 2.375rem)" }}>
+          <h2 className="text-center" style={{ color: white }}>
             Who We Engineer For
           </h2>
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -169,7 +169,7 @@ function ServicesPage() {
         className="px-6 py-16"
       >
         <div className="mx-auto max-w-3xl text-center">
-          <h2 style={{ color: white, fontSize: "clamp(1.625rem, 3vw, 2.125rem)" }}>
+          <h2 style={{ color: white }}>
             Uncertain which capabilities fit your target growth?
           </h2>
           <p className="mt-4" style={{ color: muted, fontSize: "1.125rem", lineHeight: 1.7 }}>
