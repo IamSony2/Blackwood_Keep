@@ -60,7 +60,7 @@ function ContactPage() {
       {/* HERO */}
       <section style={{ backgroundColor: black, minHeight: "40vh" }} className="flex items-center justify-center px-6 py-16">
         <div className="mx-auto max-w-3xl text-center">
-          <h1 style={{ color: white, fontSize: "clamp(1.875rem, 4.5vw, 2.875rem)", lineHeight: 1.2 }}>
+          <h1 style={{ color: white, lineHeight: 1.2 }}>
             Let's review your market opportunities.
           </h1>
           <p className="mt-6" style={{ color: muted, fontSize: "1.1875rem", lineHeight: 1.6 }}>
@@ -75,7 +75,7 @@ function ContactPage() {
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 md:grid-cols-2">
           {/* Route A */}
           <div className="md:pr-10" style={{ borderRight: `1px solid ${structuralBorder}` }}>
-            <h2 style={{ color: white, fontFamily: "var(--font-sans)", fontWeight: 500, fontSize: "1.5rem" }}>
+            <h2 style={{ color: white, fontFamily: "var(--font-sans)", fontWeight: 500 }}>
               Route A: Direct Electronic Briefing
             </h2>
             <p className="mt-2" style={{ color: muted, fontSize: "1.125rem" }}>
@@ -131,7 +131,7 @@ function ContactPage() {
 
           {/* Route B */}
           <div>
-            <h2 style={{ color: white, fontFamily: "var(--font-sans)", fontWeight: 500, fontSize: "1.5rem" }}>
+            <h2 style={{ color: white, fontFamily: "var(--font-sans)", fontWeight: 500 }}>
               Route B: Direct Calendar Allocation
             </h2>
             <p className="mt-2" style={{ color: muted, fontSize: "1.125rem" }}>
