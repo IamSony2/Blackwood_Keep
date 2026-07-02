@@ -107,13 +107,13 @@ function Home() {
             Digital Marketing &amp; Lead Generation
           </h1>
           <h2
-            className="mt-4"
+            className="mt-3"
             style={{
               color: white,
               fontFamily: "var(--font-display)",
               fontWeight: 500,
-              fontSize: "clamp(2.125rem, 5vw, 3.625rem)",
-              lineHeight: 1.15,
+              fontSize: "clamp(1.875rem, 3.5vw, 2.625rem)",
+              lineHeight: 1.2,
             }}
           >
             Your Marketing Stronghold
