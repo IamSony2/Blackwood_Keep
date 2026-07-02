@@ -104,4 +104,10 @@
     letter-spacing: -0.01em;
     color: var(--color-bk-white);
   }
+  h1 {
+    font-size: clamp(1.125rem, 2.5vw, 2rem);
+  }
+  h2 {
+    font-size: clamp(1.875rem, 3.5vw, 2.625rem);
+  }
 }
