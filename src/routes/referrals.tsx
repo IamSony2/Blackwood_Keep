@@ -37,7 +37,7 @@ function ReferralsPage() {
       {/* HERO */}
       <section style={{ backgroundColor: black, minHeight: "50vh" }} className="flex items-center justify-center px-6 py-20">
         <div className="mx-auto max-w-3xl text-center">
-          <h1 style={{ color: white, fontSize: "clamp(2.0625rem, 4.5vw, 3.125rem)", lineHeight: 1.2 }}>
+          <h1 style={{ color: white, lineHeight: 1.2 }}>
             Trusted Growth Partners
           </h1>
           <p className="mt-6" style={{ color: muted, fontSize: "1.0625rem", lineHeight: 1.6 }}>
@@ -50,7 +50,7 @@ function ReferralsPage() {
       {/* PROCESS */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-center" style={{ color: white, fontSize: "clamp(1.75rem, 3vw, 2.375rem)" }}>
+          <h2 className="text-center" style={{ color: white }}>
             The Referral Mechanics
           </h2>
           <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -80,7 +80,7 @@ function ReferralsPage() {
       {/* INTEGRATION PROFILE */}
       <section style={{ backgroundColor: slate }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-center" style={{ color: white, fontSize: "clamp(1.75rem, 3vw, 2.375rem)" }}>
+          <h2 className="text-center" style={{ color: white }}>
             Ideal Introductions
           </h2>
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -109,7 +109,7 @@ function ReferralsPage() {
       {/* INTAKE FORM */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-3xl">
-          <h2 className="text-center" style={{ color: white, fontSize: "clamp(1.75rem, 3vw, 2.375rem)" }}>
+          <h2 className="text-center" style={{ color: white }}>
             Submit Strategic Referral
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-center" style={{ color: muted, fontSize: "1.0625rem" }}>
@@ -133,7 +133,7 @@ function ReferralsPage() {
             <button
               type="button"
               style={{
-                backgroundColor: goldPop,
+                backgroundColor: gold,
                 color: black,
                 padding: "14px 32px",
                 borderRadius: "8px",
