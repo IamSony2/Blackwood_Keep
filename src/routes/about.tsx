@@ -53,11 +53,11 @@ function AboutPage() {
             Our Agency Philosophy
           </h1>
           <h2
-            className="mt-2"
+            className="mt-3"
             style={{
               color: white,
-              fontSize: "clamp(2.125rem, 5vw, 3.375rem)",
-              lineHeight: 1.15,
+              fontSize: "clamp(1.75rem, 3vw, 2.375rem)",
+              lineHeight: 1.2,
             }}
           >
             Tired of Marketing Guesswork?
