@@ -45,7 +45,7 @@ function TeamPage() {
           <h1 style={{ color: white, fontSize: "clamp(2.0625rem, 4.5vw, 3.125rem)", lineHeight: 1.2 }}>
             Meet Our Specialists
           </h1>
-          <h2 className="mt-2" style={{ color: white, fontSize: "clamp(2.0625rem, 4.5vw, 3.125rem)", lineHeight: 1.2 }}>
+          <h2 className="mt-3" style={{ color: white, fontSize: "clamp(1.75rem, 3vw, 2.375rem)", lineHeight: 1.2 }}>
             Dedicated digital growth engineers.
           </h2>
           <p className="mt-6" style={{ color: muted, fontSize: "1.1875rem", lineHeight: 1.6 }}>
