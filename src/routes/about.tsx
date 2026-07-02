@@ -46,9 +46,7 @@ function AboutPage() {
           <h1
             style={{
               color: white,
-              fontSize: "clamp(2.125rem, 5vw, 3.375rem)",
-              lineHeight: 1.15,
-            }}
+              lineHeight: 1.15 }}
           >
             Our Agency Philosophy
           </h1>
@@ -56,9 +54,7 @@ function AboutPage() {
             className="mt-3"
             style={{
               color: white,
-              fontSize: "clamp(1.75rem, 3vw, 2.375rem)",
-              lineHeight: 1.2,
-            }}
+              lineHeight: 1.2 }}
           >
             Tired of Marketing Guesswork?
           </h2>
@@ -78,7 +74,7 @@ function AboutPage() {
       {/* OPERATIONAL STANDARDS */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-3xl">
-          <h2 className="text-center" style={{ color: white, fontSize: "clamp(1.75rem, 3vw, 2.375rem)" }}>
+          <h2 className="text-center" style={{ color: white }}>
             A Partner, Not Just a Monthly Bill
           </h2>
           <div className="mt-4 flex justify-center">
@@ -97,7 +93,7 @@ function AboutPage() {
 
       <section style={{ backgroundColor: black }} className="px-6 pb-20">
         <div className="mx-auto max-w-3xl">
-          <h2 className="text-center" style={{ color: white, fontSize: "clamp(1.75rem, 3vw, 2.375rem)" }}>
+          <h2 className="text-center" style={{ color: white }}>
             Driving Local Growth in the Background
           </h2>
           <div className="mt-10 space-y-6" style={{ color: muted, lineHeight: 1.8, fontSize: "1.125rem" }}>
@@ -128,7 +124,7 @@ function AboutPage() {
       {/* CORE PILLARS */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-center" style={{ color: white, fontSize: "clamp(1.75rem, 3vw, 2.375rem)" }}>
+          <h2 className="text-center" style={{ color: white }}>
             Our Non-Negotiables
           </h2>
           <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -164,7 +160,7 @@ function AboutPage() {
       {/* ALLIANCE HIGHLIGHT */}
       <section style={{ backgroundColor: slate }} className="px-6 py-16">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 style={{ color: white, fontSize: "clamp(1.625rem, 3vw, 2.125rem)" }}>
+          <h2 style={{ color: white }}>
             Built on Performance, Not Advertising.
           </h2>
           <p className="mt-6" style={{ color: muted, fontSize: "1.125rem", lineHeight: 1.7 }}>
@@ -184,7 +180,7 @@ function AboutPage() {
         className="px-6 py-16"
       >
         <div className="mx-auto max-w-3xl text-center">
-          <h2 style={{ color: white, fontSize: "clamp(1.625rem, 3vw, 2.125rem)" }}>
+          <h2 style={{ color: white }}>
             Evaluate your current marketing spend efficiency.
           </h2>
           <Link
