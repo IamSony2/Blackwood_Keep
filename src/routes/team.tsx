@@ -42,10 +42,10 @@ function TeamPage() {
         className="flex items-center justify-center px-6 py-20"
       >
         <div className="mx-auto max-w-3xl text-center">
-          <h1 style={{ color: white, fontSize: "clamp(2.0625rem, 4.5vw, 3.125rem)", lineHeight: 1.2 }}>
+          <h1 style={{ color: white, lineHeight: 1.2 }}>
             Meet Our Specialists
           </h1>
-          <h2 className="mt-3" style={{ color: white, fontSize: "clamp(1.75rem, 3vw, 2.375rem)", lineHeight: 1.2 }}>
+          <h2 className="mt-3" style={{ color: white, lineHeight: 1.2 }}>
             Dedicated digital growth engineers.
           </h2>
           <p className="mt-6" style={{ color: muted, fontSize: "1.1875rem", lineHeight: 1.6 }}>
@@ -60,7 +60,7 @@ function TeamPage() {
       {/* ETHOS */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-4xl">
-          <h2 className="text-center" style={{ color: white, fontSize: "clamp(1.75rem, 3vw, 2.375rem)" }}>
+          <h2 className="text-center" style={{ color: white }}>
             What Informs Our Work
           </h2>
           <div className="mt-10 space-y-6">
@@ -83,7 +83,7 @@ function TeamPage() {
       {/* PRINCIPLES */}
       <section style={{ backgroundColor: slate }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-center" style={{ color: white, fontSize: "clamp(1.75rem, 3vw, 2.375rem)" }}>
+          <h2 className="text-center" style={{ color: white }}>
             The Code We Execute Daily
           </h2>
           <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -136,7 +136,7 @@ function TeamPage() {
       {/* CTA */}
       <section style={{ backgroundColor: black, borderTop: `1px solid ${structuralBorder}` }} className="px-6 py-16">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 style={{ color: white, fontSize: "clamp(1.625rem, 3vw, 2.125rem)" }}>
+          <h2 style={{ color: white }}>
             Partner with dedicated operations experts.
           </h2>
           <Link
