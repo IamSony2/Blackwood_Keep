@@ -74,10 +74,10 @@ function PricingPage() {
         className="flex items-center justify-center px-6 py-20"
       >
         <div className="mx-auto max-w-3xl text-center">
-          <h1 style={{ color: white, fontSize: "clamp(2.0625rem, 4.5vw, 3.125rem)", lineHeight: 1.2 }}>
+          <h1 style={{ color: white, lineHeight: 1.2 }}>
             Transparent Retainer Structures
           </h1>
-          <h2 className="mt-3" style={{ color: white, fontSize: "clamp(1.75rem, 3vw, 2.375rem)", lineHeight: 1.2 }}>
+          <h2 className="mt-3" style={{ color: white, lineHeight: 1.2 }}>
             Performance-Driven Investments
           </h2>
           <p
@@ -97,7 +97,7 @@ function PricingPage() {
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-12 lg:grid-cols-2">
           <div>
-            <h2 style={{ color: white, fontSize: "clamp(1.625rem, 3vw, 2.125rem)" }}>
+            <h2 style={{ color: white }}>
               How Your Investment Scope is Determined
             </h2>
             <div className="mt-8 space-y-6">
@@ -207,7 +207,7 @@ function PricingPage() {
 
       {/* FAQ */}
       <section style={{ backgroundColor: slate }} className="px-6 py-20">
-        <h2 className="text-center" style={{ color: white, fontSize: "clamp(1.75rem, 3vw, 2.375rem)" }}>
+        <h2 className="text-center" style={{ color: white }}>
           Commercial Partnership Clarity
         </h2>
         <div className="mt-4 flex justify-center">
@@ -247,7 +247,7 @@ function PricingPage() {
         className="px-6 py-16"
       >
         <div className="mx-auto max-w-3xl text-center">
-          <h2 style={{ color: white, fontSize: "clamp(1.625rem, 3vw, 2.125rem)" }}>
+          <h2 style={{ color: white }}>
             We will deliver an accurate commercial scope proposal.
           </h2>
           <p className="mt-4" style={{ color: muted, fontSize: "1.125rem", lineHeight: 1.7 }}>
