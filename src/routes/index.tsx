@@ -69,7 +69,7 @@ export const Route = createFileRoute("/")({
 });
 
 // 60/30/10 brand rule: black = dominant canvas, slate = structure, white = typography, gold/champagne = accents only
-// goldPop is reserved strictly for the header nav "Book Free Audit" CTA (and its mobile-menu twin)
+// goldPop is reserved strictly for primary CTA buttons (filled background) - not links, icons, or dividers
 const black = "var(--color-bk-black)";
 const slate = "var(--color-bk-slate)";
 const gold = "var(--color-bk-gold)";
@@ -100,9 +100,7 @@ function Home() {
               color: white,
               fontFamily: "var(--font-display)",
               fontWeight: 500,
-              fontSize: "clamp(2.125rem, 5vw, 3.625rem)",
-              lineHeight: 1.15,
-            }}
+              lineHeight: 1.15 }}
           >
             Digital Marketing &amp; Lead Generation
           </h1>
@@ -112,9 +110,7 @@ function Home() {
               color: white,
               fontFamily: "var(--font-display)",
               fontWeight: 500,
-              fontSize: "clamp(1.875rem, 3.5vw, 2.625rem)",
-              lineHeight: 1.2,
-            }}
+              lineHeight: 1.2 }}
           >
             Your Marketing Stronghold
           </h2>
@@ -192,7 +188,7 @@ function Home() {
       {/* SECTION 3 — PROBLEM / SOLUTION */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl text-center">
-          <h2 style={{ color: white, fontSize: "clamp(1.875rem, 3.5vw, 2.625rem)" }}>
+          <h2 style={{ color: white }}>
             Does any of this sound familiar?
           </h2>
           <div className="mt-4 flex justify-center">
@@ -224,7 +220,7 @@ function Home() {
       {/* SECTION 4 — ONBOARDING MATRIX */}
       <section id="how-it-works" style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl text-center">
-          <h2 style={{ color: white, fontSize: "clamp(1.875rem, 3.5vw, 2.625rem)" }}>
+          <h2 style={{ color: white }}>
             The Blueprint to Predictable Growth
           </h2>
           <p
@@ -280,7 +276,7 @@ function Home() {
       {/* SECTION 5 — SECTORS & SERVICES */}
       <section id="sectors" style={{ backgroundColor: slate }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl text-center">
-          <h2 style={{ color: white, fontSize: "clamp(1.875rem, 3.5vw, 2.625rem)" }}>
+          <h2 style={{ color: white }}>
             Engineered Growth Frameworks
           </h2>
           <p className="mx-auto mt-4 max-w-3xl" style={{ color: muted, fontSize: "1.125rem" }}>
@@ -316,7 +312,7 @@ function Home() {
       {/* SECTION 6 — TESTIMONIALS STRIP */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl text-center">
-          <h2 style={{ color: white, fontSize: "clamp(1.875rem, 3.5vw, 2.625rem)" }}>
+          <h2 style={{ color: white }}>
             Validated Commercial Success
           </h2>
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -347,7 +343,7 @@ function Home() {
       <section style={{ backgroundColor: slate }} className="px-6 py-20">
         <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 md:grid-cols-2">
           <div>
-            <h2 style={{ color: white, fontSize: "clamp(1.75rem, 3vw, 2.375rem)" }}>
+            <h2 style={{ color: white }}>
               Partner with Blackwood Keep
             </h2>
             <p
@@ -403,7 +399,7 @@ function Home() {
       >
         <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
           <CastleShield size={60} />
-          <h2 className="mt-6" style={{ color: white, fontSize: "2.375rem" }}>
+          <h2 className="mt-6" style={{ color: white }}>
             Eliminate Pipeline Chaos. Secure Your Growth Plan.
           </h2>
           <p className="mt-4" style={{ color: muted, fontSize: "1.125rem", lineHeight: 1.7 }}>
