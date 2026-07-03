@@ -69,7 +69,7 @@ export const Route = createFileRoute("/")({
 });
 
 // 60/30/10 brand rule: black = dominant canvas, slate = structure, white = typography, gold/champagne = accents only
-// goldPop is reserved strictly for primary CTA buttons (filled background) - not links, icons, or dividers
+// goldPop is reserved strictly for the header nav "Book Free Audit" CTA (and its mobile-menu twin)
 const black = "var(--color-bk-black)";
 const slate = "var(--color-bk-slate)";
 const gold = "var(--color-bk-gold)";
@@ -109,7 +109,7 @@ function Home() {
               fontWeight: 500,
               lineHeight: 1.2 }}
           >
-            Your Marketing Stronghold
+            Commercial Growth Engineered
           </h2>
           <p
             className="mt-6"
