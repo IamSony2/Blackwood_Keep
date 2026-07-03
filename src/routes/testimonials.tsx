@@ -85,6 +85,9 @@ function TestimonialsPage() {
           <h1 style={{ lineHeight: 1.2 }}>
             Verifiable commercial results
           </h1>
+          <h2 className="mt-3" style={{ color: white, lineHeight: 1.2 }}>
+            Client Growth Journeys
+          </h2>
           <p className="mt-6" style={{ color: muted, fontSize: "1.0625rem", lineHeight: 1.6 }}>
             We scale regional enterprises. Explore real feedback from trades, facilities management,
             and B2B leaders who have secured their lead pipelines across the Wirral, Liverpool, and
@@ -96,9 +99,9 @@ function TestimonialsPage() {
       {/* GRID */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-center" style={{ color: white }}>
-            Client Growth Journeys
-          </h2>
+          <h3 className="text-center" style={{ color: white, fontSize: "1.5rem" }}>
+            What our customers say!
+          </h3>
           <div className="mt-4 flex justify-center">
             <GoldDivider />
           </div>
