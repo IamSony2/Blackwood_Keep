@@ -97,9 +97,6 @@ function Home() {
           <h1
             className="mt-6"
             style={{
-              color: white,
-              fontFamily: "var(--font-display)",
-              fontWeight: 500,
               lineHeight: 1.15 }}
           >
             Digital Marketing &amp; Lead Generation
