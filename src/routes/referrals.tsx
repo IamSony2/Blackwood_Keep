@@ -37,7 +37,7 @@ function ReferralsPage() {
       {/* HERO */}
       <section style={{ backgroundColor: black, minHeight: "50vh" }} className="flex items-center justify-center px-6 py-20">
         <div className="mx-auto max-w-3xl text-center">
-          <h1 style={{ color: white, lineHeight: 1.2 }}>
+          <h1 style={{ lineHeight: 1.2 }}>
             Trusted Growth Partners
           </h1>
           <p className="mt-6" style={{ color: muted, fontSize: "1.0625rem", lineHeight: 1.6 }}>
