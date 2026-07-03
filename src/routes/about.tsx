@@ -45,7 +45,6 @@ function AboutPage() {
         <div className="mx-auto max-w-3xl text-center">
           <h1
             style={{
-              color: white,
               lineHeight: 1.15 }}
           >
             Our Agency Philosophy
