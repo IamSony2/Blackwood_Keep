@@ -60,7 +60,7 @@ function ContactPage() {
       {/* HERO */}
       <section style={{ backgroundColor: black, minHeight: "40vh" }} className="flex items-center justify-center px-6 py-16">
         <div className="mx-auto max-w-3xl text-center">
-          <h1 style={{ color: white, lineHeight: 1.2 }}>
+          <h1 style={{ lineHeight: 1.2 }}>
             Let's review your market opportunities.
           </h1>
           <p className="mt-6" style={{ color: muted, fontSize: "1.1875rem", lineHeight: 1.6 }}>
