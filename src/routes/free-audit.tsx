@@ -51,6 +51,9 @@ function FreeAuditPage() {
           <h1 style={{ lineHeight: 1.2 }}>
             Secure your customised digital growth roadmap.
           </h1>
+          <h2 className="mt-3" style={{ color: white, lineHeight: 1.2 }}>
+            Reveal your opportunities
+          </h2>
           <p
             className="mx-auto mt-6"
             style={{ color: muted, fontSize: "1.0625rem", maxWidth: "560px", lineHeight: 1.6 }}
