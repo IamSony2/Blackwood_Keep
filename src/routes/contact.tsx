@@ -63,6 +63,9 @@ function ContactPage() {
           <h1 style={{ lineHeight: 1.2 }}>
             Let's review your market opportunities.
           </h1>
+          <h2 className="mt-3" style={{ color: white, lineHeight: 1.2 }}>
+            Plan Your Growth
+          </h2>
           <p className="mt-6" style={{ color: muted, fontSize: "1.1875rem", lineHeight: 1.6 }}>
             No generic sales presentations. Just an objective conversation regarding your
             acquisition pipeline and conversion targets.
