@@ -40,6 +40,9 @@ function ReferralsPage() {
           <h1 style={{ lineHeight: 1.2 }}>
             Trusted Growth Partners
           </h1>
+          <h2 className="mt-3" style={{ color: white, lineHeight: 1.2 }}>
+            Value Commercial Introductions
+          </h2>
           <p className="mt-6" style={{ color: muted, fontSize: "1.0625rem", lineHeight: 1.6 }}>
             We scale regional operations through structural results, and we intentionally reward
             professionals who guide firms to our door.
