@@ -48,7 +48,7 @@ function FreeAuditPage() {
         className="flex items-center justify-center px-6 py-20"
       >
         <div className="mx-auto max-w-2xl text-center">
-          <h1 style={{ color: white, fontSize: "clamp(1.875rem, 4vw, 2.875rem)", lineHeight: 1.2 }}>
+          <h1 style={{ color: white, lineHeight: 1.2 }}>
             Secure your customised digital growth roadmap.
           </h1>
           <p
@@ -96,7 +96,7 @@ function FreeAuditPage() {
           {/* Option A */}
           <div>
             <h2
-              style={{ color: white, fontFamily: "var(--font-sans)", fontWeight: 500, fontSize: "1.5rem" }}
+              style={{ color: white, fontFamily: "var(--font-sans)", fontWeight: 500 }}
             >
               Option A: Submit Profile Details
             </h2>
@@ -158,7 +158,7 @@ function FreeAuditPage() {
             style={{ borderColor: structuralBorder }}
           >
             <h2
-              style={{ color: white, fontFamily: "var(--font-sans)", fontWeight: 500, fontSize: "1.5rem" }}
+              style={{ color: white, fontFamily: "var(--font-sans)", fontWeight: 500 }}
             >
               Option B: Schedule Immediate Strategy Briefing
             </h2>
