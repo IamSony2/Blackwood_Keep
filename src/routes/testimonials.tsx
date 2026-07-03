@@ -99,9 +99,9 @@ function TestimonialsPage() {
       {/* GRID */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <h3 className="text-center" style={{ color: white, fontSize: "1.5rem" }}>
+          <h2 className="text-center" style={{ color: white }}>
             What our customers say!
-          </h3>
+          </h2>
           <div className="mt-4 flex justify-center">
             <GoldDivider />
           </div>
