@@ -43,7 +43,7 @@ function ServicesPage() {
         className="flex items-center justify-center px-6 py-20"
       >
         <div className="mx-auto max-w-3xl text-center">
-          <h1 style={{ color: white, lineHeight: 1.2 }}>
+          <h1 style={{ lineHeight: 1.2 }}>
             Acquisition Systems &amp; Pipeline Architecture
           </h1>
           <h2 className="mt-3" style={{ color: white, lineHeight: 1.2 }}>
