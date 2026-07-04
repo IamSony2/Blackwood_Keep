@@ -32,7 +32,7 @@ export function CookieBanner() {
             setShow(false);
           }}
           style={{
-            backgroundColor: "var(--color-bk-gold-pop)",
+            backgroundColor: "var(--color-bk-gold)",
             color: "var(--color-bk-black)",
             borderRadius: "8px",
             padding: "10px 22px",
