@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+<![CDATA[import { createFileRoute, Link } from "@tanstack/react-router";
 import { Lightbulb, ShieldCheck, Settings, Heart } from "lucide-react";
 import { PageLayout } from "@/components/PageLayout";
 
@@ -45,8 +45,8 @@ function TeamPage() {
           <h1 style={{ lineHeight: 1.2 }}>
             Meet Our Specialists
           </h1>
-          <h2 className="mt-3" style={{ color: white, lineHeight: 1.2 }}>
-            Dedicated digital growth engineers.
+          <h2 className="mt-3" style={{ lineHeight: 1.2 }}>
+            Dedicated digital growth engineers
           </h2>
           <p className="mt-6" style={{ color: muted, fontSize: "1.1875rem", lineHeight: 1.6 }}>
             Everything we build is handled entirely in-house—nothing is outsourced. We operate as a
@@ -60,7 +60,7 @@ function TeamPage() {
       {/* ETHOS */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-4xl">
-          <h2 className="text-center" style={{ color: white }}>
+          <h2 className="text-center">
             What Informs Our Work
           </h2>
           <div className="mt-10 space-y-6">
@@ -83,14 +83,14 @@ function TeamPage() {
       {/* PRINCIPLES */}
       <section style={{ backgroundColor: slate }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-center" style={{ color: white }}>
+          <h2 className="text-center">
             The Code We Execute Daily
           </h2>
           <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            <Principle icon={<Lightbulb size={24} style={{ color: champagne }} />} title="Technical Clarity" body="No creative verbosity. We communicate in costs, lead values, conversion percentages, and closed revenue values." />
-            <Principle icon={<ShieldCheck size={24} style={{ color: champagne }} />} title="Radical Honesty" body="If a campaign is underperforming or a postcode territory is oversaturated, we declare it immediately." />
-            <Principle icon={<Settings size={24} style={{ color: champagne }} />} title="Process Automation" body="We build programmatic systems designed to function seamlessly without demanding human maintenance." />
-            <Principle icon={<Heart size={24} style={{ color: champagne }} />} title="Client Ownership" body="We treat your client pipeline as a mission-critical asset. When you win market territory, we win." />
+            <Principle icon={<Lightbulb size={24} className="bwk-icon-accent" />} title="Technical Clarity" body="No creative verbosity. We communicate in costs, lead values, conversion percentages, and closed revenue values." />
+            <Principle icon={<ShieldCheck size={24} className="bwk-icon-accent" />} title="Radical Honesty" body="If a campaign is underperforming or a postcode territory is oversaturated, we declare it immediately." />
+            <Principle icon={<Settings size={24} className="bwk-icon-accent" />} title="Process Automation" body="We build programmatic systems designed to function seamlessly without demanding human maintenance." />
+            <Principle icon={<Heart size={24} className="bwk-icon-accent" />} title="Client Ownership" body="We treat your client pipeline as a mission-critical asset. When you win market territory, we win." />
           </div>
         </div>
       </section>
@@ -101,7 +101,7 @@ function TeamPage() {
         className="px-6 py-20"
       >
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-center" style={{ color: white }}>Founders & Engineers</h2>
+          <h2 className="text-center">Founders &amp; Engineers</h2>
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
             {[
               { initials: "MS", name: "Maggie Smith", role: "Founder & Strategic Director", bio: "Architect of the Blackwood Keep growth methodology. Leads diagnostic audits and account strategy across all engagements." },
@@ -136,20 +136,10 @@ function TeamPage() {
       {/* CTA */}
       <section style={{ backgroundColor: black, borderTop: `1px solid ${structuralBorder}` }} className="px-6 py-16">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 style={{ color: white }}>
-            Partner with dedicated operations experts.
+          <h2>
+            Partner with dedicated operations experts
           </h2>
-          <Link
-            to="/free-audit"
-            className="mt-6 inline-block"
-            style={{
-              backgroundColor: gold,
-              color: black,
-              padding: "14px 28px",
-              borderRadius: "8px",
-              fontWeight: 500,
-            }}
-          >
+          <Link to="/free-audit" className="bwk-button mt-6 inline-block">
             Request Custom Strategic Audit
           </Link>
         </div>
@@ -187,3 +177,4 @@ function Principle({ icon, title, body }: { icon: React.ReactNode; title: string
     </div>
   );
 }
+]]>
