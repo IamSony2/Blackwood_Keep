@@ -1,4 +1,4 @@
-@import "tailwindcss" source(none);
+<![CDATA[@import "tailwindcss" source(none);
 @source "../src";
 @import "tw-animate-css";
 
@@ -19,11 +19,8 @@
   --color-bk-gold: #C8A45D;
   --color-bk-gold-antique: #B68B3A;
   --color-bk-gold-champagne: #E5D2A0;
-  /* Brighter accent reserved strictly for primary CTA buttons and micro-interactions
-     (hover/active states, checkbox ticks). Logo, icons, dividers, and stat numbers
-     keep using --color-bk-gold above. */
   --color-bk-gold-pop: #FF8A00;
-  --color-bk-white: #F9FAFB;
+  --color-bk-white: #F8F9FA;
   --color-bk-silver: #D1D5DB;
   --color-bk-subtle: #9CA3AF;
   --color-bk-success: #16A34A;
@@ -53,21 +50,21 @@
 :root {
   --radius: 0.5rem;
   --background: #0D0E12;
-  --foreground: #F9FAFB;
+  --foreground: #F8F9FA;
   --card: #242936;
-  --card-foreground: #F9FAFB;
+  --card-foreground: #F8F9FA;
   --popover: #242936;
-  --popover-foreground: #F9FAFB;
+  --popover-foreground: #F8F9FA;
   --primary: #FF8A00;
   --primary-foreground: #0D0E12;
   --secondary: #242936;
-  --secondary-foreground: #F9FAFB;
+  --secondary-foreground: #F8F9FA;
   --muted: #242936;
   --muted-foreground: #B4B2A9;
   --accent: #E5D2A0;
   --accent-foreground: #0D0E12;
   --destructive: #DC2626;
-  --destructive-foreground: #F9FAFB;
+  --destructive-foreground: #F8F9FA;
   --border: #3A4150;
   --input: #3A4150;
   --ring: #FF8A00;
@@ -75,13 +72,107 @@
 
 .nav-link {
   color: var(--color-bk-white);
+  cursor: pointer;
   transition: color 0.15s ease;
 }
-.nav-link:hover {
-  color: var(--color-bk-gold);
+.nav-link:hover,
+.nav-link:focus-visible {
+  color: var(--color-bk-gold-champagne);
 }
 .nav-link.is-active {
+  color: var(--color-bk-gold-champagne);
+}
+
+.bwk-button {
+  display: inline-block;
+  background-color: var(--color-bk-gold);
+  color: var(--color-bk-black);
+  border: none;
+  border-radius: 8px;
+  padding: 14px 28px;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 1.0625rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.15s ease;
+}
+.bwk-button:hover,
+.bwk-button:focus-visible {
+  background-color: var(--color-bk-gold-champagne);
+}
+.bwk-button--sm {
+  padding: 12px 24px;
+  font-size: 1rem;
+}
+
+.bwk-button--pop {
+  background-color: var(--color-bk-gold-pop);
+}
+.bwk-button--pop:hover,
+.bwk-button--pop:focus-visible {
+  background-color: var(--color-bk-gold-champagne);
+}
+
+.bwk-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  background-color: var(--color-bk-slate);
+  border: 0.5px solid var(--border);
+  border-radius: 12px;
+  padding: 1.75rem;
+  text-align: left;
+}
+.bwk-card--on-black {
+  background-color: var(--color-bk-black);
+}
+
+.bwk-segment-card {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+  border-bottom: 0.5px solid var(--border);
+}
+.bwk-segment-card--right {
+  border-right: 0.5px solid var(--border);
+}
+
+.bwk-card-fill {
+  flex: 1 1 auto;
+}
+
+.bwk-icon-accent {
+  color: var(--color-bk-gold-champagne);
+}
+
+.bwk-badge {
+  align-self: flex-start;
+  background-color: var(--color-bk-black);
+  color: var(--color-bk-gold-champagne);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.8125rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.bwk-quote-mark {
   color: var(--color-bk-gold);
+  font-family: var(--font-display);
+  font-size: 3.125rem;
+  line-height: 0.8;
+}
+
+.bwk-solution-text {
+  color: var(--color-bk-gold);
+  font-size: 1.0625rem;
+  font-weight: 500;
+}
+
+.bwk-attr {
+  color: var(--color-bk-gold);
+  font-size: 0.9375rem;
 }
 
 @layer base {
@@ -105,14 +196,17 @@
     color: var(--color-bk-white);
   }
   h1 {
-    font-size: clamp(0.5625rem, 1.05vw, 0.7875rem);
+    font-size: clamp(2.25rem, 5vw, 3.75rem);
     font-family: var(--font-sans);
     font-weight: 600;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.01em;
     text-transform: uppercase;
-    color: var(--muted-foreground);
+    color: var(--color-bk-white);
+    line-height: 1.1;
   }
   h2 {
     font-size: clamp(1.875rem, 3.5vw, 2.625rem);
+    color: var(--color-bk-gold-antique);
   }
 }
+]]>
