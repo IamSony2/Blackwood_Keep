@@ -1,9 +1,8 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+<![CDATA[import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   Clock,
   PoundSterling,
   TrendingUp,
-  ArrowDown,
   MapPin,
   MessageSquare,
   Target,
@@ -17,7 +16,6 @@ import {
 } from "lucide-react";
 import { PageLayout } from "@/components/PageLayout";
 import { CastleShield } from "@/components/CastleShield";
-import { GoldDivider } from "@/components/GoldDivider";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -69,15 +67,10 @@ export const Route = createFileRoute("/")({
 });
 
 // 60/30/10 brand rule: black = dominant canvas, slate = structure, white = typography, gold/champagne = accents only
-// goldPop is reserved strictly for the header nav "Book Free Audit" CTA (and its mobile-menu twin)
+// All colour, button, link and card styling now lives in src/styles.css (.bwk-button, .bwk-card, .nav-link, etc.)
+// — nothing below should set colour via inline style.
 const black = "var(--color-bk-black)";
 const slate = "var(--color-bk-slate)";
-const gold = "var(--color-bk-gold)";
-const goldPop = "var(--color-bk-gold-pop)";
-const champagne = "var(--color-bk-gold-champagne)";
-const white = "var(--color-bk-white)";
-const muted = "var(--muted-foreground)";
-const structuralBorder = "var(--border)";
 
 function Home() {
   const scrollTo = (id: string) => {
@@ -93,60 +86,20 @@ function Home() {
         className="flex items-center justify-center px-6 py-24 md:py-32"
       >
         <div className="mx-auto flex max-w-4xl flex-col items-center text-center">
-          <CastleShield size={72} />
-          <h1
-            className="mt-6"
-            style={{
-              lineHeight: 1.15 }}
-          >
-            Digital Marketing &amp; Lead Generation
-          </h1>
-          <h2
-            className="mt-3"
-            style={{
-              color: white,
-              fontFamily: "var(--font-display)",
-              fontWeight: 500,
-              lineHeight: 1.2 }}
-          >
-            Commercial Growth Engineered
-          </h2>
-          <p
-            className="mt-6"
-            style={{ color: muted, fontSize: "1.125rem", maxWidth: "720px", lineHeight: 1.6 }}
-          >
+          <h1 style={{ lineHeight: 1.15 }}>Digital Marketing &amp; Lead Generation</h1>
+          <CastleShield size={72} className="mt-5" />
+          <h2 className="mt-3">Commercial growth engineered</h2>
+          <p className="mt-6 text-muted-foreground" style={{ fontSize: "1.125rem", maxWidth: "720px", lineHeight: 1.6 }}>
             Get marketing clarity, a predictable pipeline, and measurable growth. We build
             high-converting digital marketing systems and multi-channel paid campaigns that turn
             clicks into commercial contracts. Proudly serving trades, facilities management, and
             B2B/B2C enterprises across the Wirral, Liverpool, Cheshire, and North Wales.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-            <Link
-              to="/free-audit"
-              style={{
-                backgroundColor: gold,
-                color: black,
-                borderRadius: "8px",
-                padding: "14px 28px",
-                fontWeight: 500,
-                fontSize: "1.0625rem",
-              }}
-            >
+            <Link to="/free-audit" className="bwk-button">
               Book a Pipeline Audit
             </Link>
-            <button
-              type="button"
-              onClick={() => scrollTo("how-it-works")}
-              style={{
-                border: `1px solid ${gold}`,
-                color: gold,
-                borderRadius: "8px",
-                padding: "14px 28px",
-                fontWeight: 500,
-                fontSize: "1.0625rem",
-                background: "transparent",
-              }}
-            >
+            <button type="button" onClick={() => scrollTo("how-it-works")} className="bwk-button">
               See How It Works
             </button>
           </div>
@@ -155,7 +108,7 @@ function Home() {
 
       {/* SECTION 2 — SEGMENTATION GATEWAY */}
       <section style={{ backgroundColor: slate }} className="px-6 py-20">
-        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-0 md:grid-cols-2">
+        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-0 md:grid-cols-2 md:items-stretch">
           <SegmentCard
             heading="Local Trades & Facilities Management"
             body="For regional contractors, M&E engineers, and FM providers across the Wirral, Liverpool, and North Wales who require consistent local lead volume, dominant search visibility, and frictionless pipeline booking."
@@ -185,27 +138,22 @@ function Home() {
       {/* SECTION 3 — PROBLEM / SOLUTION */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl text-center">
-          <h2 style={{ color: white }}>
-            Does any of this sound familiar?
-          </h2>
-          <div className="mt-4 flex justify-center">
-            <GoldDivider />
-          </div>
-          <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
+          <h2>Does any of this sound familiar?</h2>
+          <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3 md:items-stretch">
             <ProblemCard
-              icon={<Clock size={28} style={{ color: champagne }} />}
+              icon={<Clock size={28} className="bwk-icon-accent" />}
               title="You're too busy on site to capture incoming inquiries"
               body="Every day your team means to handle incoming leads, but field logistics and operational challenges take over while your phone rings out."
               solution="We engineer automated capture."
             />
             <ProblemCard
-              icon={<PoundSterling size={28} style={{ color: champagne }} />}
+              icon={<PoundSterling size={28} className="bwk-icon-accent" />}
               title="You've spent heavily on ads before with zero visibility"
               body="Wasted spend on generic ad agencies who gave you clicks instead of signed commercial contracts. Sound familiar?"
               solution="We measure commercial contract wins, not clicks."
             />
             <ProblemCard
-              icon={<TrendingUp size={28} style={{ color: champagne }} />}
+              icon={<TrendingUp size={28} className="bwk-icon-accent" />}
               title="You are operating on a volatile feast-or-famine cycle"
               body="Fully booked this month, worried about pipeline health the next. No automated system smoothing your client acquisition."
               solution="We build a predictable revenue engine."
@@ -217,17 +165,12 @@ function Home() {
       {/* SECTION 4 — ONBOARDING MATRIX */}
       <section id="how-it-works" style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl text-center">
-          <h2 style={{ color: white }}>
-            The Blueprint to Predictable Growth
-          </h2>
-          <p
-            className="mx-auto mt-4 max-w-3xl"
-            style={{ color: muted, fontSize: "1.125rem", lineHeight: 1.7 }}
-          >
+          <h2>The blueprint to predictable growth</h2>
+          <p className="mx-auto mt-4 max-w-3xl text-muted-foreground" style={{ fontSize: "1.125rem", lineHeight: 1.7 }}>
             A structured, dual-speed onboarding process engineered to eliminate launch friction
             while protecting enterprise compliance.
           </p>
-          <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
+          <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3 md:items-stretch">
             <PhaseCard
               phase="Phase 01"
               title="The Pipeline Audit"
@@ -250,21 +193,11 @@ function Home() {
               deliverable="24/7 access to live performance metrics and recurring commercial account reviews."
             />
           </div>
-          <p className="mt-10" style={{ color: muted, fontSize: "1rem" }}>
+          <p className="mt-10 text-muted-foreground" style={{ fontSize: "1rem" }}>
             Average onboarding timeline from discovery audit to live market execution: 14 to 21
             business days.
           </p>
-          <Link
-            to="/free-audit"
-            className="mt-8 inline-block"
-            style={{
-              backgroundColor: gold,
-              color: black,
-              borderRadius: "8px",
-              padding: "14px 28px",
-              fontWeight: 500,
-            }}
-          >
+          <Link to="/free-audit" className="bwk-button mt-8 inline-block">
             Start with a Free Audit
           </Link>
         </div>
@@ -273,35 +206,29 @@ function Home() {
       {/* SECTION 5 — SECTORS & SERVICES */}
       <section id="sectors" style={{ backgroundColor: slate }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl text-center">
-          <h2 style={{ color: white }}>
-            Engineered Growth Frameworks
-          </h2>
-          <p className="mx-auto mt-4 max-w-3xl" style={{ color: muted, fontSize: "1.125rem" }}>
+          <h2>Engineered growth frameworks</h2>
+          <p className="mx-auto mt-4 max-w-3xl text-muted-foreground" style={{ fontSize: "1.125rem" }}>
             Advanced digital architecture tailored to your specific commercial operations.
           </p>
-          <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
+          <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3 md:items-stretch">
             <SectorCard
-              icon={<Settings2 size={28} style={{ color: champagne }} />}
+              icon={<Settings2 size={28} className="bwk-icon-accent" />}
               title="CRM Automation & Lead Nurturing"
               body="Never allow an enterprise or domestic lead to go cold. We engineer rapid automated response protocols and follow-up infrastructure so enquiries are captured instantly while you operate your daily business."
             />
             <SectorCard
-              icon={<Star size={28} style={{ color: champagne }} />}
+              icon={<Star size={28} className="bwk-icon-accent" />}
               title="Local Map Pack & Reputation Engineering"
               body="Establish absolute regional authority across the Wirral, Liverpool, and Chester. We automate five-star review loops and optimise your local search profile to guarantee you are the primary firm selected."
             />
             <SectorCard
-              icon={<Rocket size={28} style={{ color: champagne }} />}
+              icon={<Rocket size={28} className="bwk-icon-accent" />}
               title="Funnel Optimisation & Paid Campaigns"
               body="Eliminate marketing guesswork. We build bespoke lead capture engines and manage high-intent advertising budgets targeted directly at procurement managers and high-value domestic clients."
             />
           </div>
-          <Link
-            to="/services"
-            className="mt-10 inline-block"
-            style={{ color: gold, fontSize: "1.0625rem" }}
-          >
-            Explore Full Capabilities Matrix →
+          <Link to="/services" className="bwk-button mt-10 inline-block">
+            Explore Full Capabilities Matrix
           </Link>
         </div>
       </section>
@@ -309,10 +236,8 @@ function Home() {
       {/* SECTION 6 — TESTIMONIALS STRIP */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl text-center">
-          <h2 style={{ color: white }}>
-            Validated Commercial Success
-          </h2>
-          <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
+          <h2>Validated commercial success</h2>
+          <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3 md:items-stretch">
             <TestimonialCard
               quote="Before Blackwood Keep, we were pouring ad spend into a black hole. They built a localised funnel that streamlined our inbound inquiries completely. We finally have total clarity."
               attr="J.W., Roofing Contractor, Wirral"
@@ -326,12 +251,8 @@ function Home() {
               attr="M.T., Enterprise Business Owner, Liverpool"
             />
           </div>
-          <Link
-            to="/testimonials"
-            className="mt-10 inline-block"
-            style={{ color: gold, fontSize: "1.0625rem" }}
-          >
-            Read more testimonials →
+          <Link to="/testimonials" className="bwk-button mt-10 inline-block">
+            Read More Testimonials
           </Link>
         </div>
       </section>
@@ -340,48 +261,32 @@ function Home() {
       <section style={{ backgroundColor: slate }} className="px-6 py-20">
         <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 md:grid-cols-2">
           <div>
-            <h2 style={{ color: white }}>
-              Partner with Blackwood Keep
-            </h2>
-            <p
-              className="mt-6"
-              style={{ color: muted, fontSize: "1.125rem", lineHeight: 1.7 }}
-            >
+            <h2>Partner with Blackwood Keep</h2>
+            <p className="mt-6 text-muted-foreground" style={{ fontSize: "1.125rem", lineHeight: 1.7 }}>
               Our growth is anchored directly to regional trust and executive word of mouth. If you
               introduce our engineering capabilities to a regional business or facilities company
               looking to scale customer acquisition, we reward your advocacy through a transparent
               referral ecosystem.
             </p>
-            <Link
-              to="/referrals"
-              className="mt-6 inline-block"
-              style={{ color: gold, fontSize: "1.0625rem" }}
-            >
-              Explore our referral programme details →
+            <Link to="/referrals" className="bwk-button mt-6 inline-block">
+              Explore Our Referral Programme Details
             </Link>
           </div>
-          <div
-            style={{
-              backgroundColor: black,
-              border: `1px solid ${structuralBorder}`,
-              borderRadius: "12px",
-              padding: "1.5rem",
-            }}
-          >
-            <h3 style={{ color: white, fontSize: "1.5rem" }}>Strategic Alliances</h3>
-            <ul className="mt-4 space-y-3" style={{ color: muted, fontSize: "1.0625rem" }}>
+          <div className="bwk-card">
+            <h3 style={{ fontSize: "1.5rem" }}>Strategic Alliances</h3>
+            <ul className="mt-4 space-y-3 text-muted-foreground" style={{ fontSize: "1.0625rem" }}>
               <li className="flex gap-3">
-                <Check size={18} style={{ color: champagne, flexShrink: 0, marginTop: 3 }} />
+                <Check size={18} className="bwk-icon-accent" style={{ flexShrink: 0, marginTop: 3 }} />
                 <span>
                   Regional Trade Networks — Mechanical, electrical, structural, building contractors
                 </span>
               </li>
               <li className="flex gap-3">
-                <Check size={18} style={{ color: champagne, flexShrink: 0, marginTop: 3 }} />
-                <span>Facilities & Asset Management Providers</span>
+                <Check size={18} className="bwk-icon-accent" style={{ flexShrink: 0, marginTop: 3 }} />
+                <span>Facilities &amp; Asset Management Providers</span>
               </li>
               <li className="flex gap-3">
-                <Check size={18} style={{ color: champagne, flexShrink: 0, marginTop: 3 }} />
+                <Check size={18} className="bwk-icon-accent" style={{ flexShrink: 0, marginTop: 3 }} />
                 <span>High-Growth B2B Operations seeking automated pipeline stability</span>
               </li>
             </ul>
@@ -391,30 +296,18 @@ function Home() {
 
       {/* SECTION 8 — FINAL CTA */}
       <section
-        style={{ backgroundColor: black, borderTop: `1px solid ${structuralBorder}` }}
+        style={{ backgroundColor: black, borderTop: "1px solid var(--border)" }}
         className="px-6 py-20"
       >
         <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
           <CastleShield size={60} />
-          <h2 className="mt-6" style={{ color: white }}>
-            Eliminate Pipeline Chaos. Secure Your Growth Plan.
-          </h2>
-          <p className="mt-4" style={{ color: muted, fontSize: "1.125rem", lineHeight: 1.7 }}>
+          <h2 className="mt-6">Eliminate pipeline chaos — secure your growth plan</h2>
+          <p className="mt-4 text-muted-foreground" style={{ fontSize: "1.125rem", lineHeight: 1.7 }}>
             Book your comprehensive, plain-English Growth Audit today. No high-pressure sales
             scripts. Just an objective analysis of your market vulnerabilities and absolute
             pipeline opportunities.
           </p>
-          <Link
-            to="/free-audit"
-            className="mt-8 inline-block"
-            style={{
-              backgroundColor: gold,
-              color: black,
-              padding: "14px 32px",
-              borderRadius: "8px",
-              fontWeight: 500,
-            }}
-          >
+          <Link to="/free-audit" className="bwk-button mt-8 inline-block">
             Secure Your Free Growth Audit
           </Link>
         </div>
@@ -439,38 +332,22 @@ function SegmentCard({
   border?: "right";
 }) {
   return (
-    <div
-      className="p-8 md:p-10"
-      style={{
-        borderRight: border === "right" ? `0.5px solid ${structuralBorder}` : undefined,
-        borderBottom: `0.5px solid ${structuralBorder}`,
-      }}
-    >
-      <h3 style={{ color: white, fontSize: "1.625rem" }}>{heading}</h3>
-      <p className="mt-4" style={{ color: muted, fontSize: "1.0625rem", lineHeight: 1.7 }}>
-        {body}
-      </p>
-      <ul className="mt-6 space-y-3">
-        {bullets.map((b, i) => (
-          <li key={i} className="flex items-center gap-3" style={{ color: muted, fontSize: "1rem" }}>
-            <span style={{ color: champagne }}>{b.icon}</span>
-            <span>{b.text}</span>
-          </li>
-        ))}
-      </ul>
-      <button
-        type="button"
-        onClick={onClick}
-        className="mt-8"
-        style={{
-          backgroundColor: gold,
-          color: black,
-          padding: "12px 24px",
-          borderRadius: "8px",
-          fontWeight: 500,
-          fontSize: "1rem",
-        }}
-      >
+    <div className={`bwk-segment-card ${border === "right" ? "bwk-segment-card--right" : ""}`}>
+      <h3 style={{ fontSize: "1.625rem" }}>{heading}</h3>
+      <div className="bwk-card-fill">
+        <p className="mt-4 text-muted-foreground" style={{ fontSize: "1.0625rem", lineHeight: 1.7 }}>
+          {body}
+        </p>
+        <ul className="mt-6 space-y-3">
+          {bullets.map((b, i) => (
+            <li key={i} className="flex items-center gap-3 text-muted-foreground" style={{ fontSize: "1rem" }}>
+              <span className="bwk-icon-accent">{b.icon}</span>
+              <span>{b.text}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <button type="button" onClick={onClick} className="bwk-button bwk-button--sm mt-8" style={{ alignSelf: "flex-start" }}>
         {cta}
       </button>
     </div>
@@ -489,30 +366,17 @@ function ProblemCard({
   solution: string;
 }) {
   return (
-    <div className="text-left">
-      <div
-        style={{
-          backgroundColor: slate,
-          border: `0.5px solid ${structuralBorder}`,
-          borderRadius: "12px",
-          padding: "1.5rem",
-          minHeight: "260px",
-        }}
-      >
+    <div className="flex flex-col text-left">
+      <div className="bwk-card">
         {icon}
-        <h3 className="mt-4" style={{ color: white, fontSize: "1.25rem" }}>
+        <h3 className="mt-4" style={{ fontSize: "1.25rem" }}>
           {title}
         </h3>
-        <p className="mt-3" style={{ color: muted, fontSize: "1rem", lineHeight: 1.6 }}>
+        <p className="mt-3 text-muted-foreground" style={{ fontSize: "1rem", lineHeight: 1.6 }}>
           {body}
         </p>
       </div>
-      <div className="mt-4 flex flex-col items-center">
-        <ArrowDown size={24} style={{ color: gold }} />
-        <p className="mt-2 text-center" style={{ color: gold, fontSize: "1.0625rem", fontWeight: 500 }}>
-          {solution}
-        </p>
-      </div>
+      <p className="bwk-solution-text mt-4 text-center">{solution}</p>
     </div>
   );
 }
@@ -531,39 +395,18 @@ function PhaseCard({
   deliverable: string;
 }) {
   return (
-    <div
-      className="flex flex-col text-left"
-      style={{
-        backgroundColor: slate,
-        border: `0.5px solid ${structuralBorder}`,
-        borderRadius: "12px",
-        padding: "1.75rem",
-      }}
-    >
-      <span
-        className="self-start"
-        style={{
-          backgroundColor: black,
-          color: champagne,
-          padding: "4px 10px",
-          borderRadius: "999px",
-          fontSize: "0.8125rem",
-          letterSpacing: "0.08em",
-          textTransform: "uppercase",
-        }}
-      >
-        {phase}
-      </span>
-      <h3 className="mt-4" style={{ color: white, fontFamily: "var(--font-sans)", fontSize: "1.25rem", fontWeight: 500 }}>
+    <div className="bwk-card">
+      <span className="bwk-badge">{phase}</span>
+      <h3 className="mt-4" style={{ fontFamily: "var(--font-sans)", fontSize: "1.25rem", fontWeight: 500 }}>
         {title}
       </h3>
-      <p className="mt-4" style={{ color: white, fontSize: "1.0625rem", fontWeight: 500 }}>
+      <p className="mt-4" style={{ fontSize: "1.0625rem", fontWeight: 500 }}>
         {focus}
       </p>
-      <p className="mt-3" style={{ color: muted, fontSize: "1rem", lineHeight: 1.6 }}>
+      <p className="mt-3 text-muted-foreground" style={{ fontSize: "1rem", lineHeight: 1.6 }}>
         {technical}
       </p>
-      <p className="mt-3" style={{ color: muted, fontSize: "0.9375rem", fontStyle: "italic" }}>
+      <p className="mt-3 text-muted-foreground" style={{ fontSize: "0.9375rem", fontStyle: "italic" }}>
         {deliverable}
       </p>
     </div>
@@ -580,20 +423,12 @@ function SectorCard({
   body: string;
 }) {
   return (
-    <div
-      className="text-left"
-      style={{
-        backgroundColor: black,
-        border: `0.5px solid ${structuralBorder}`,
-        borderRadius: "12px",
-        padding: "1.75rem",
-      }}
-    >
+    <div className="bwk-card bwk-card--on-black">
       {icon}
-      <h3 className="mt-4" style={{ color: white, fontSize: "1.25rem" }}>
+      <h3 className="mt-4" style={{ fontSize: "1.25rem" }}>
         {title}
       </h3>
-      <p className="mt-3" style={{ color: muted, fontSize: "1rem", lineHeight: 1.6 }}>
+      <p className="mt-3 text-muted-foreground" style={{ fontSize: "1rem", lineHeight: 1.6 }}>
         {body}
       </p>
     </div>
@@ -602,34 +437,13 @@ function SectorCard({
 
 function TestimonialCard({ quote, attr }: { quote: string; attr: string }) {
   return (
-    <div
-      className="text-left"
-      style={{
-        backgroundColor: slate,
-        border: `0.5px solid ${structuralBorder}`,
-        borderRadius: "12px",
-        padding: "1.5rem",
-      }}
-    >
-      <div
-        style={{
-          color: gold,
-          fontFamily: "var(--font-display)",
-          fontSize: "3.125rem",
-          lineHeight: 0.8,
-        }}
-      >
-        "
-      </div>
-      <p
-        className="mt-2"
-        style={{ color: muted, fontStyle: "italic", fontSize: "1rem", lineHeight: 1.7 }}
-      >
+    <div className="bwk-card">
+      <div className="bwk-quote-mark">"</div>
+      <p className="mt-2 text-muted-foreground" style={{ fontStyle: "italic", fontSize: "1rem", lineHeight: 1.7 }}>
         {quote}
       </p>
-      <p className="mt-4" style={{ color: gold, fontSize: "0.9375rem" }}>
-        — {attr}
-      </p>
+      <p className="bwk-attr mt-4">— {attr}</p>
     </div>
   );
 }
+]]>
