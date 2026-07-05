@@ -1,8 +1,7 @@
-import { createFileRoute, useNavigate, Link } from "@tanstack/react-router";
+<![CDATA[import { createFileRoute, useNavigate, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { PageLayout } from "@/components/PageLayout";
 import { Accordion } from "@/components/Accordion";
-import { GoldDivider } from "@/components/GoldDivider";
 
 export const Route = createFileRoute("/pricing")({
   head: () => ({
@@ -77,7 +76,7 @@ function PricingPage() {
           <h1 style={{ lineHeight: 1.2 }}>
             Transparent Retainer Structures
           </h1>
-          <h2 className="mt-3" style={{ color: white, lineHeight: 1.2 }}>
+          <h2 className="mt-3" style={{ lineHeight: 1.2 }}>
             Performance-Driven Investments
           </h2>
           <p
@@ -97,7 +96,7 @@ function PricingPage() {
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-12 lg:grid-cols-2">
           <div>
-            <h2 style={{ color: white }}>
+            <h2>
               How Your Investment Scope is Determined
             </h2>
             <div className="mt-8 space-y-6">
@@ -187,18 +186,7 @@ function PricingPage() {
                 onChange={setBudget}
                 options={["£1,000–£2,500", "£2,500–£5,000", "£5,000+"]}
               />
-              <button
-                type="submit"
-                className="w-full"
-                style={{
-                  backgroundColor: gold,
-                  color: black,
-                  padding: "14px 24px",
-                  borderRadius: "8px",
-                  fontWeight: 500,
-                  fontSize: "1rem",
-                }}
-              >
+              <button type="submit" className="bwk-button w-full">
                 Submit Scope Criteria for Full Performance Audit
               </button>
             </form>
@@ -208,12 +196,9 @@ function PricingPage() {
 
       {/* FAQ */}
       <section style={{ backgroundColor: slate }} className="px-6 py-20">
-        <h2 className="text-center" style={{ color: white }}>
+        <h2 className="text-center">
           Commercial Partnership Clarity
         </h2>
-        <div className="mt-4 flex justify-center">
-          <GoldDivider />
-        </div>
         <div className="mt-12">
           <Accordion
             items={[
@@ -248,24 +233,14 @@ function PricingPage() {
         className="px-6 py-16"
       >
         <div className="mx-auto max-w-3xl text-center">
-          <h2 style={{ color: white }}>
-            We will deliver an accurate commercial scope proposal.
+          <h2>
+            We will deliver an accurate commercial scope proposal
           </h2>
           <p className="mt-4" style={{ color: muted, fontSize: "1.125rem", lineHeight: 1.7 }}>
             Request your free video-led Pipeline Audit. We will analyse your competitors and
             present an exact, performance-backed investment layout.
           </p>
-          <Link
-            to="/free-audit"
-            className="mt-8 inline-block"
-            style={{
-              backgroundColor: gold,
-              color: black,
-              padding: "14px 28px",
-              borderRadius: "8px",
-              fontWeight: 500,
-            }}
-          >
+          <Link to="/free-audit" className="bwk-button mt-8 inline-block">
             Request Custom Scope Audit
           </Link>
         </div>
@@ -312,3 +287,4 @@ function ScopeSelect({
     </label>
   );
 }
+]]>
