@@ -1,7 +1,6 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+<![CDATA[import { createFileRoute, Link } from "@tanstack/react-router";
 import { Cog, Star, Rocket, Check } from "lucide-react";
 import { PageLayout } from "@/components/PageLayout";
-import { GoldDivider } from "@/components/GoldDivider";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
@@ -46,7 +45,7 @@ function ServicesPage() {
           <h1 style={{ lineHeight: 1.2 }}>
             Acquisition Systems &amp; Pipeline Architecture
           </h1>
-          <h2 className="mt-3" style={{ color: white, lineHeight: 1.2 }}>
+          <h2 className="mt-3" style={{ lineHeight: 1.2 }}>
             Unified Acquisition Framework
           </h2>
           <p className="mt-6" style={{ color: muted, fontSize: "1.1875rem", lineHeight: 1.6 }}>
@@ -61,15 +60,12 @@ function ServicesPage() {
       {/* MASTER CORE CAPABILITIES */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-center" style={{ color: white }}>
+          <h2 className="text-center">
             Core Performance Modules
           </h2>
-          <div className="mt-4 flex justify-center">
-            <GoldDivider />
-          </div>
           <div className="mt-12 space-y-10">
             <MasterPanel
-              icon={<Cog size={56} style={{ color: champagne }} />}
+              icon={<Cog size={56} className="bwk-icon-accent" />}
               title="CRM Automation & Lead Capture Sequences"
               body="The primary source of revenue loss for regional trades and SMEs is lead response latency. If a customer inquires and waits two hours, they call your competitor. We program complete, automated CRM data frameworks that instantly ingest, tag, and follow up with inbound opportunities the second they arrive. Keep your pipeline moving flawlessly while your engineers operate on site and your leadership team drives strategic growth."
               included={[
@@ -81,7 +77,7 @@ function ServicesPage() {
               target="Regional trades, facilities companies, and complex business operations looking to systematically eliminate manual lead tracking error."
             />
             <MasterPanel
-              icon={<Star size={56} style={{ color: champagne }} />}
+              icon={<Star size={56} className="bwk-icon-accent" />}
               title="Local Postcode Dominance & Authority Systems"
               body="Modern B2B and regional consumers execute deep local validation before engaging. If your regional competitors display extensive verified profiles and your presence is minimal, they secure the contract. We automate elite five-star review generation loops directly from your completed jobs, while strategically optimising your geographic index to capture high-intent commercial and domestic queries across the Wirral, Liverpool, and Chester."
               included={[
@@ -93,7 +89,7 @@ function ServicesPage() {
               target="Contractors, specialised engineering companies, and local service networks dependent on local search superiority and total corporate credibility."
             />
             <MasterPanel
-              icon={<Rocket size={56} style={{ color: champagne }} />}
+              icon={<Rocket size={56} className="bwk-icon-accent" />}
               title="High-Intent Customer Acquisition Engines"
               body="Stop burning investment capital on broad keyword matching or vague agency traffic reports. We engineer conversion-first digital architectures backed by highly precise paid media positioning (Google Ads, Meta, LinkedIn). We zero in exclusively on targeted decision-makers and high-value search criteria, ensuring your media allocation lands in front of ready-to-buy users."
               included={[
@@ -111,7 +107,7 @@ function ServicesPage() {
       {/* AUXILIARY SEGMENTS */}
       <section style={{ backgroundColor: slate }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl text-center">
-          <h2 style={{ color: white }}>
+          <h2>
             Integrated Systems Included in All Scopes
           </h2>
           <p className="mx-auto mt-4 max-w-3xl" style={{ color: muted, fontSize: "1.125rem" }}>
@@ -137,7 +133,7 @@ function ServicesPage() {
       {/* USER PERSONAS */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-center" style={{ color: white }}>
+          <h2 className="text-center">
             Who We Engineer For
           </h2>
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -169,7 +165,7 @@ function ServicesPage() {
         className="px-6 py-16"
       >
         <div className="mx-auto max-w-3xl text-center">
-          <h2 style={{ color: white }}>
+          <h2>
             Uncertain which capabilities fit your target growth?
           </h2>
           <p className="mt-4" style={{ color: muted, fontSize: "1.125rem", lineHeight: 1.7 }}>
@@ -177,17 +173,7 @@ function ServicesPage() {
             exactly which modules will drive immediate cash flow—and which are completely
             unnecessary.
           </p>
-          <Link
-            to="/free-audit"
-            className="mt-8 inline-block"
-            style={{
-              backgroundColor: gold,
-              color: black,
-              padding: "14px 28px",
-              borderRadius: "8px",
-              fontWeight: 500,
-            }}
-          >
+          <Link to="/free-audit" className="bwk-button mt-8 inline-block">
             Book Free Pipeline Audit
           </Link>
         </div>
@@ -238,7 +224,7 @@ function MasterPanel({
                 className="flex gap-2"
                 style={{ color: muted, fontSize: "1rem" }}
               >
-                <Check size={16} style={{ color: champagne, flexShrink: 0, marginTop: 4 }} />
+                <Check size={16} className="bwk-icon-accent" style={{ flexShrink: 0, marginTop: 4 }} />
                 <span>{i}</span>
               </li>
             ))}
@@ -247,12 +233,8 @@ function MasterPanel({
         <p className="mt-6" style={{ color: muted, fontSize: "0.9375rem", fontStyle: "italic" }}>
           <strong style={{ color: white }}>Target Profile:</strong> {target}
         </p>
-        <Link
-          to="/free-audit"
-          className="mt-6 inline-block"
-          style={{ color: gold, fontSize: "1rem" }}
-        >
-          Select this module for audit framework →
+        <Link to="/free-audit" className="nav-link mt-6 inline-block" style={{ fontSize: "1rem" }}>
+          Select this module for audit framework
         </Link>
       </div>
     </article>
@@ -311,3 +293,4 @@ function PersonaCard({
     </div>
   );
 }
+]]>
