@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+<![CDATA[import { Link } from "@tanstack/react-router";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
 import { CastleShield } from "./CastleShield";
 
@@ -63,23 +63,20 @@ export function SiteFooter({ minimal = false }: Props) {
           >
             Creative Design &amp; Digital Marketing Solutions
           </p>
-          <div className="flex justify-center gap-4 md:justify-end" style={{ color: "var(--color-bk-gold)" }}>
-            <a href="#" aria-label="Facebook"><Facebook size={20} /></a>
-            <a href="#" aria-label="Instagram"><Instagram size={20} /></a>
-            <a href="#" aria-label="TikTok"><TikTok /></a>
-            <a href="#" aria-label="LinkedIn"><Linkedin size={20} /></a>
+          <div className="flex justify-center gap-4 md:justify-end nav-link" style={{ color: "var(--color-bk-gold)" }}>
+            <a href="#" aria-label="Facebook" className="nav-link"><Facebook size={20} /></a>
+            <a href="#" aria-label="Instagram" className="nav-link"><Instagram size={20} /></a>
+            <a href="#" aria-label="TikTok" className="nav-link"><TikTok /></a>
+            <a href="#" aria-label="LinkedIn" className="nav-link"><Linkedin size={20} /></a>
           </div>
         </div>
 
         {/* Row 2 */}
         <nav aria-label="Footer">
-          <ul
-            className="flex flex-wrap justify-center gap-x-6 gap-y-2"
-            style={{ color: "var(--muted-foreground)", fontSize: "1rem" }}
-          >
+          <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2">
             {navLinks.map((l) => (
               <li key={l.to}>
-                <Link to={l.to} className="hover:text-bk-gold">
+                <Link to={l.to} className="nav-link" style={{ fontSize: "1rem" }}>
                   {l.label}
                 </Link>
               </li>
@@ -88,13 +85,10 @@ export function SiteFooter({ minimal = false }: Props) {
         </nav>
 
         {/* Row 3 */}
-        <div
-          className="flex flex-wrap justify-center gap-x-6 gap-y-2"
-          style={{ color: "var(--color-bk-white)", fontSize: "1rem" }}
-        >
-          <a href="mailto:hello@blackwoodkeep.co.uk" className="hover:text-bk-gold">hello@blackwoodkeep.co.uk</a>
-          <span>·</span>
-          <span>[Swytch phone number]</span>
+        <div className="flex flex-wrap justify-center gap-x-6 gap-y-2" style={{ fontSize: "1rem" }}>
+          <a href="mailto:hello@blackwoodkeep.co.uk" className="nav-link">hello@blackwoodkeep.co.uk</a>
+          <span style={{ color: "var(--color-bk-white)" }}>·</span>
+          <span style={{ color: "var(--color-bk-white)" }}>[Swytch phone number]</span>
         </div>
 
         {/* Row 4 */}
@@ -112,9 +106,9 @@ export function SiteFooter({ minimal = false }: Props) {
           <span>·</span>
           <span>Registered in England and Wales</span>
           <span>·</span>
-          <Link to="/privacy" className="hover:text-bk-gold">Privacy Policy</Link>
+          <Link to="/privacy" className="nav-link">Privacy Policy</Link>
           <span>·</span>
-          <Link to="/cookies" className="hover:text-bk-gold">Cookie Policy</Link>
+          <Link to="/cookies" className="nav-link">Cookie Policy</Link>
           <span>·</span>
           <span>ICO Registration</span>
         </div>
@@ -122,3 +116,4 @@ export function SiteFooter({ minimal = false }: Props) {
     </footer>
   );
 }
+]]>
