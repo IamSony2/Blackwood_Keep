@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+<![CDATA[import { createFileRoute } from "@tanstack/react-router";
 import { ShieldCheck, Clock, Lightbulb } from "lucide-react";
 import { PageLayout } from "@/components/PageLayout";
 import { ZohoPlaceholder } from "@/components/ZohoPlaceholder";
@@ -49,9 +49,9 @@ function FreeAuditPage() {
       >
         <div className="mx-auto max-w-2xl text-center">
           <h1 style={{ lineHeight: 1.2 }}>
-            Secure your customised digital growth roadmap.
+            Secure your customised digital growth roadmap
           </h1>
-          <h2 className="mt-3" style={{ color: white, lineHeight: 1.2 }}>
+          <h2 className="mt-3" style={{ lineHeight: 1.2 }}>
             Reveal your opportunities
           </h2>
           <p
@@ -98,9 +98,7 @@ function FreeAuditPage() {
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 md:grid-cols-2">
           {/* Option A */}
           <div>
-            <h2
-              style={{ color: white, fontFamily: "var(--font-sans)", fontWeight: 500 }}
-            >
+            <h2 style={{ fontFamily: "var(--font-sans)", fontWeight: 500 }}>
               Option A: Submit Profile Details
             </h2>
             <p className="mt-2" style={{ color: muted, fontSize: "1.125rem" }}>
@@ -138,18 +136,7 @@ function FreeAuditPage() {
               <FieldInput name="competitor" label="Primary competitor" />
               <FieldInput name="budget" label="Monthly budget target" />
               <GdprCheckbox />
-              <button
-                type="submit"
-                className="w-full"
-                style={{
-                  backgroundColor: gold,
-                  color: black,
-                  padding: "12px 24px",
-                  borderRadius: "8px",
-                  fontWeight: 500,
-                  fontSize: "1rem",
-                }}
-              >
+              <button type="submit" className="bwk-button w-full">
                 Send via email
               </button>
             </form>
@@ -160,9 +147,7 @@ function FreeAuditPage() {
             className="border-l-0 md:border-l md:pl-10"
             style={{ borderColor: structuralBorder }}
           >
-            <h2
-              style={{ color: white, fontFamily: "var(--font-sans)", fontWeight: 500 }}
-            >
+            <h2 style={{ fontFamily: "var(--font-sans)", fontWeight: 500 }}>
               Option B: Schedule Immediate Strategy Briefing
             </h2>
             <p className="mt-2" style={{ color: muted, fontSize: "1.125rem" }}>
@@ -240,3 +225,4 @@ function Trust({ icon, text }: { icon: React.ReactNode; text: string }) {
     </div>
   );
 }
+]]>
