@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+<![CDATA[import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { CastleShield } from "./CastleShield";
@@ -62,18 +62,7 @@ export function SiteHeader({ minimal = false }: Props) {
         )}
 
         <div className="flex items-center gap-3">
-          <Link
-            to="/free-audit"
-            className="hidden md:inline-block transition-opacity hover:opacity-90"
-            style={{
-              backgroundColor: "var(--color-bk-gold-pop)",
-              color: "var(--color-bk-black)",
-              borderRadius: "8px",
-              padding: "10px 20px",
-              fontSize: "1rem",
-              fontWeight: 500,
-            }}
-          >
+          <Link to="/free-audit" className="bwk-button bwk-button--pop hidden md:inline-block">
             Book Free Audit
           </Link>
           {!minimal && (
@@ -109,22 +98,13 @@ export function SiteHeader({ minimal = false }: Props) {
               key={l.to}
               to={l.to}
               onClick={() => setOpen(false)}
-              style={{ color: "var(--color-bk-white)", fontSize: "1.375rem", fontFamily: "var(--font-sans)" }}
+              className="nav-link"
+              style={{ fontSize: "1.375rem" }}
             >
               {l.label}
             </Link>
           ))}
-          <Link
-            to="/free-audit"
-            onClick={() => setOpen(false)}
-            style={{
-              backgroundColor: "var(--color-bk-gold-pop)",
-              color: "var(--color-bk-black)",
-              borderRadius: "8px",
-              padding: "12px 28px",
-              fontWeight: 500,
-            }}
-          >
+          <Link to="/free-audit" onClick={() => setOpen(false)} className="bwk-button bwk-button--pop">
             Book Free Audit
           </Link>
         </div>
@@ -132,3 +112,4 @@ export function SiteHeader({ minimal = false }: Props) {
     </header>
   );
 }
+]]>
