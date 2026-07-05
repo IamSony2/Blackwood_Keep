@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+<![CDATA[import { createFileRoute } from "@tanstack/react-router";
 import { PageLayout } from "@/components/PageLayout";
 import { ZohoPlaceholder } from "@/components/ZohoPlaceholder";
 
@@ -40,7 +40,7 @@ function ReferralsPage() {
           <h1 style={{ lineHeight: 1.2 }}>
             Trusted Growth Partners
           </h1>
-          <h2 className="mt-3" style={{ color: white, lineHeight: 1.2 }}>
+          <h2 className="mt-3" style={{ lineHeight: 1.2 }}>
             Value Commercial Introductions
           </h2>
           <p className="mt-6" style={{ color: muted, fontSize: "1.0625rem", lineHeight: 1.6 }}>
@@ -53,7 +53,7 @@ function ReferralsPage() {
       {/* PROCESS */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-center" style={{ color: white }}>
+          <h2 className="text-center">
             The Referral Mechanics
           </h2>
           <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -83,7 +83,7 @@ function ReferralsPage() {
       {/* INTEGRATION PROFILE */}
       <section style={{ backgroundColor: slate }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-center" style={{ color: white }}>
+          <h2 className="text-center">
             Ideal Introductions
           </h2>
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -112,7 +112,7 @@ function ReferralsPage() {
       {/* INTAKE FORM */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-3xl">
-          <h2 className="text-center" style={{ color: white }}>
+          <h2 className="text-center">
             Submit Strategic Referral
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-center" style={{ color: muted, fontSize: "1.0625rem" }}>
@@ -133,16 +133,7 @@ function ReferralsPage() {
             </ZohoPlaceholder>
           </div>
           <div className="mt-6 text-center">
-            <button
-              type="button"
-              style={{
-                backgroundColor: gold,
-                color: black,
-                padding: "14px 32px",
-                borderRadius: "8px",
-                fontWeight: 500,
-              }}
-            >
+            <button type="button" className="bwk-button">
               Register Introduction
             </button>
           </div>
@@ -152,3 +143,4 @@ function ReferralsPage() {
     </PageLayout>
   );
 }
+]]>
