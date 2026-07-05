@@ -1,7 +1,6 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+<![CDATA[import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageLayout } from "@/components/PageLayout";
 import { ZohoPlaceholder } from "@/components/ZohoPlaceholder";
-import { GoldDivider } from "@/components/GoldDivider";
 
 export const Route = createFileRoute("/testimonials")({
   head: () => ({
@@ -85,7 +84,7 @@ function TestimonialsPage() {
           <h1 style={{ lineHeight: 1.2 }}>
             Verifiable commercial results
           </h1>
-          <h2 className="mt-3" style={{ color: white, lineHeight: 1.2 }}>
+          <h2 className="mt-3" style={{ lineHeight: 1.2 }}>
             Client Growth Journeys
           </h2>
           <p className="mt-6" style={{ color: muted, fontSize: "1.0625rem", lineHeight: 1.6 }}>
@@ -99,12 +98,9 @@ function TestimonialsPage() {
       {/* GRID */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-center" style={{ color: white }}>
+          <h2 className="text-center">
             What our customers say!
           </h2>
-          <div className="mt-4 flex justify-center">
-            <GoldDivider />
-          </div>
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {testimonials.map((t, i) => (
               <article
@@ -155,7 +151,7 @@ function TestimonialsPage() {
       {/* METRIC SNAPSHOT */}
       <section style={{ backgroundColor: slate }} className="px-6 py-20">
         <div className="mx-auto max-w-5xl text-center">
-          <h2 style={{ color: white }}>
+          <h2>
             The Performance Delta
           </h2>
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -169,15 +165,15 @@ function TestimonialsPage() {
       {/* GOOGLE VALIDATION */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 style={{ color: white }}>Independent Verification</h2>
+          <h2>Independent Verification</h2>
           <p className="mx-auto mt-4 max-w-2xl" style={{ color: muted, fontSize: "1.125rem" }}>
             Track our live independent feedback matrix directly via Google Business Profile.
           </p>
           <div className="mt-8">
             <ZohoPlaceholder label="Live API Embed — Google Reviews Stream" minHeight={220} />
           </div>
-          <a href="#" className="mt-6 inline-block" style={{ color: gold }}>
-            Review our live Google corporate footprint →
+          <a href="#" className="nav-link mt-6 inline-block">
+            Review our live Google corporate footprint
           </a>
         </div>
       </section>
@@ -188,20 +184,10 @@ function TestimonialsPage() {
         className="px-6 py-16"
       >
         <div className="mx-auto max-w-3xl text-center">
-          <h2 style={{ color: white }}>
-            Command your regional territory today.
+          <h2>
+            Command your regional territory today
           </h2>
-          <Link
-            to="/free-audit"
-            className="mt-6 inline-block"
-            style={{
-              backgroundColor: gold,
-              color: black,
-              padding: "14px 28px",
-              borderRadius: "8px",
-              fontWeight: 500,
-            }}
-          >
+          <Link to="/free-audit" className="bwk-button mt-6 inline-block">
             Secure Your Growth Audit
           </Link>
         </div>
@@ -236,3 +222,4 @@ function Stat({ number, label }: { number: string; label: string }) {
     </div>
   );
 }
+]]>
