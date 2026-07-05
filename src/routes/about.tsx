@@ -1,7 +1,6 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+<![CDATA[import { createFileRoute, Link } from "@tanstack/react-router";
 import { Lightbulb, Award, Heart, Settings, ShieldCheck } from "lucide-react";
 import { PageLayout } from "@/components/PageLayout";
-import { GoldDivider } from "@/components/GoldDivider";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -52,7 +51,6 @@ function AboutPage() {
           <h2
             className="mt-3"
             style={{
-              color: white,
               lineHeight: 1.2 }}
           >
             Tired of Marketing Guesswork?
@@ -73,12 +71,9 @@ function AboutPage() {
       {/* OPERATIONAL STANDARDS */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-3xl">
-          <h2 className="text-center" style={{ color: white }}>
-            A Partner, Not Just a Monthly Bill
+          <h2 className="text-center">
+            A Partner Not Just a Monthly Bill
           </h2>
-          <div className="mt-4 flex justify-center">
-            <GoldDivider />
-          </div>
           <div className="mt-10 space-y-6" style={{ color: muted, lineHeight: 1.8, fontSize: "1.125rem" }}>
             <p>
               We don't just turn on paid ads and walk away. Before we launch anything, we work
@@ -92,7 +87,7 @@ function AboutPage() {
 
       <section style={{ backgroundColor: black }} className="px-6 pb-20">
         <div className="mx-auto max-w-3xl">
-          <h2 className="text-center" style={{ color: white }}>
+          <h2 className="text-center">
             Driving Local Growth in the Background
           </h2>
           <div className="mt-10 space-y-6" style={{ color: muted, lineHeight: 1.8, fontSize: "1.125rem" }}>
@@ -123,32 +118,32 @@ function AboutPage() {
       {/* CORE PILLARS */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-center" style={{ color: white }}>
+          <h2 className="text-center">
             Our Non-Negotiables
           </h2>
           <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             <ValueCard
-              icon={<Lightbulb size={24} style={{ color: champagne }} />}
+              icon={<Lightbulb size={24} className="bwk-icon-accent" />}
               title="Absolute Clarity"
               body="We present every strategy in clear, actionable business terms. If a campaign metric cannot be broken down in under 30 seconds, it does not belong in our pipeline architecture."
             />
             <ValueCard
-              icon={<Award size={24} style={{ color: champagne }} />}
+              icon={<Award size={24} className="bwk-icon-accent" />}
               title="Commercial ROI Focus"
               body="We measure campaign health purely by inbound lead quality, closed commercial values, and customer acquisition efficiency—never by random social platform clicks."
             />
             <ValueCard
-              icon={<Heart size={24} style={{ color: champagne }} />}
+              icon={<Heart size={24} className="bwk-icon-accent" />}
               title="Deep Strategic Alignment"
               body="We thoroughly study prospective clients before onboarding. We only initiate partnerships where our funnel development can guarantee a measurable revenue impact."
             />
             <ValueCard
-              icon={<Settings size={24} style={{ color: champagne }} />}
+              icon={<Settings size={24} className="bwk-icon-accent" />}
               title="Systems Architecture"
               body="We specialise in hands-off infrastructure, developing methodical, automated automation protocols that liberate your management layer from data entry tasks."
             />
             <ValueCard
-              icon={<ShieldCheck size={24} style={{ color: champagne }} />}
+              icon={<ShieldCheck size={24} className="bwk-icon-accent" />}
               title="Direct Candour"
               body="We remain conscientiously realistic regarding target timelines, required media budgets, and market realities. No inflated projections—just predictable execution."
             />
@@ -159,16 +154,16 @@ function AboutPage() {
       {/* ALLIANCE HIGHLIGHT */}
       <section style={{ backgroundColor: slate }} className="px-6 py-16">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 style={{ color: white }}>
-            Built on Performance, Not Advertising.
+          <h2>
+            Built on Performance Not Advertising
           </h2>
           <p className="mt-6" style={{ color: muted, fontSize: "1.125rem", lineHeight: 1.7 }}>
             The core of our client portfolio is constructed through intentional industry referrals
             and long-term asset performance. If your business requires transparent growth, we invite
             you to experience our strategic process directly.
           </p>
-          <Link to="/referrals" className="mt-6 inline-block" style={{ color: gold }}>
-            Review our referral guidelines →
+          <Link to="/referrals" className="nav-link mt-6 inline-block">
+            Review our referral guidelines
           </Link>
         </div>
       </section>
@@ -179,20 +174,10 @@ function AboutPage() {
         className="px-6 py-16"
       >
         <div className="mx-auto max-w-3xl text-center">
-          <h2 style={{ color: white }}>
-            Evaluate your current marketing spend efficiency.
+          <h2>
+            Evaluate your current marketing spend efficiency
           </h2>
-          <Link
-            to="/free-audit"
-            className="mt-6 inline-block"
-            style={{
-              backgroundColor: gold,
-              color: black,
-              padding: "14px 28px",
-              borderRadius: "8px",
-              fontWeight: 500,
-            }}
-          >
+          <Link to="/free-audit" className="bwk-button mt-6 inline-block">
             Request Free Pipeline Audit
           </Link>
         </div>
@@ -265,3 +250,4 @@ function ValueCard({
     </div>
   );
 }
+]]>
