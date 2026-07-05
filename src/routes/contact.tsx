@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+<![CDATA[import { createFileRoute } from "@tanstack/react-router";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { PageLayout } from "@/components/PageLayout";
 import { ZohoPlaceholder } from "@/components/ZohoPlaceholder";
@@ -61,9 +61,9 @@ function ContactPage() {
       <section style={{ backgroundColor: black, minHeight: "40vh" }} className="flex items-center justify-center px-6 py-16">
         <div className="mx-auto max-w-3xl text-center">
           <h1 style={{ lineHeight: 1.2 }}>
-            Let's review your market opportunities.
+            Let's review your market opportunities
           </h1>
-          <h2 className="mt-3" style={{ color: white, lineHeight: 1.2 }}>
+          <h2 className="mt-3" style={{ lineHeight: 1.2 }}>
             Plan Your Growth
           </h2>
           <p className="mt-6" style={{ color: muted, fontSize: "1.1875rem", lineHeight: 1.6 }}>
@@ -78,7 +78,7 @@ function ContactPage() {
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 md:grid-cols-2">
           {/* Route A */}
           <div className="md:pr-10" style={{ borderRight: `1px solid ${structuralBorder}` }}>
-            <h2 style={{ color: white, fontFamily: "var(--font-sans)", fontWeight: 500 }}>
+            <h2 style={{ fontFamily: "var(--font-sans)", fontWeight: 500 }}>
               Route A: Direct Electronic Briefing
             </h2>
             <p className="mt-2" style={{ color: muted, fontSize: "1.125rem" }}>
@@ -114,18 +114,7 @@ function ContactPage() {
                 />
               </label>
               <GdprCheckbox />
-              <button
-                type="submit"
-                className="w-full"
-                style={{
-                  backgroundColor: gold,
-                  color: black,
-                  padding: "12px 24px",
-                  borderRadius: "8px",
-                  fontWeight: 500,
-                  fontSize: "1rem",
-                }}
-              >
+              <button type="submit" className="bwk-button w-full">
                 Submit briefing
               </button>
             </form>
@@ -134,7 +123,7 @@ function ContactPage() {
 
           {/* Route B */}
           <div>
-            <h2 style={{ color: white, fontFamily: "var(--font-sans)", fontWeight: 500 }}>
+            <h2 style={{ fontFamily: "var(--font-sans)", fontWeight: 500 }}>
               Route B: Direct Calendar Allocation
             </h2>
             <p className="mt-2" style={{ color: muted, fontSize: "1.125rem" }}>
@@ -154,10 +143,10 @@ function ContactPage() {
       <section style={{ backgroundColor: slate }} className="px-6 py-16">
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-3">
           <ContactItem icon={<Phone size={22} style={{ color: gold }} />}>
-            <a href="tel:+44" style={{ color: white }}>[Swytch phone number]</a>
+            <a href="tel:+44" className="nav-link">[Swytch phone number]</a>
           </ContactItem>
           <ContactItem icon={<Mail size={22} style={{ color: gold }} />}>
-            <a href="mailto:hello@blackwoodkeep.co.uk" style={{ color: white }}>
+            <a href="mailto:hello@blackwoodkeep.co.uk" className="nav-link">
               hello@blackwoodkeep.co.uk
             </a>
           </ContactItem>
@@ -217,3 +206,4 @@ function ContactItem({ icon, children }: { icon: React.ReactNode; children: Reac
     </div>
   );
 }
+]]>
