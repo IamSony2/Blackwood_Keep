@@ -1,4 +1,4 @@
-<![CDATA[import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { ShieldCheck, Clock, Lightbulb } from "lucide-react";
 import { PageLayout } from "@/components/PageLayout";
 import { ZohoPlaceholder } from "@/components/ZohoPlaceholder";
@@ -42,7 +42,6 @@ const structuralBorder = "var(--border)";
 function FreeAuditPage() {
   return (
     <PageLayout>
-      {/* HERO */}
       <section
         style={{ backgroundColor: black, minHeight: "50vh" }}
         className="flex items-center justify-center px-6 py-20"
@@ -65,7 +64,6 @@ function FreeAuditPage() {
         </div>
       </section>
 
-      {/* DELIVERABLES */}
       <section style={{ backgroundColor: slate }} className="px-6 py-16">
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-3">
           {[
@@ -93,10 +91,8 @@ function FreeAuditPage() {
         </div>
       </section>
 
-      {/* TWO-PATH CONVERSION */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 md:grid-cols-2">
-          {/* Option A */}
           <div>
             <h2 style={{ fontFamily: "var(--font-sans)", fontWeight: 500 }}>
               Option A: Submit Profile Details
@@ -104,7 +100,6 @@ function FreeAuditPage() {
             <p className="mt-2" style={{ color: muted, fontSize: "1.125rem" }}>
               We run the technical diagnostics and email your video blueprint within 24 hours.
             </p>
-            {/* ZOHO FORM EMBED — connect Zoho Forms here */}
             <div className="mt-6">
               <ZohoPlaceholder
                 label=""
@@ -120,9 +115,7 @@ function FreeAuditPage() {
                 </p>
               </ZohoPlaceholder>
             </div>
-            {/* END ZOHO FORM */}
 
-            {/* HTML fallback form */}
             <form
               action="mailto:hello@blackwoodkeep.co.uk"
               method="post"
@@ -142,7 +135,6 @@ function FreeAuditPage() {
             </form>
           </div>
 
-          {/* Option B */}
           <div
             className="border-l-0 md:border-l md:pl-10"
             style={{ borderColor: structuralBorder }}
@@ -154,7 +146,6 @@ function FreeAuditPage() {
               Select a live call window to map out your architecture directly with our leadership
               team.
             </p>
-            {/* ZOHO BOOKINGS CALENDAR EMBED — connect Zoho Bookings here */}
             <div className="mt-6">
               <ZohoPlaceholder
                 label="Integrated Zoho Bookings Interface — Select Discovery Slot"
@@ -162,12 +153,10 @@ function FreeAuditPage() {
                 minHeight={500}
               />
             </div>
-            {/* END ZOHO BOOKINGS */}
           </div>
         </div>
       </section>
 
-      {/* REASSURANCE */}
       <section
         style={{ backgroundColor: black, borderTop: `0.5px solid ${structuralBorder}` }}
         className="px-6 py-12"
@@ -225,4 +214,3 @@ function Trust({ icon, text }: { icon: React.ReactNode; text: string }) {
     </div>
   );
 }
-]]>
