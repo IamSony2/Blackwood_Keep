@@ -1,4 +1,4 @@
-<![CDATA[@import "tailwindcss" source(none);
+@import "tailwindcss" source(none);
 @source "../src";
 @import "tw-animate-css";
 
@@ -209,4 +209,3 @@
     color: var(--color-bk-gold-antique);
   }
 }
-]]>
