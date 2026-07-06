@@ -1,4 +1,4 @@
-<![CDATA[import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { PageLayout } from "@/components/PageLayout";
 import { ZohoPlaceholder } from "@/components/ZohoPlaceholder";
 
@@ -34,7 +34,6 @@ const structuralBorder = "var(--border)";
 function ReferralsPage() {
   return (
     <PageLayout>
-      {/* HERO */}
       <section style={{ backgroundColor: black, minHeight: "50vh" }} className="flex items-center justify-center px-6 py-20">
         <div className="mx-auto max-w-3xl text-center">
           <h1 style={{ lineHeight: 1.2 }}>
@@ -50,7 +49,6 @@ function ReferralsPage() {
         </div>
       </section>
 
-      {/* PROCESS */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
           <h2 className="text-center">
@@ -80,7 +78,6 @@ function ReferralsPage() {
         </div>
       </section>
 
-      {/* INTEGRATION PROFILE */}
       <section style={{ backgroundColor: slate }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
           <h2 className="text-center">
@@ -109,7 +106,6 @@ function ReferralsPage() {
         </div>
       </section>
 
-      {/* INTAKE FORM */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-3xl">
           <h2 className="text-center">
@@ -120,7 +116,6 @@ function ReferralsPage() {
             tracking diagnostics.
           </p>
 
-          {/* REFERRAL FORM — connect Zoho Forms here */}
           <div className="mt-8">
             <ZohoPlaceholder label="" variant="light" minHeight={300}>
               <p style={{ color: white, fontWeight: 500, marginBottom: 12 }}>
@@ -137,10 +132,8 @@ function ReferralsPage() {
               Register Introduction
             </button>
           </div>
-          {/* END REFERRAL FORM */}
         </div>
       </section>
     </PageLayout>
   );
 }
-]]>
