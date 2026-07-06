@@ -1,4 +1,4 @@
-<![CDATA[import { createFileRoute, useNavigate, Link } from "@tanstack/react-router";
+import { createFileRoute, useNavigate, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { PageLayout } from "@/components/PageLayout";
 import { Accordion } from "@/components/Accordion";
@@ -67,7 +67,6 @@ function PricingPage() {
 
   return (
     <PageLayout>
-      {/* HERO */}
       <section
         style={{ backgroundColor: black, minHeight: "50vh" }}
         className="flex items-center justify-center px-6 py-20"
@@ -92,7 +91,6 @@ function PricingPage() {
         </div>
       </section>
 
-      {/* INTENT QUALIFICATION ENGINE */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-12 lg:grid-cols-2">
           <div>
@@ -194,7 +192,6 @@ function PricingPage() {
         </div>
       </section>
 
-      {/* FAQ */}
       <section style={{ backgroundColor: slate }} className="px-6 py-20">
         <h2 className="text-center">
           Commercial Partnership Clarity
@@ -227,7 +224,6 @@ function PricingPage() {
         </div>
       </section>
 
-      {/* CTA */}
       <section
         style={{ backgroundColor: black, borderTop: `1px solid ${structuralBorder}` }}
         className="px-6 py-16"
@@ -287,4 +283,3 @@ function ScopeSelect({
     </label>
   );
 }
-]]>
