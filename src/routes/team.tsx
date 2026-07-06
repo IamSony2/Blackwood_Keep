@@ -1,4 +1,4 @@
-<![CDATA[import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { Lightbulb, ShieldCheck, Settings, Heart } from "lucide-react";
 import { PageLayout } from "@/components/PageLayout";
 
@@ -36,7 +36,6 @@ const structuralBorder = "var(--border)";
 function TeamPage() {
   return (
     <PageLayout>
-      {/* HERO */}
       <section
         style={{ backgroundColor: black, minHeight: "50vh" }}
         className="flex items-center justify-center px-6 py-20"
@@ -57,7 +56,6 @@ function TeamPage() {
         </div>
       </section>
 
-      {/* ETHOS */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-4xl">
           <h2 className="text-center">
@@ -80,7 +78,6 @@ function TeamPage() {
         </div>
       </section>
 
-      {/* PRINCIPLES */}
       <section style={{ backgroundColor: slate }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
           <h2 className="text-center">
@@ -95,7 +92,6 @@ function TeamPage() {
         </div>
       </section>
 
-      {/* FOUNDERS & ENGINEERS */}
       <section
         style={{ backgroundColor: black }}
         className="px-6 py-20"
@@ -133,7 +129,6 @@ function TeamPage() {
         </div>
       </section>
 
-      {/* CTA */}
       <section style={{ backgroundColor: black, borderTop: `1px solid ${structuralBorder}` }} className="px-6 py-16">
         <div className="mx-auto max-w-3xl text-center">
           <h2>
@@ -177,4 +172,3 @@ function Principle({ icon, title, body }: { icon: React.ReactNode; title: string
     </div>
   );
 }
-]]>
