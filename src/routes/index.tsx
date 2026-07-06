@@ -1,4 +1,4 @@
-<![CDATA[import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   Clock,
   PoundSterling,
@@ -66,9 +66,6 @@ export const Route = createFileRoute("/")({
   component: Home,
 });
 
-// 60/30/10 brand rule: black = dominant canvas, slate = structure, white = typography, gold/champagne = accents only
-// All colour, button, link and card styling now lives in src/styles.css (.bwk-button, .bwk-card, .nav-link, etc.)
-// — nothing below should set colour via inline style.
 const black = "var(--color-bk-black)";
 const slate = "var(--color-bk-slate)";
 
@@ -80,7 +77,6 @@ function Home() {
 
   return (
     <PageLayout>
-      {/* SECTION 1 — HERO */}
       <section
         style={{ backgroundColor: black }}
         className="flex items-center justify-center px-6 py-24 md:py-32"
@@ -106,7 +102,6 @@ function Home() {
         </div>
       </section>
 
-      {/* SECTION 2 — SEGMENTATION GATEWAY */}
       <section style={{ backgroundColor: slate }} className="px-6 py-20">
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-0 md:grid-cols-2 md:items-stretch">
           <SegmentCard
@@ -135,7 +130,6 @@ function Home() {
         </div>
       </section>
 
-      {/* SECTION 3 — PROBLEM / SOLUTION */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl text-center">
           <h2>Does any of this sound familiar?</h2>
@@ -162,7 +156,6 @@ function Home() {
         </div>
       </section>
 
-      {/* SECTION 4 — ONBOARDING MATRIX */}
       <section id="how-it-works" style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl text-center">
           <h2>The blueprint to predictable growth</h2>
@@ -203,7 +196,6 @@ function Home() {
         </div>
       </section>
 
-      {/* SECTION 5 — SECTORS & SERVICES */}
       <section id="sectors" style={{ backgroundColor: slate }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl text-center">
           <h2>Engineered growth frameworks</h2>
@@ -233,7 +225,6 @@ function Home() {
         </div>
       </section>
 
-      {/* SECTION 6 — TESTIMONIALS STRIP */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl text-center">
           <h2>Validated commercial success</h2>
@@ -257,7 +248,6 @@ function Home() {
         </div>
       </section>
 
-      {/* SECTION 7 — REFERRALS MENTION */}
       <section style={{ backgroundColor: slate }} className="px-6 py-20">
         <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 md:grid-cols-2">
           <div>
@@ -294,7 +284,6 @@ function Home() {
         </div>
       </section>
 
-      {/* SECTION 8 — FINAL CTA */}
       <section
         style={{ backgroundColor: black, borderTop: "1px solid var(--border)" }}
         className="px-6 py-20"
@@ -446,4 +435,3 @@ function TestimonialCard({ quote, attr }: { quote: string; attr: string }) {
     </div>
   );
 }
-]]>
