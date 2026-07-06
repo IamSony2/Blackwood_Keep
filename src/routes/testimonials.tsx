@@ -1,4 +1,4 @@
-<![CDATA[import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageLayout } from "@/components/PageLayout";
 import { ZohoPlaceholder } from "@/components/ZohoPlaceholder";
 
@@ -75,7 +75,6 @@ const testimonials = [
 function TestimonialsPage() {
   return (
     <PageLayout>
-      {/* HERO */}
       <section
         style={{ backgroundColor: black, minHeight: "50vh" }}
         className="flex items-center justify-center px-6 py-20"
@@ -95,7 +94,6 @@ function TestimonialsPage() {
         </div>
       </section>
 
-      {/* GRID */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
           <h2 className="text-center">
@@ -148,7 +146,6 @@ function TestimonialsPage() {
         </div>
       </section>
 
-      {/* METRIC SNAPSHOT */}
       <section style={{ backgroundColor: slate }} className="px-6 py-20">
         <div className="mx-auto max-w-5xl text-center">
           <h2>
@@ -162,7 +159,6 @@ function TestimonialsPage() {
         </div>
       </section>
 
-      {/* GOOGLE VALIDATION */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-4xl text-center">
           <h2>Independent Verification</h2>
@@ -178,7 +174,6 @@ function TestimonialsPage() {
         </div>
       </section>
 
-      {/* CTA */}
       <section
         style={{ backgroundColor: black, borderTop: `1px solid ${structuralBorder}` }}
         className="px-6 py-16"
@@ -222,4 +217,3 @@ function Stat({ number, label }: { number: string; label: string }) {
     </div>
   );
 }
-]]>
