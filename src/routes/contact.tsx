@@ -1,4 +1,4 @@
-<![CDATA[import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { PageLayout } from "@/components/PageLayout";
 import { ZohoPlaceholder } from "@/components/ZohoPlaceholder";
@@ -57,7 +57,6 @@ const structuralBorder = "var(--border)";
 function ContactPage() {
   return (
     <PageLayout>
-      {/* HERO */}
       <section style={{ backgroundColor: black, minHeight: "40vh" }} className="flex items-center justify-center px-6 py-16">
         <div className="mx-auto max-w-3xl text-center">
           <h1 style={{ lineHeight: 1.2 }}>
@@ -73,10 +72,8 @@ function ContactPage() {
         </div>
       </section>
 
-      {/* TWO INTAKE PLATFORMS */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 md:grid-cols-2">
-          {/* Route A */}
           <div className="md:pr-10" style={{ borderRight: `1px solid ${structuralBorder}` }}>
             <h2 style={{ fontFamily: "var(--font-sans)", fontWeight: 500 }}>
               Route A: Direct Electronic Briefing
@@ -85,7 +82,6 @@ function ContactPage() {
               Our engineering team responds with complete account feedback within one standard
               working day.
             </p>
-            {/* GENERAL ENQUIRY FORM — connect Zoho Forms here */}
             <form
               action="mailto:hello@blackwoodkeep.co.uk"
               method="post"
@@ -118,10 +114,8 @@ function ContactPage() {
                 Submit briefing
               </button>
             </form>
-            {/* END GENERAL ENQUIRY FORM */}
           </div>
 
-          {/* Route B */}
           <div>
             <h2 style={{ fontFamily: "var(--font-sans)", fontWeight: 500 }}>
               Route B: Direct Calendar Allocation
@@ -130,16 +124,13 @@ function ContactPage() {
               Secure an immediate strategic briefing block directly inside our active database
               scheduler.
             </p>
-            {/* ZOHO BOOKINGS CALENDAR — connect here */}
             <div className="mt-6">
               <ZohoPlaceholder label="Bespoke Zoho Bookings Calendar Interface Hub" variant="light" minHeight={400} />
             </div>
-            {/* END ZOHO BOOKINGS */}
           </div>
         </div>
       </section>
 
-      {/* CONTACT GRID */}
       <section style={{ backgroundColor: slate }} className="px-6 py-16">
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-3">
           <ContactItem icon={<Phone size={22} style={{ color: gold }} />}>
@@ -159,7 +150,6 @@ function ContactPage() {
         </div>
       </section>
 
-      {/* PROTOCOL PROMISE */}
       <section style={{ backgroundColor: black }} className="px-6 py-10">
         <div className="mx-auto flex max-w-3xl items-center justify-center gap-3 text-center">
           <Clock size={24} style={{ color: gold }} />
@@ -206,4 +196,3 @@ function ContactItem({ icon, children }: { icon: React.ReactNode; children: Reac
     </div>
   );
 }
-]]>
