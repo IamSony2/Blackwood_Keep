@@ -1,4 +1,4 @@
-<![CDATA[import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { Lightbulb, Award, Heart, Settings, ShieldCheck } from "lucide-react";
 import { PageLayout } from "@/components/PageLayout";
 
@@ -36,7 +36,6 @@ const structuralBorder = "var(--border)";
 function AboutPage() {
   return (
     <PageLayout>
-      {/* HERO */}
       <section
         style={{ backgroundColor: black, minHeight: "60vh" }}
         className="flex items-center justify-center px-6 py-20"
@@ -68,7 +67,6 @@ function AboutPage() {
         </div>
       </section>
 
-      {/* OPERATIONAL STANDARDS */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-3xl">
           <h2 className="text-center">
@@ -101,7 +99,6 @@ function AboutPage() {
         </div>
       </section>
 
-      {/* MISSION & VISION */}
       <section style={{ backgroundColor: slate }} className="px-6 py-20">
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-2">
           <PullQuote
@@ -115,7 +112,6 @@ function AboutPage() {
         </div>
       </section>
 
-      {/* CORE PILLARS */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
           <h2 className="text-center">
@@ -151,7 +147,6 @@ function AboutPage() {
         </div>
       </section>
 
-      {/* ALLIANCE HIGHLIGHT */}
       <section style={{ backgroundColor: slate }} className="px-6 py-16">
         <div className="mx-auto max-w-3xl text-center">
           <h2>
@@ -168,7 +163,6 @@ function AboutPage() {
         </div>
       </section>
 
-      {/* CTA */}
       <section
         style={{ backgroundColor: black, borderTop: `1px solid ${structuralBorder}` }}
         className="px-6 py-16"
@@ -250,4 +244,3 @@ function ValueCard({
     </div>
   );
 }
-]]>
