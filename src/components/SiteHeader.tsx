@@ -1,4 +1,4 @@
-<![CDATA[import { Link } from "@tanstack/react-router";
+import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { CastleShield } from "./CastleShield";
@@ -112,4 +112,3 @@ export function SiteHeader({ minimal = false }: Props) {
     </header>
   );
 }
-]]>
