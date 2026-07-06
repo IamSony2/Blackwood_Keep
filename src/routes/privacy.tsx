@@ -1,4 +1,4 @@
-<![CDATA[import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { PageLayout } from "@/components/PageLayout";
 
 export const Route = createFileRoute("/privacy")({
@@ -37,4 +37,3 @@ function Privacy() {
     </PageLayout>
   );
 }
-]]>
