@@ -1,4 +1,4 @@
-<![CDATA[import { Link } from "@tanstack/react-router";
+import { Link } from "@tanstack/react-router";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
 import { CastleShield } from "./CastleShield";
 
@@ -18,7 +18,6 @@ interface Props {
   minimal?: boolean;
 }
 
-// TikTok inline SVG (no lucide equivalent)
 function TikTok({ size = 20 }: { size?: number }) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -50,7 +49,6 @@ export function SiteFooter({ minimal = false }: Props) {
       className="px-6 py-12"
     >
       <div className="mx-auto max-w-7xl space-y-8">
-        {/* Row 1 */}
         <div className="grid grid-cols-1 items-center gap-6 md:grid-cols-3">
           <div className="flex justify-center md:justify-start">
             <Link to="/" aria-label="Blackwood Keep home">
@@ -71,7 +69,6 @@ export function SiteFooter({ minimal = false }: Props) {
           </div>
         </div>
 
-        {/* Row 2 */}
         <nav aria-label="Footer">
           <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2">
             {navLinks.map((l) => (
@@ -84,20 +81,17 @@ export function SiteFooter({ minimal = false }: Props) {
           </ul>
         </nav>
 
-        {/* Row 3 */}
         <div className="flex flex-wrap justify-center gap-x-6 gap-y-2" style={{ fontSize: "1rem" }}>
           <a href="mailto:hello@blackwoodkeep.co.uk" className="nav-link">hello@blackwoodkeep.co.uk</a>
           <span style={{ color: "var(--color-bk-white)" }}>·</span>
           <span style={{ color: "var(--color-bk-white)" }}>[Swytch phone number]</span>
         </div>
 
-        {/* Row 4 */}
         <p className="text-center" style={{ color: "var(--muted-foreground)", fontSize: "0.9375rem" }}>
           Serving businesses across the Wirral, Liverpool, Chester, Cheshire West, Cheshire East,
           and North Wales
         </p>
 
-        {/* Row 5 */}
         <div
           className="flex flex-wrap justify-center gap-x-4 gap-y-1 text-center"
           style={{ color: "var(--muted-foreground)", fontSize: "0.875rem" }}
@@ -116,4 +110,3 @@ export function SiteFooter({ minimal = false }: Props) {
     </footer>
   );
 }
-]]>
