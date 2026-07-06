@@ -1,4 +1,4 @@
-<![CDATA[import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { Cog, Star, Rocket, Check } from "lucide-react";
 import { PageLayout } from "@/components/PageLayout";
 
@@ -36,7 +36,6 @@ const structuralBorder = "var(--border)";
 function ServicesPage() {
   return (
     <PageLayout>
-      {/* HERO */}
       <section
         style={{ backgroundColor: black, minHeight: "60vh" }}
         className="flex items-center justify-center px-6 py-20"
@@ -57,7 +56,6 @@ function ServicesPage() {
         </div>
       </section>
 
-      {/* MASTER CORE CAPABILITIES */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
           <h2 className="text-center">
@@ -104,7 +102,6 @@ function ServicesPage() {
         </div>
       </section>
 
-      {/* AUXILIARY SEGMENTS */}
       <section style={{ backgroundColor: slate }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl text-center">
           <h2>
@@ -130,7 +127,6 @@ function ServicesPage() {
         </div>
       </section>
 
-      {/* USER PERSONAS */}
       <section style={{ backgroundColor: black }} className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
           <h2 className="text-center">
@@ -159,7 +155,6 @@ function ServicesPage() {
         </div>
       </section>
 
-      {/* CTA */}
       <section
         style={{ backgroundColor: black, borderTop: `1px solid ${structuralBorder}` }}
         className="px-6 py-16"
@@ -293,4 +288,3 @@ function PersonaCard({
     </div>
   );
 }
-]]>
