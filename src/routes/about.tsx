@@ -90,7 +90,7 @@ function AboutPage() {
           </h2>
           <div className="mt-10 space-y-6" style={{ color: muted, lineHeight: 1.8, fontSize: "1.125rem" }}>
             <p>
-              Operating across the Wirral, Liverpool, Chester, and North Wales, we build smart,
+              Operating across the Wirral, Liverpool, Chester, Cheshire West, Cheshire East, and North Wales, we build smart,
               data-driven lead generation systems that bring in high-quality commercial enquiries
               and build regional trust. The best part? It runs flawlessly in the background,
               leaving you free to focus on executing your day-to-day physical operations.
@@ -103,7 +103,7 @@ function AboutPage() {
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-2">
           <PullQuote
             label="Our Mission"
-            quote="To give regional trades and B2B enterprises the clarity, automated systems, and confidence to capture their markets and grow—removing digital confusion so they can focus entirely on executing what they do best."
+            quote="To give regional trades and B2B/B2C enterprises the clarity, automated systems, and confidence to capture their markets and grow—removing digital confusion so they can focus entirely on executing what they do best."
           />
           <PullQuote
             label="Our Vision"
@@ -143,6 +143,12 @@ function AboutPage() {
               title="Direct Candour"
               body="We remain conscientiously realistic regarding target timelines, required media budgets, and market realities. No inflated projections—just predictable execution."
             />
+            <ValueCard
+              icon={<Award size={24} className="bwk-icon-accent" />}
+              title="Sovereign Asset Ownership"
+              body="We build infrastructure exclusively within your corporate ecosystem. Every tracking pixel, ad account, automation script, and landing page remains 100% your intellectual property from day one. We engineer systems to scale your business, not to make you dependent on our agency."
+            />
+
           </div>
         </div>
       </section>
@@ -153,11 +159,9 @@ function AboutPage() {
             Built on Performance Not Advertising
           </h2>
           <p className="mt-6" style={{ color: muted, fontSize: "1.125rem", lineHeight: 1.7 }}>
-            The core of our client portfolio is constructed through intentional industry referrals
-            and long-term asset performance. If your business requires transparent growth, we invite
-            you to experience our strategic process directly.
+            The core of our client portfolio is constructed through intentional industry referrals and long-term asset performance. If you know a business who would benefit from transparent growth, we invite you to explore our strategic process directly.
           </p>
-          <Link to="/referrals" className="nav-link mt-6 inline-block">
+          <Link to="/referrals" className="bwk-button mt-6 inline-block">
             Review our referral guidelines
           </Link>
         </div>
