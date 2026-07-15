@@ -11,7 +11,7 @@ export const Route = createFileRoute("/contact")({
       {
         name: "description",
         content:
-          "Contact Blackwood Keep to stabilise your corporate customer acquisition. Dedicated support for Wirral, Liverpool, Chester, and North Wales operators.",
+          "Contact Blackwood Keep to stabilise your corporate customer acquisition. Dedicated support for Wirral, Liverpool, Chester, Cheshire West, Cheshire East, and North Wales operators.",
       },
       { property: "og:title", content: "Contact Blackwood Keep" },
       {
@@ -60,14 +60,14 @@ function ContactPage() {
       <section style={{ backgroundColor: black, minHeight: "40vh" }} className="flex items-center justify-center px-6 py-16">
         <div className="mx-auto max-w-3xl text-center">
           <h1 style={{ lineHeight: 1.2 }}>
-            Let's review your market opportunities
+            Pipeline Consultation
           </h1>
           <h2 className="mt-3" style={{ lineHeight: 1.2 }}>
-            Plan Your Growth
+            Review your market opportunities
           </h2>
           <p className="mt-6" style={{ color: muted, fontSize: "1.1875rem", lineHeight: 1.6 }}>
             No generic sales presentations. Just an objective conversation regarding your
-            acquisition pipeline and conversion targets.
+            acquisition pipeline and conversion targets. Connect with our team to discuss scaling your trade, facilities, or B2B/B2C enterprise across the Wirral, Liverpool, Chester, Cheshire West, Cheshire East, and North Wales.
           </p>
         </div>
       </section>
@@ -134,7 +134,7 @@ function ContactPage() {
       <section style={{ backgroundColor: slate }} className="px-6 py-16">
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-3">
           <ContactItem icon={<Phone size={22} style={{ color: gold }} />}>
-            <a href="tel:+44" className="nav-link">[Swytch phone number]</a>
+            Tel: <a href="tel:+447395887773" className="nav-link">07395 887 773</a>
           </ContactItem>
           <ContactItem icon={<Mail size={22} style={{ color: gold }} />}>
             <a href="mailto:hello@blackwoodkeep.co.uk" className="nav-link">
