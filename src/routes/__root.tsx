@@ -107,7 +107,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Blackwood Keep engineers high-converting marketing funnels for trades, facilities management, and B2B/B2C enterprises across the Wirral, Liverpool, Chester, Cheshire West, Cheshire East, and North Wales.",
+          "Blackwood Keep engineers high-converting marketing funnels for trades, facilities management, and B2B enterprises across the Wirral, Liverpool, and Cheshire.",
       },
       { property: "og:site_name", content: "Blackwood Keep" },
       { property: "og:type", content: "website" },
