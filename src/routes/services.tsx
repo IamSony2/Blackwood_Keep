@@ -9,7 +9,7 @@ export const Route = createFileRoute("/services")({
       {
         name: "description",
         content:
-          "Comprehensive CRM automation, local map optimisation, funnel architecture, SEO, and paid ad deployment. Master capabilities page serving the Wirral, Liverpool, and Chester.",
+          "Comprehensive CRM automation, local map optimisation, funnel architecture, SEO, and paid ad deployment. Master capabilities page serving the Wirral, Liverpool, Chester, Cheshire West, Cheshire East, and North Wales.",
       },
       { property: "og:title", content: "Services & Capabilities | Blackwood Keep" },
       {
@@ -51,7 +51,7 @@ function ServicesPage() {
             We design, deploy, and manage your complete digital marketing and customer acquisition
             systems. By eliminating fragmented tools and loose ends, we build a seamless,
             high-performance ecosystem engineered solely to scale revenue for trades, facilities
-            management, and B2B enterprises across the Wirral, Liverpool, Cheshire and North Wales.
+            management, and B2B/B2C enterprises across the Wirral, Liverpool, Chester, Cheshire West, Cheshire East, and North Wales.
           </p>
         </div>
       </section>
@@ -77,7 +77,7 @@ function ServicesPage() {
             <MasterPanel
               icon={<Star size={56} className="bwk-icon-accent" />}
               title="Local Postcode Dominance & Authority Systems"
-              body="Modern B2B and regional consumers execute deep local validation before engaging. If your regional competitors display extensive verified profiles and your presence is minimal, they secure the contract. We automate elite five-star review generation loops directly from your completed jobs, while strategically optimising your geographic index to capture high-intent commercial and domestic queries across the Wirral, Liverpool, and Chester."
+              body="Modern B2B/B2C and regional consumers execute deep local validation before engaging. If your regional competitors display extensive verified profiles and your presence is minimal, they secure the contract. We automate elite five-star review generation loops directly from your completed jobs, while strategically optimising your geographic index to capture high-intent commercial and domestic queries across the Wirral, Liverpool, Chester, Cheshire West, Cheshire East, and North Wales."
               included={[
                 "Automated post-job review request deployment",
                 "Google Business Profile geospatial optimisation",
@@ -96,7 +96,7 @@ function ServicesPage() {
                 "High-converting bespoke landing page deployment",
                 "End-to-end multi-touch ROI attribution mapping",
               ]}
-              target="B2B enterprise layers, facilities management operators, and aggressive growth companies looking for predictable, scalable inbound contract values."
+              target="B2B/B2C enterprise layers, facilities management operators, and aggressive growth companies looking for predictable, scalable inbound contract values."
             />
           </div>
         </div>
@@ -141,7 +141,7 @@ function ServicesPage() {
             />
             <PersonaCard
               name="The Facilities & Asset Director"
-              who="FM operators across Cheshire, Liverpool, & North Wales"
+              who="FM operators across Wirral, Liverpool, Chester, Cheshire West, Cheshire East, and North Wales"
               friction="Underperforming web assets making them look small in procurement tenders"
               resolution="Corporate authority layout and deep enterprise CRM workflows."
             />

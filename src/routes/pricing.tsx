@@ -10,7 +10,7 @@ export const Route = createFileRoute("/pricing")({
       {
         name: "description",
         content:
-          "Transparent, performance-driven digital marketing partnerships for Wirral, Liverpool, and Cheshire businesses. Tailored project and retainer scopes without commodity packages.",
+          "Transparent, performance-driven digital marketing partnerships for Wirral, Liverpool, Chester, Cheshire West, Cheshire East, and North Wales businesses. Tailored project and retainer scopes without commodity packages.",
       },
       { property: "og:title", content: "Investment Scope & Value | Blackwood Keep" },
       {
@@ -85,8 +85,8 @@ function PricingPage() {
             We do not sell pre-packaged marketing commodities. Instead, we scope every digital
             marketing retainer entirely around your unique commercial revenue targets, current
             infrastructure footprint, and target geographic reach. You receive a structured,
-            value-driven asset built purely to scale your trade, facilities, or B2B enterprise
-            across the Wirral, Liverpool, Cheshire and North Wales.
+            value-driven asset built purely to scale your trade, facilities, or B2B/B2C enterprise
+            across the Wirral, Liverpool, Chester, Cheshire West, Cheshire East, and North Wales.
           </p>
         </div>
       </section>
@@ -166,7 +166,7 @@ function PricingPage() {
                 label="Select Primary Operational Sector:"
                 value={sector}
                 onChange={setSector}
-                options={["Local Trades & FM", "Regional SME", "B2B Enterprise"]}
+                options={["Local Trades & FM", "Regional SME", "B2B/B2C Enterprise"]}
               />
               <ScopeSelect
                 label="Target Regional Footprint:"

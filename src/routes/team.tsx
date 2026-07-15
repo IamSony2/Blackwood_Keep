@@ -9,7 +9,7 @@ export const Route = createFileRoute("/team")({
       {
         name: "description",
         content:
-          "Meet the specialised strategic consultants driving performance and revenue for local trades and B2B enterprise clients at Blackwood Keep.",
+          "Meet the specialised strategic consultants driving performance and revenue for local trades and B2B/B2C enterprise clients at Blackwood Keep.",
       },
       { property: "og:title", content: "Our Team | Blackwood Keep" },
       {
@@ -48,10 +48,7 @@ function TeamPage() {
             Dedicated digital growth engineers
           </h2>
           <p className="mt-6" style={{ color: muted, fontSize: "1.1875rem", lineHeight: 1.6 }}>
-            Everything we build is handled entirely in-house—nothing is outsourced. We operate as a
-            highly focused digital marketing and lead generation engineering group. We don't employ
-            generic account handlers or salespeople; you collaborate directly with deep technical
-            specialists who build your acquisition systems.
+            We operate as a highly focused digital marketing and lead generation engineering group. We do not employ generic account handlers or salespeople; you collaborate directly with deep technical specialists who build your acquisition systems.
           </p>
         </div>
       </section>
@@ -63,16 +60,16 @@ function TeamPage() {
           </h2>
           <div className="mt-10 space-y-6">
             <EthosBlock
-              title="Direct Operational Experience."
+              title="Direct Operational Experience"
               body="We have managed complex physical businesses. We understand that an inquiry is worthless unless it converts cleanly into an invoice."
             />
             <EthosBlock
-              title="Rigorous Selective Boarding."
-              body="We intentionally limit client intake parameters. If our diagnostic evaluation reveals an infrastructure gap, we resolve that first."
+              title="Rigorous Selective Boarding"
+              body="We intentionally limit client intake parameters across the Wirral, Liverpool, Chester, Cheshire West, Cheshire East, and North Wales. If our diagnostic evaluation reveals an internal infrastructure gap in your pipeline, we resolve that first before launching campaigns."
             />
             <EthosBlock
-              title="Obsession with Hard Attribution."
-              body="If a strategy cannot be validated inside a data dashboard, we do not build it. Every pound spent must have an explicit tracking path."
+              title="Obsession with Hard Attribution"
+              body="If a marketing strategy cannot be validated inside a data dashboard, we do not build it. Every pound of your media budget spent must have an explicit, trackable path to revenue."
             />
           </div>
         </div>
@@ -85,9 +82,9 @@ function TeamPage() {
           </h2>
           <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             <Principle icon={<Lightbulb size={24} className="bwk-icon-accent" />} title="Technical Clarity" body="No creative verbosity. We communicate in costs, lead values, conversion percentages, and closed revenue values." />
-            <Principle icon={<ShieldCheck size={24} className="bwk-icon-accent" />} title="Radical Honesty" body="If a campaign is underperforming or a postcode territory is oversaturated, we declare it immediately." />
-            <Principle icon={<Settings size={24} className="bwk-icon-accent" />} title="Process Automation" body="We build programmatic systems designed to function seamlessly without demanding human maintenance." />
-            <Principle icon={<Heart size={24} className="bwk-icon-accent" />} title="Client Ownership" body="We treat your client pipeline as a mission-critical asset. When you win market territory, we win." />
+            <Principle icon={<ShieldCheck size={24} className="bwk-icon-accent" />} title="Radical Honesty" body="If a paid ad campaign is underperforming or a postcode territory is oversaturated, we declare it immediately." />
+            <Principle icon={<Settings size={24} className="bwk-icon-accent" />} title="Process Automation" body="We build programmatic marketing systems and automated lead engines designed to function seamlessly without demanding human maintenance." />
+            <Principle icon={<Heart size={24} className="bwk-icon-accent" />} title="Client Ownership" body="We treat your regional client pipeline as a mission-critical asset. When you win market territory across your target zones, we win." />
           </div>
         </div>
       </section>
@@ -97,12 +94,12 @@ function TeamPage() {
         className="px-6 py-20"
       >
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-center">Founders &amp; Engineers</h2>
+          <h2 className="text-center">Founders &amp; Partners</h2>
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
             {[
-              { initials: "MS", name: "Maggie Smith", role: "Founder & Strategic Director", bio: "Architect of the Blackwood Keep growth methodology. Leads diagnostic audits and account strategy across all engagements." },
-              { initials: "IS", name: "Ian the Engineering Lead", role: "Funnel & CRM Engineering", bio: "Owns deployment of automated CRM and tracking infrastructure across client portfolios." },
-              { initials: "JS", name: "James the Media Lead", role: "Paid Acquisition & SEO", bio: "Manages localised paid campaigns and technical SEO across the North West client base." },
+              { initials: "MS", name: "Maggie", role: "Founder & Strategic Director", bio: "Architect of the Blackwood Keep growth methodology. Leads client diagnostic audits, 12-month commercial roadmaps, and cross-channel strategy to transform search vulnerabilities into immediate lead opportunities." },
+              { initials: "IS", name: "Ian", role: "IT Director", bio: "Owns the technical deployment of automated CRM systems, analytical tracking infrastructure, and SaaS optimisation. Integrates backend technical frameworks to ensure client acquisition pipelines operate seamlessly." },
+              { initials: "JS", name: "Resources", role: "Specialist Delivery Network", bio: "Backed by a vetted ecosystem of agile media buyers, technical SEO professionals, and creative assets. We deploy specialised external talent precisely when your campaign objectives or ad budgets require deep scale." },
             ].map((m) => (
               <div
                 key={m.name}
@@ -114,14 +111,8 @@ function TeamPage() {
                   textAlign: "center",
                 }}
               >
-                <div
-                  className="mx-auto flex h-16 w-16 items-center justify-center"
-                  style={{ backgroundColor: black, color: gold, borderRadius: "999px", fontFamily: "var(--font-display)", fontSize: "1.375rem" }}
-                >
-                  {m.initials}
-                </div>
-                <h3 className="mt-4" style={{ color: white, fontSize: "1.375rem" }}>{m.name}</h3>
-                <p style={{ color: muted, fontSize: "1rem" }}>{m.role}</p>
+                <h2 className="mt-4" style={{ color: white, fontSize: "1.375rem" }}>{m.name}</h2>
+                <h3>{m.role}</h3>
                 <p className="mt-3" style={{ color: muted, fontSize: "0.9375rem", lineHeight: 1.6 }}>{m.bio}</p>
               </div>
             ))}

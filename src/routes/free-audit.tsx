@@ -51,7 +51,7 @@ function FreeAuditPage() {
             Secure your customised digital growth roadmap
           </h1>
           <h2 className="mt-3" style={{ lineHeight: 1.2 }}>
-            Reveal your opportunities
+            Request Your Audit
           </h2>
           <p
             className="mx-auto mt-6"
@@ -64,7 +64,7 @@ function FreeAuditPage() {
         </div>
       </section>
 
-      <section style={{ backgroundColor: slate }} className="px-6 py-16">
+      <section style={{ backgroundColor: slate }} className="px-6 py-20">
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-3">
           {[
             "A personalised video breakdown dissecting your website and map performance",
@@ -73,13 +73,14 @@ function FreeAuditPage() {
           ].map((d, i) => (
             <div key={i} className="flex flex-col items-center text-center">
               <div
-                className="flex h-12 w-12 items-center justify-center"
-                style={{
-                  borderRadius: "999px",
-                  border: `2px solid ${gold}`,
-                  color: gold,
-                  fontFamily: "var(--font-display)",
-                }}
+                    className="flex h-14 w-14 flex-shrink-0 items-center justify-center"
+                    style={{
+                      backgroundColor: gold,
+                      color: black,
+                      borderRadius: "999px",
+                      fontFamily: "var(--font-display)",
+                      fontSize: "26px",
+                    }}
               >
                 {i + 1}
               </div>
@@ -124,10 +125,10 @@ function FreeAuditPage() {
             >
               <FieldInput name="name" label="Full name" required />
               <FieldInput name="email" label="Corporate email" type="email" required />
-              <FieldInput name="phone" label="Phone number" type="tel" />
-              <FieldInput name="company" label="Company URL" />
-              <FieldInput name="competitor" label="Primary competitor" />
-              <FieldInput name="budget" label="Monthly budget target" />
+              <FieldInput name="phone" label="Phone number" type="tel" required />
+              <FieldInput name="company" label="Company URL" required />
+              <FieldInput name="competitor" label="Primary competitor" required />
+              <FieldInput name="budget" label="Monthly budget target" required />
               <GdprCheckbox />
               <button type="submit" className="bwk-button w-full">
                 Send via email

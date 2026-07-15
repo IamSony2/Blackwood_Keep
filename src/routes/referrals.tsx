@@ -87,7 +87,7 @@ function ReferralsPage() {
             {[
               { t: "Commercial Contractors", b: "Mechanical, electrical, civil, roofing, and plumbing firms across the North West." },
               { t: "Facilities & Asset Groups", b: "Commercial cleaning, safety compliance, security providers, and out-of-hours infrastructure teams." },
-              { t: "Mid-Market Service SMEs", b: "Any commercial firm across Wirral, Liverpool, Chester, or North Wales seeking client tracking consistency." },
+              { t: "Mid-Market Service SMEs", b: "Any commercial firm across Wirral, Liverpool, Chester, Cheshire West, Cheshire East, and North Wales seeking client tracking consistency." },
             ].map((c) => (
               <div
                 key={c.t}
