@@ -42,6 +42,24 @@ export function CookieBanner() {
         >
           Accept
         </button>
+
+        <button
+          type="button"
+          onClick={() => {
+            localStorage.setItem("bk-cookie-accepted", "0");
+            setShow(false);
+          }}
+          style={{
+            backgroundColor: "var(--color-bk-gold)",
+            color: "var(--color-bk-black)",
+            borderRadius: "8px",
+            padding: "10px 22px",
+            fontWeight: 500,
+            fontSize: "1rem",
+          }}
+        >
+          Refuse
+        </button>
       </div>
     </div>
   );

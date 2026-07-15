@@ -84,7 +84,7 @@ export function SiteFooter({ minimal = false }: Props) {
         <div className="flex flex-wrap justify-center gap-x-6 gap-y-2" style={{ fontSize: "1rem" }}>
           <a href="mailto:hello@blackwoodkeep.co.uk" className="nav-link">hello@blackwoodkeep.co.uk</a>
           <span style={{ color: "var(--color-bk-white)" }}>·</span>
-          <span style={{ color: "var(--color-bk-white)" }}>[Swytch phone number]</span>
+          <span style={{ color: "var(--color-bk-white)" }}><a href="tel:+447395887773" className="nav-link">07395 887 773</a></span>
         </div>
 
         <p className="text-center" style={{ color: "var(--muted-foreground)", fontSize: "0.9375rem" }}>
